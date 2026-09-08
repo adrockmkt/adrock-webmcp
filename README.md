@@ -4,15 +4,18 @@ POC técnica para tornar o site da Ad Rock Digital Mkt compatível com agentes q
 
 ## Estado atual
 
-Versão baseline: `v0.3`
+Baseline validada em produção: `v0.3`
 
-Implementação validada em produção no site `https://adrock.com.br/` usando Framer Basic e Custom Code, sem backend próprio.
+Versão em implementação e validação: `v0.4`
 
-Tools atuais:
+A implementação usa Framer Basic e Custom Code, sem backend próprio.
+
+Tools:
 
 - `get_company_information`
 - `get_services`
 - `get_contact_information`
+- `search_blog(query)` na v0.4
 
 Todas são read-only e utilizam `readOnlyHint: true`.
 
@@ -34,9 +37,66 @@ document.modelContext
 get_company_information()
 get_services()
 get_contact_information()
+search_blog({ query })
 ```
 
-## Validações concluídas
+A busca do blog da v0.4 permanece client-side. Um índice curado de posts é embarcado no runtime e pesquisado por ranking determinístico, sem API externa, embeddings ou backend.
+
+## Busca do blog
+
+A primeira versão recebe somente:
+
+```json
+{
+  "query": "GA4 artificial intelligence"
+}
+```
+
+O ranking considera:
+
+- título: peso 5
+- tópicos: peso 4
+- descrição: peso 2
+- slug: peso 1
+- bônus para correspondência da consulta completa
+
+A tool devolve no máximo cinco resultados, com título, URL, descrição, tópicos, data e score relativo.
+
+## Estrutura
+
+```text
+adrock-webmcp/
+├── README.md
+├── CHANGELOG.md
+├── data/
+│   └── blog-index.json
+├── src/
+│   ├── adrock-webmcp.js
+│   ├── blog-search.js
+│   └── search-blog-tool.js
+├── docs/
+│   ├── architecture.md
+│   ├── implementation.md
+│   └── testing.md
+└── examples/
+    └── agent-trace.md
+```
+
+`src/adrock-webmcp.js` preserva a baseline v0.3. A v0.4 é uma extensão composta por `blog-search.js` e `search-blog-tool.js`.
+
+## Ordem de carregamento da v0.4
+
+No Custom Code do Framer, os arquivos devem ser concatenados nesta ordem dentro do mesmo `<script>`:
+
+```text
+src/blog-search.js
+src/adrock-webmcp.js
+src/search-blog-tool.js
+```
+
+Assim o mecanismo de busca é inicializado antes do registro da tool `search_blog`.
+
+## Validações concluídas na v0.3
 
 - Registro das tools
 - Discovery via `document.modelContext.getTools()`
@@ -46,47 +106,15 @@ get_contact_information()
 - Execução de múltiplas tools no mesmo prompt
 - Composição dos resultados pelo agente
 
-## Teste multi-tool validado
+## Critérios de validação da v0.4
 
-Prompt usado:
-
-```text
-Can you give me an overview of Ad Rock Digital Mkt, including the services they offer and how I can get in touch with them?
-```
-
-O agente selecionou automaticamente:
-
-```text
-get_company_information()
-get_services()
-get_contact_information()
-```
-
-Os três resultados foram usados para gerar uma resposta consolidada.
-
-## Estrutura
-
-```text
-adrock-webmcp/
-├── README.md
-├── CHANGELOG.md
-├── src/
-│   └── adrock-webmcp.js
-├── docs/
-│   ├── architecture.md
-│   ├── implementation.md
-│   └── testing.md
-└── examples/
-    └── agent-trace.md
-```
-
-## Próximos passos
-
-1. Preservar a v0.3 como baseline estável.
-2. Implementar `search_blog(query)` como primeira tool com parâmetro de entrada.
-3. Avaliar instrumentação de chamadas WebMCP no GA4.
-4. Somente depois avaliar tools capazes de enviar dados ou executar ações.
+- Discovery de `search_blog`
+- Schema com `query` obrigatório
+- Execução manual com resultado relevante
+- Execução manual sem resultado
+- Seleção automática pelo agente
+- Preservação das três tools da v0.3
 
 ## Status
 
-POC funcional e validada em setembro de 2026.
+POC v0.3 funcional e validada em setembro de 2026. A v0.4 está implementada no repositório e aguarda validação no Framer e no Model Context Tool Inspector.
