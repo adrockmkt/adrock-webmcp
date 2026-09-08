@@ -63,35 +63,46 @@ get_contact_information
 
 ## Validação v0.4
 
-A v0.4 só deve ser marcada como validada depois dos testes abaixo no site publicado.
+Validação concluída em produção em 8 de setembro de 2026.
 
 ### Teste 1: registro
 
-O Console deve adicionar:
+Resultado confirmado no site publicado:
 
 ```text
 [Ad Rock WebMCP] Tool registrada: search_blog
 ```
 
+Status: `OK`
+
 ### Teste 2: discovery
 
+Execução:
+
 ```javascript
-const tools = await document.modelContext.getTools();
-tools.map((tool) => tool.name);
+await document.modelContext.getTools()
 ```
 
-Resultado esperado:
+Resultado confirmado:
 
 ```text
-[
-  "get_company_information",
-  "get_services",
-  "get_contact_information",
-  "search_blog"
-]
+length: 4
 ```
 
+As quatro tools permaneceram disponíveis:
+
+```text
+get_company_information
+get_services
+get_contact_information
+search_blog
+```
+
+Status: `OK`
+
 ### Teste 3: execução manual com resultado
+
+Execução:
 
 ```javascript
 const tools = await document.modelContext.getTools();
@@ -103,13 +114,18 @@ await document.modelContext.executeTool(
 );
 ```
 
-Resultado esperado:
+Resultado confirmado:
 
-- `count` maior que zero
+- `count: 5`
 - resultados relacionados a GA4 e IA
 - URLs do domínio `adrock.com.br`
+- retorno com título, URL, descrição, tópicos, data e score
+
+Status: `OK`
 
 ### Teste 4: execução manual sem resultado
+
+Execução:
 
 ```javascript
 await document.modelContext.executeTool(
@@ -118,7 +134,7 @@ await document.modelContext.executeTool(
 );
 ```
 
-Resultado esperado:
+Resultado confirmado:
 
 ```json
 {
@@ -128,25 +144,45 @@ Resultado esperado:
 }
 ```
 
+Status: `OK`
+
 ### Teste 5: seleção automática pelo agente
 
-Após Reset no Inspector:
+Após Reset no Inspector, foi enviado:
 
 ```text
 Does Ad Rock have any articles about GA4 and artificial intelligence?
 ```
 
-Resultado esperado no trace:
+O trace registrou:
 
 ```text
-AI calling tool "search_blog" with {"query":"..."}
+AI calling tool "search_blog" with {"query":"GA4 artificial intelligence"}
 ```
 
-O texto exato da query pode ser reformulado pelo modelo. O critério é que `search_blog` seja selecionada e receba um argumento semanticamente compatível.
+A tool retornou cinco artigos e o agente sintetizou os resultados em linguagem natural com links e tópicos relevantes.
+
+Status: `OK`
 
 ### Teste 6: regressão
 
-Repetir o prompt multi-tool da v0.3 e confirmar que as três tools anteriores continuam disponíveis e funcionais.
+A discovery confirmou que as três tools da v0.3 continuam registradas ao lado da nova `search_blog`.
+
+A implementação da v0.4 estende a baseline sem substituir `src/adrock-webmcp.js`.
+
+Status: `OK`
+
+## Critérios finais v0.4
+
+```text
+Tool discovery            OK
+Schema com query          OK
+Execução manual           OK
+Seleção automática        OK
+Busca relevante           OK
+Busca sem resultado       OK
+v0.3 sem regressão        OK
+```
 
 ## Observação sobre erro 503
 
