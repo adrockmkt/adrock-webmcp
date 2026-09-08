@@ -1,0 +1,66 @@
+[
+  {
+    "title": "GA4, GTM, MCP e o Futuro da Mensuração com IA: O Que Mudou e Como se Preparar",
+    "slug": "ga4-mcp-google-analytics-mensuracao-ia",
+    "url": "https://adrock.com.br/blog/ga4-mcp-google-analytics-mensuracao-ia",
+    "description": "Como a IA está transformando o GA4, GTM e Search Console, com foco em MCP, mensuração e novas jornadas digitais.",
+    "topics": ["GA4", "Google Analytics 4", "GTM", "Google Tag Manager", "MCP", "Artificial Intelligence", "IA", "Analytics", "Measurement"],
+    "published_at": "2025-08-15"
+  },
+  {
+    "title": "Como dominar relatórios, atribuição e automação no GA4 com IA e Python",
+    "slug": "ga4-relatorios-atribuicao-automacao-ia",
+    "url": "https://adrock.com.br/blog/ga4-relatorios-atribuicao-automacao-ia",
+    "description": "Guia sobre relatórios estratégicos, atribuição e automação de análises usando GA4, IA, API e Python.",
+    "topics": ["GA4", "Google Analytics 4", "Artificial Intelligence", "IA", "Python", "Automation", "Automação", "Attribution", "Analytics"],
+    "published_at": "2025-11-06"
+  },
+  {
+    "title": "De bot de consultas a analista com IA: a evolução do GA4 Assistant Bot com RAG",
+    "slug": "evolucao-ga4-assistant-bot-rag",
+    "url": "https://adrock.com.br/blog/evolucao-ga4-assistant-bot-rag",
+    "description": "Evolução do GA4 Assistant Bot com RAG para transformar dados do Google Analytics em análises inteligentes baseadas em contexto real.",
+    "topics": ["GA4", "Google Analytics 4", "Artificial Intelligence", "IA", "RAG", "Assistant", "Automation", "Analytics"],
+    "published_at": "2026-04-16"
+  },
+  {
+    "title": "Google Tag (GT-): o que muda na implementação e como isso impacta GA4 e Google Ads",
+    "slug": "google-tag-gt-implementacao-ga4-google-ads",
+    "url": "https://adrock.com.br/blog/google-tag-gt-implementacao-ga4-google-ads",
+    "description": "Explica a consolidação da Google Tag, a integração com GA4 e Google Ads e os impactos técnicos na implementação de tracking.",
+    "topics": ["GA4", "Google Analytics 4", "Google Tag", "GTM", "Google Ads", "Tracking", "Analytics"],
+    "published_at": "2026-04-14"
+  },
+  {
+    "title": "Checklist de Auditoria GA4 2026: o framework técnico completo da Ad Rock para analytics, IA e tracking moderno",
+    "slug": "checklist-auditoria-ga4-2026",
+    "url": "https://adrock.com.br/blog/checklist-auditoria-ga4-2026",
+    "description": "Framework técnico para auditoria de GA4, GTM, IA, automação, mídia paga, tracking e governança de dados.",
+    "topics": ["GA4", "Google Analytics 4", "Audit", "Auditoria", "Artificial Intelligence", "IA", "GTM", "Tracking", "Governance", "Analytics"],
+    "published_at": "2026-05-20"
+  },
+  {
+    "title": "Guia oficial do Google para AI Search: o que realmente importa para otimizar sites para IA",
+    "slug": "guia-oficial-google-ai-search-seo",
+    "url": "https://adrock.com.br/blog/guia-oficial-google-ai-search-seo",
+    "description": "Análise do guia oficial do Google para AI Search, com fundamentos de SEO técnico, conteúdo útil, renderização, entidades e GEO.",
+    "topics": ["SEO", "AI Search", "Artificial Intelligence", "IA", "Google", "GEO", "AI Overviews", "Technical SEO"],
+    "published_at": "2026-06-05"
+  },
+  {
+    "title": "Search Console ganha relatório de AI Search: Google passa a mostrar dados de AI Mode e experiências generativas",
+    "slug": "search-console-relatorio-ai-search-ai-mode",
+    "url": "https://adrock.com.br/blog/search-console-relatorio-ai-search-ai-mode",
+    "description": "Explica os relatórios de AI Search e AI Mode no Search Console e o impacto da mensuração de experiências generativas para SEO.",
+    "topics": ["Google Search Console", "AI Search", "AI Mode", "Artificial Intelligence", "IA", "SEO", "Measurement", "Analytics"],
+    "published_at": "2026-06-10"
+  },
+  {
+    "title": "O Google acabou de revelar acidentalmente como seus sistemas de busca por IA realmente funcionam",
+    "slug": "como-funciona-o-ranqueamento-da-ia-do-google",
+    "url": "https://adrock.com.br/blog/como-funciona-o-ranqueamento-da-ia-do-google",
+    "description": "Análise técnica do pipeline de ranqueamento da IA do Google, incluindo sinais de ranking, discovery e impacto no SEO.",
+    "topics": ["SEO", "Google", "Artificial Intelligence", "IA", "AI Search", "Ranking", "Discovery", "Technical SEO"],
+    "published_at": "2026-02-12"
+  }
+]
