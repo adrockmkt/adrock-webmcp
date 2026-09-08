@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.4
+
+- Adicionada `search_blog(query)` como primeira tool com parâmetro de entrada.
+- Adicionado índice curado de posts em `data/blog-index.json`.
+- Adicionado mecanismo de busca determinístico client-side em `src/blog-search.js`.
+- Adicionado registro WebMCP isolado em `src/search-blog-tool.js`.
+- Busca limitada aos cinco resultados mais relevantes.
+- Mantida arquitetura sem backend e sem dependências externas em runtime.
+- Validação em produção ainda pendente.
+
 ## v0.3
 
 - Adicionada `get_contact_information`.
