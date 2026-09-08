@@ -4,9 +4,7 @@ POC técnica para tornar o site da Ad Rock Digital Mkt compatível com agentes q
 
 ## Estado atual
 
-Baseline validada em produção: `v0.3`
-
-Versão em implementação e validação: `v0.4`
+Baseline validada em produção: `v0.4`
 
 A implementação usa Framer Basic e Custom Code, sem backend próprio.
 
@@ -15,7 +13,7 @@ Tools:
 - `get_company_information`
 - `get_services`
 - `get_contact_information`
-- `search_blog(query)` na v0.4
+- `search_blog(query)`
 
 Todas são read-only e utilizam `readOnlyHint: true`.
 
@@ -40,7 +38,7 @@ get_contact_information()
 search_blog({ query })
 ```
 
-A busca do blog da v0.4 permanece client-side. Um índice curado de posts é embarcado no runtime e pesquisado por ranking determinístico, sem API externa, embeddings ou backend.
+A busca do blog permanece client-side. Um índice curado de posts é embarcado no runtime e pesquisado por ranking determinístico, sem API externa, embeddings ou backend.
 
 ## Busca do blog
 
@@ -82,11 +80,11 @@ adrock-webmcp/
     └── agent-trace.md
 ```
 
-`src/adrock-webmcp.js` preserva a baseline v0.3. A v0.4 é uma extensão composta por `blog-search.js` e `search-blog-tool.js`.
+`src/adrock-webmcp.js` preserva a baseline funcional das três tools estáticas. A v0.4 adiciona `blog-search.js` e `search-blog-tool.js` como extensão parametrizada.
 
 ## Ordem de carregamento da v0.4
 
-No Custom Code do Framer, os arquivos devem ser concatenados nesta ordem dentro do mesmo `<script>`:
+No Custom Code do Framer, os arquivos são concatenados nesta ordem dentro do mesmo `<script>`:
 
 ```text
 src/blog-search.js
@@ -96,25 +94,39 @@ src/search-blog-tool.js
 
 Assim o mecanismo de busca é inicializado antes do registro da tool `search_blog`.
 
-## Validações concluídas na v0.3
+## Validações concluídas
 
-- Registro das tools
-- Discovery via `document.modelContext.getTools()`
+- Registro das quatro tools
+- Discovery via `document.modelContext.getTools()` com `length: 4`
 - Execução manual via `document.modelContext.executeTool()`
 - Detecção pelo Model Context Tool Inspector
-- Seleção automática de tool por intenção
+- Seleção automática das tools estáticas por intenção
 - Execução de múltiplas tools no mesmo prompt
 - Composição dos resultados pelo agente
+- Schema obrigatório com parâmetro `query` em `search_blog`
+- Execução manual de busca com cinco resultados relevantes
+- Execução manual sem resultado com `count: 0` e `results: []`
+- Seleção automática de `search_blog` pelo agente
+- Geração automática da query `GA4 artificial intelligence`
+- Síntese dos artigos em linguagem natural
+- Preservação das três tools anteriores sem regressão
 
-## Critérios de validação da v0.4
+## Teste de agente validado na v0.4
 
-- Discovery de `search_blog`
-- Schema com `query` obrigatório
-- Execução manual com resultado relevante
-- Execução manual sem resultado
-- Seleção automática pelo agente
-- Preservação das três tools da v0.3
+Prompt enviado após Reset no Inspector:
+
+```text
+Does Ad Rock have any articles about GA4 and artificial intelligence?
+```
+
+Trace observado:
+
+```text
+AI calling tool "search_blog" with {"query":"GA4 artificial intelligence"}
+```
+
+A tool retornou cinco artigos e o agente utilizou esse payload para produzir uma resposta com títulos, links e síntese temática.
 
 ## Status
 
-POC v0.3 funcional e validada em setembro de 2026. A v0.4 está implementada no repositório e aguarda validação no Framer e no Model Context Tool Inspector.
+POC v0.4 funcional e validada em produção em 8 de setembro de 2026.
