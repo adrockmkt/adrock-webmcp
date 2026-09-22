@@ -81,3 +81,29 @@ test("query coverage outranks a stronger partial lexical match", () => {
   assert.equal(result.results[0].coverage, 1);
   assert.ok(result.results[1].coverage < 1);
 });
+
+
+test("AI and IA variants count as equivalent concepts for coverage", () => {
+  const runtime = loadRuntime([
+    {
+      title: "GA4 com IA para análise contextual",
+      slug: "ga4-ia-analise-contextual",
+      url: "https://adrock.com.br/blog/ga4-ia-analise-contextual",
+      description: "Inteligência artificial aplicada ao Google Analytics.",
+      category: "Analytics e Dados",
+      published_at: "2026-09-22"
+    },
+    {
+      title: "AI powered ad creatives",
+      slug: "ai-powered-ad-creatives",
+      url: "https://adrock.com.br/blog/ai-powered-ad-creatives",
+      description: "Artificial intelligence for advertising.",
+      category: "Mídia e Performance",
+      published_at: "2026-09-21"
+    }
+  ]);
+
+  const result = runtime.search("GA4 artificial intelligence");
+  assert.equal(result.results[0].url, "https://adrock.com.br/blog/ga4-ia-analise-contextual");
+  assert.equal(result.results[0].coverage, 1);
+});
