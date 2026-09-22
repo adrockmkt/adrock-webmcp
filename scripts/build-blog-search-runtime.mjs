@@ -20,8 +20,21 @@ export function renderBlogSearchRuntime(index) {
       .trim();
   }
 
+  const TOKEN_ALIASES = Object.freeze({
+    ai: ["ai", "ia", "artificial", "intelligence", "inteligencia"],
+    ia: ["ia", "ai", "artificial", "intelligence", "inteligencia"],
+    artificial: ["artificial", "ai", "ia"],
+    intelligence: ["intelligence", "inteligencia", "ai", "ia"],
+    inteligencia: ["inteligencia", "intelligence", "ia", "ai"]
+  });
+
   function tokenize(value) {
     return [...new Set(normalize(value).split(/\\s+/).filter((token) => token.length >= 2))];
+  }
+
+  function tokenMatches(haystack, token) {
+    const variants = TOKEN_ALIASES[token] || [token];
+    return variants.some((variant) => haystack.includes(variant));
   }
 
   function fieldScore(field, tokens, weight) {
@@ -36,7 +49,7 @@ export function renderBlogSearchRuntime(index) {
   function tokenCoverage(post, tokens) {
     if (!tokens.length) return 0;
     const haystack = searchableText(post);
-    const matched = tokens.filter((token) => haystack.includes(token)).length;
+    const matched = tokens.filter((token) => tokenMatches(haystack, token)).length;
     return matched / tokens.length;
   }
 
@@ -97,6 +110,7 @@ export function renderBlogSearchRuntime(index) {
     index: BLOG_INDEX,
     normalize,
     tokenize,
+    tokenMatches,
     tokenCoverage,
     search: searchBlog
   });
