@@ -29,3 +29,10 @@ test("automated sync tests, generates and validates before commit", async () => 
   assert.match(workflow, /git diff --quiet -- data\/blog-index\.generated\.json/);
   assert.match(workflow, /if: steps\.changes\.outputs\.changed == 'true'/);
 });
+
+
+test("change detection includes an untracked first generated index", async () => {
+  const workflow = await readFile(workflowPath, "utf8");
+  assert.match(workflow, /git status --porcelain/);
+  assert.doesNotMatch(workflow, /git diff --quiet -- data\/blog-index\.generated\.json/);
+});
