@@ -1,0 +1,63 @@
+name: Publish WebMCP runtime
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "data/blog-index.generated.json"
+      - "scripts/build-blog-search-runtime.mjs"
+      - "src/adrock-webmcp.js"
+      - "src/search-blog-tool.js"
+      - ".github/workflows/publish-webmcp-runtime.yml"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: webmcp-pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Run runtime tests
+        run: node --test tests/build-blog-search-runtime.test.mjs
+
+      - name: Build dynamic blog runtime
+        run: node scripts/build-blog-search-runtime.mjs
+
+      - name: Prepare Pages artifact
+        run: |
+          mkdir -p public
+          cp src/blog-search.generated.js public/blog-search.js
+          cp src/adrock-webmcp.js public/adrock-webmcp.js
+          cp src/search-blog-tool.js public/search-blog-tool.js
+          printf '%s\n' '<!doctype html><meta charset="utf-8"><title>Ad Rock WebMCP Runtime</title>' > public/index.html
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
