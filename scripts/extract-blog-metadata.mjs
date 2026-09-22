@@ -49,12 +49,12 @@ function getMeta(html, key, attribute = "property") {
 }
 
 function getH1(html) {
-  const match = html.match(/<h1\\b[^>]*>([\\s\\S]*?)<\\/h1>/i);
+  const match = html.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/i);
   return cleanText(match?.[1]);
 }
 
 function isGenericSiteTitle(value) {
-  return Boolean(value && /^Ad Rock Digital Mkt - Marketing Digital e ações 360\\.?$/i.test(value));
+  return Boolean(value && /^Ad Rock Digital Mkt - Marketing Digital e ações 360\.?$/i.test(value));
 }
 
 function getTitle(html) {
@@ -62,7 +62,7 @@ function getTitle(html) {
   if (ogTitle && !isGenericSiteTitle(ogTitle)) return ogTitle;
   const h1 = getH1(html);
   if (h1) return h1;
-  const match = html.match(/<title\\b[^>]*>([\\s\\S]*?)<\\/title>/i);
+  const match = html.match(/<title\b[^>]*>([\s\S]*?)<\/title>/i);
   const title = cleanText(match?.[1]);
   return isGenericSiteTitle(title) ? null : title;
 }
@@ -80,7 +80,7 @@ function getDescription(html) {
 }
 
 function getVisibleArticleHeader(html) {
-  const h1Match = html.match(/<h1\\b[^>]*>[\\s\\S]*?<\\/h1>/i);
+  const h1Match = html.match(/<h1\b[^>]*>[\s\S]*?<\/h1>/i);
   if (!h1Match || h1Match.index == null) return null;
   return cleanText(html.slice(Math.max(0, h1Match.index - 6000), h1Match.index));
 }
@@ -88,14 +88,14 @@ function getVisibleArticleHeader(html) {
 function getVisibleCategory(html) {
   const header = getVisibleArticleHeader(html);
   if (!header) return null;
-  const match = header.match(/(?:^|\\s)([^.!?]{2,80}?)\\s+(\\d{1,2} de [a-zç.]+ de \\d{4})\\s+Go back$/i);
+  const match = header.match(/(?:^|\s)([^.!?]{2,80}?)\s+(\d{1,2} de [a-zç.]+ de \d{4})\s+Go back$/i);
   return cleanText(match?.[1]);
 }
 
 function getVisiblePublishedAt(html) {
   const header = getVisibleArticleHeader(html);
   if (!header) return null;
-  const match = header.match(/(\\d{1,2} de [a-zç.]+ de \\d{4})\\s+Go back$/i);
+  const match = header.match(/(\d{1,2} de [a-zç.]+ de \d{4})\s+Go back$/i);
   return cleanText(match?.[1]);
 }
 
@@ -119,7 +119,7 @@ function getCategory(html) {
 
 function normalizePublishedAt(value) {
   if (!value) return null;
-  const ptBr = value.match(/^(\\d{1,2}) de ([a-zç.]+) de (\\d{4})$/i);
+  const ptBr = value.match(/^(\d{1,2}) de ([a-zç.]+) de (\d{4})$/i);
   if (ptBr) {
     const months = { jan: 1, fev: 2, mar: 3, abr: 4, mai: 5, jun: 6, jul: 7, ago: 8, set: 9, out: 10, nov: 11, dez: 12 };
     const month = months[ptBr[2].toLowerCase().replace(".", "").slice(0, 3)];
