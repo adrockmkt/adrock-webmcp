@@ -48,26 +48,62 @@ function getMeta(html, key, attribute = "property") {
   return null;
 }
 
-function getTitle(html) {
-  const ogTitle = getMeta(html, "og:title");
-  if (ogTitle) return ogTitle;
-
-  const match = html.match(/<title\b[^>]*>([\s\S]*?)<\/title>/i);
+function getH1(html) {
+  const match = html.match(/<h1\\b[^>]*>([\\s\\S]*?)<\\/h1>/i);
   return cleanText(match?.[1]);
 }
 
+function isGenericSiteTitle(value) {
+  return Boolean(value && /^Ad Rock Digital Mkt - Marketing Digital e ações 360\\.?$/i.test(value));
+}
+
+function getTitle(html) {
+  const ogTitle = getMeta(html, "og:title");
+  if (ogTitle && !isGenericSiteTitle(ogTitle)) return ogTitle;
+  const h1 = getH1(html);
+  if (h1) return h1;
+  const match = html.match(/<title\\b[^>]*>([\\s\\S]*?)<\\/title>/i);
+  const title = cleanText(match?.[1]);
+  return isGenericSiteTitle(title) ? null : title;
+}
+
+function isGenericSiteDescription(value) {
+  return Boolean(value && /^Consultoria de Marketing Digital:/i.test(value));
+}
+
 function getDescription(html) {
-  return (
-    getMeta(html, "og:description") ??
-    getMeta(html, "description", "name") ??
-    null
-  );
+  const candidates = [
+    getMeta(html, "og:description"),
+    getMeta(html, "description", "name"),
+  ];
+  return candidates.find((value) => value && !isGenericSiteDescription(value)) ?? null;
+}
+
+function getVisibleArticleHeader(html) {
+  const h1Match = html.match(/<h1\\b[^>]*>[\\s\\S]*?<\\/h1>/i);
+  if (!h1Match || h1Match.index == null) return null;
+  return cleanText(html.slice(Math.max(0, h1Match.index - 6000), h1Match.index));
+}
+
+function getVisibleCategory(html) {
+  const header = getVisibleArticleHeader(html);
+  if (!header) return null;
+  const match = header.match(/(?:^|\\s)([^.!?]{2,80}?)\\s+(\\d{1,2} de [a-zç.]+ de \\d{4})\\s+Go back$/i);
+  return cleanText(match?.[1]);
+}
+
+function getVisiblePublishedAt(html) {
+  const header = getVisibleArticleHeader(html);
+  if (!header) return null;
+  const match = header.match(/(\\d{1,2} de [a-zç.]+ de \\d{4})\\s+Go back$/i);
+  return cleanText(match?.[1]);
 }
 
 function getPublishedAt(html) {
   return (
     getMeta(html, "article:published_time") ??
     getMeta(html, "date", "name") ??
+    getVisiblePublishedAt(html) ??
     null
   );
 }
@@ -76,12 +112,19 @@ function getCategory(html) {
   return (
     getMeta(html, "article:section") ??
     getMeta(html, "category", "name") ??
+    getVisibleCategory(html) ??
     null
   );
 }
 
 function normalizePublishedAt(value) {
   if (!value) return null;
+  const ptBr = value.match(/^(\\d{1,2}) de ([a-zç.]+) de (\\d{4})$/i);
+  if (ptBr) {
+    const months = { jan: 1, fev: 2, mar: 3, abr: 4, mai: 5, jun: 6, jul: 7, ago: 8, set: 9, out: 10, nov: 11, dez: 12 };
+    const month = months[ptBr[2].toLowerCase().replace(".", "").slice(0, 3)];
+    if (month) return `${ptBr[3]}-${String(month).padStart(2, "0")}-${String(ptBr[1]).padStart(2, "0")}`;
+  }
   const timestamp = Date.parse(value);
   if (Number.isNaN(timestamp)) return value;
   return new Date(timestamp).toISOString();
