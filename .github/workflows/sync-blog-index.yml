@@ -65,7 +65,7 @@ jobs:
       - name: Detect index changes
         id: changes
         run: |
-          if git diff --quiet -- data/blog-index.generated.json; then
+          if [ -z "$(git status --porcelain -- data/blog-index.generated.json)" ]; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
