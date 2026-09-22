@@ -29,6 +29,17 @@ export function renderBlogSearchRuntime(index) {
     return tokens.reduce((score, token) => score + (normalizedField.includes(token) ? weight : 0), 0);
   }
 
+  function searchableText(post) {
+    return normalize([post.title, post.category, post.description, post.slug].filter(Boolean).join(" "));
+  }
+
+  function tokenCoverage(post, tokens) {
+    if (!tokens.length) return 0;
+    const haystack = searchableText(post);
+    const matched = tokens.filter((token) => haystack.includes(token)).length;
+    return matched / tokens.length;
+  }
+
   function calculateScore(post, query, tokens) {
     const normalizedQuery = normalize(query);
     const normalizedTitle = normalize(post.title);
@@ -55,21 +66,27 @@ export function renderBlogSearchRuntime(index) {
 
     const tokens = tokenize(cleanQuery);
     const ranked = BLOG_INDEX
-      .map((post) => ({ post, rawScore: calculateScore(post, cleanQuery, tokens) }))
+      .map((post) => ({
+        post,
+        coverage: tokenCoverage(post, tokens),
+        rawScore: calculateScore(post, cleanQuery, tokens)
+      }))
       .filter((item) => item.rawScore > 0)
       .sort((a, b) => {
+        if (b.coverage !== a.coverage) return b.coverage - a.coverage;
         if (b.rawScore !== a.rawScore) return b.rawScore - a.rawScore;
         return b.post.published_at.localeCompare(a.post.published_at);
       })
       .slice(0, limit);
 
     const maxScore = ranked.length ? ranked[0].rawScore : 0;
-    const results = ranked.map(({ post, rawScore }) => ({
+    const results = ranked.map(({ post, rawScore, coverage }) => ({
       title: post.title,
       url: post.url,
       description: post.description,
       category: post.category,
       published_at: post.published_at,
+      coverage: Number(coverage.toFixed(3)),
       score: maxScore ? Number((rawScore / maxScore).toFixed(3)) : 0
     }));
 
@@ -80,6 +97,7 @@ export function renderBlogSearchRuntime(index) {
     index: BLOG_INDEX,
     normalize,
     tokenize,
+    tokenCoverage,
     search: searchBlog
   });
 })(globalThis);
