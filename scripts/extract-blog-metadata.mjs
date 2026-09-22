@@ -94,9 +94,13 @@ function getVisibleCategory(html) {
 
   const beforeDate = header.slice(0, dateMatch.index);
   const blogMarker = beforeDate.lastIndexOf("Blog ");
-  if (blogMarker < 0) return null;
+  if (blogMarker >= 0) {
+    return cleanText(beforeDate.slice(blogMarker + "Blog ".length));
+  }
 
-  return cleanText(beforeDate.slice(blogMarker + "Blog ".length));
+  const styleEnd = beforeDate.lastIndexOf("}");
+  const visibleText = cleanText(beforeDate.slice(styleEnd >= 0 ? styleEnd + 1 : 0));
+  return visibleText;
 }
 
 function getVisiblePublishedAt(html) {
