@@ -1,0 +1,81 @@
+name: Sync WebMCP blog index
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 8 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: webmcp-blog-index-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Run discovery tests
+        run: node --test tests/discover-blog-urls.test.mjs
+
+      - name: Run metadata tests
+        run: node --test tests/extract-blog-metadata.test.mjs
+
+      - name: Run index generator tests
+        run: node --test tests/generate-blog-index.test.mjs
+
+      - name: Generate public blog index
+        run: node scripts/generate-blog-index.mjs
+
+      - name: Validate generated index
+        run: |
+          node - <<'NODE'
+          const fs = require("fs");
+          const path = "data/blog-index.generated.json";
+          const data = JSON.parse(fs.readFileSync(path, "utf8"));
+
+          if (!Array.isArray(data) || data.length === 0) {
+            throw new Error("Generated blog index is empty or invalid.");
+          }
+
+          for (const record of data) {
+            for (const field of ["title", "slug", "url", "published_at"]) {
+              if (!record[field]) {
+                throw new Error(`Invalid indexed article: missing ${field} for ${record.url ?? record.slug ?? "unknown record"}`);
+              }
+            }
+          }
+
+          console.log(`Validated ${data.length} indexed articles.`);
+          NODE
+
+      - name: Detect index changes
+        id: changes
+        run: |
+          if git diff --quiet -- data/blog-index.generated.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit updated index
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/blog-index.generated.json
+          git commit -m "chore: sync WebMCP blog index"
+          git push
