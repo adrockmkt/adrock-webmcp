@@ -59,3 +59,23 @@ test("returns nullable metadata instead of inventing missing values", () => {
   assert.equal(record.published_at, null);
   assert.equal(record.slug, "minimal");
 });
+
+
+test("falls back to visible Framer article header metadata", () => {
+  const html = `<!doctype html><html><head>
+    <title>Ad Rock Digital Mkt - Marketing Digital e ações 360.</title>
+    <meta property="og:title" content="Ad Rock Digital Mkt - Marketing Digital e ações 360.">
+    <meta property="og:description" content="Consultoria de Marketing Digital: SEO, Inbound Marketing, Google Ads, Facebook Ads, Web Analytics e Planejamento de Mídia. Clique aqui!">
+  </head><body><main>
+    <div>SEO e IA</div><div>8 de set. de 2026</div><div>Go back</div>
+    <h1>WebMCP: como a web está se preparando para agentes de inteligência artificial</h1>
+  </main></body></html>`;
+  assert.deepEqual(extractArticleMetadata(html, "https://adrock.com.br/blog/webmcp-web-agentes-inteligencia-artificial"), {
+    title: "WebMCP: como a web está se preparando para agentes de inteligência artificial",
+    description: null,
+    category: "SEO e IA",
+    published_at: "2026-09-08",
+    slug: "webmcp-web-agentes-inteligencia-artificial",
+    url: "https://adrock.com.br/blog/webmcp-web-agentes-inteligencia-artificial",
+  });
+});
