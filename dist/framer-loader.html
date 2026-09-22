@@ -1,0 +1,30 @@
+<script>
+(async () => {
+  const base = "https://adrockmkt.github.io/adrock-webmcp";
+  const scripts = [
+    `${base}/blog-search.js`,
+    `${base}/adrock-webmcp.js`,
+    `${base}/search-blog-tool.js`
+  ];
+
+  function loadScript(src) {
+    return new Promise((resolve, reject) => {
+      const script = document.createElement("script");
+      script.src = src;
+      script.async = false;
+      script.onload = resolve;
+      script.onerror = () => reject(new Error(`Failed to load WebMCP runtime: ${src}`));
+      document.head.appendChild(script);
+    });
+  }
+
+  try {
+    for (const src of scripts) {
+      await loadScript(src);
+    }
+    console.info("[Ad Rock WebMCP] External runtime loaded.");
+  } catch (error) {
+    console.error("[Ad Rock WebMCP] External runtime unavailable:", error);
+  }
+})();
+</script>
