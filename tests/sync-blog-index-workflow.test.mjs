@@ -26,7 +26,7 @@ test("automated sync tests, generates and validates before commit", async () => 
   const commit = workflow.indexOf("Commit updated index");
 
   assert.ok(tests >= 0 && generate > tests && validate > generate && commit > validate);
-  assert.match(workflow, /git diff --quiet -- data\/blog-index\.generated\.json/);
+  assert.match(workflow, /git status --porcelain -- data\/blog-index\.generated\.json/);
   assert.match(workflow, /if: steps\.changes\.outputs\.changed == 'true'/);
 });
 
