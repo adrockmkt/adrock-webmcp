@@ -54,3 +54,30 @@ test("unknown topic returns no results", () => {
   assert.equal(result.count, 0);
   assert.deepEqual(Array.from(result.results), []);
 });
+
+
+test("query coverage outranks a stronger partial lexical match", () => {
+  const runtime = loadRuntime([
+    {
+      title: "GA4 GA4 GA4 analytics tracking",
+      slug: "ga4-tracking",
+      url: "https://adrock.com.br/blog/ga4-tracking",
+      description: "GA4 measurement and reporting.",
+      category: "Analytics e Dados",
+      published_at: "2026-09-20"
+    },
+    {
+      title: "GA4 and artificial intelligence",
+      slug: "ga4-artificial-intelligence",
+      url: "https://adrock.com.br/blog/ga4-artificial-intelligence",
+      description: "Using artificial intelligence with GA4.",
+      category: "Analytics e Dados",
+      published_at: "2026-09-19"
+    }
+  ]);
+
+  const result = runtime.search("GA4 artificial intelligence");
+  assert.equal(result.results[0].url, "https://adrock.com.br/blog/ga4-artificial-intelligence");
+  assert.equal(result.results[0].coverage, 1);
+  assert.ok(result.results[1].coverage < 1);
+});
