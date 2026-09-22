@@ -99,7 +99,14 @@ function getVisibleCategory(html) {
   }
 
   const styleEnd = beforeDate.lastIndexOf("}");
-  const visibleText = cleanText(beforeDate.slice(styleEnd >= 0 ? styleEnd + 1 : 0));
+  let visibleText = cleanText(beforeDate.slice(styleEnd >= 0 ? styleEnd + 1 : 0));
+  if (!visibleText) return null;
+
+  const genericTitle = "Ad Rock Digital Mkt - Marketing Digital e ações 360.";
+  if (visibleText.startsWith(genericTitle)) {
+    visibleText = cleanText(visibleText.slice(genericTitle.length));
+  }
+
   return visibleText;
 }
 
