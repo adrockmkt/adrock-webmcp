@@ -94,3 +94,15 @@ test("extracts only category text after the Framer Blog marker", () => {
   assert.equal(record.category, "Código e Automação");
   assert.equal(record.published_at, "2026-09-21");
 });
+
+
+test("falls back to plain category text when Framer Blog marker is absent", () => {
+  const html = `<!doctype html><html><body>
+    <div>SEO e IA</div>
+    <div>8 de set. de 2026</div>
+    <div>Go back</div>
+    <h1>WebMCP</h1>
+  </body></html>`;
+  const record = extractArticleMetadata(html, "https://adrock.com.br/blog/webmcp");
+  assert.equal(record.category, "SEO e IA");
+});
