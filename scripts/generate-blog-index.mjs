@@ -17,11 +17,15 @@ export function normalizeIndexRecord(record) {
   };
 }
 
+export function isIndexableArticle(record) {
+  return Boolean(record?.url && record?.slug && record?.title && record?.published_at);
+}
+
 export function buildDeterministicIndex(records) {
   const byUrl = new Map();
   for (const record of records) {
     const normalized = normalizeIndexRecord(record);
-    if (!normalized.url || !normalized.slug) continue;
+    if (!isIndexableArticle(normalized)) continue;
     byUrl.set(normalized.url, normalized);
   }
   return [...byUrl.values()].sort((a, b) => a.url.localeCompare(b.url, "en"));
@@ -41,11 +45,19 @@ export async function generateBlogIndex(options = {}) {
     }
   }
 
+  const index = buildDeterministicIndex(records);
+  const indexedUrls = new Set(index.map((record) => record.url));
+  const skipped = records
+    .map(normalizeIndexRecord)
+    .filter((record) => !indexedUrls.has(record.url));
+
   return {
-    index: buildDeterministicIndex(records),
+    index,
     discovered_count: urls.length,
-    indexed_count: records.length,
+    indexed_count: index.length,
+    skipped_count: skipped.length,
     error_count: errors.length,
+    skipped,
     errors,
   };
 }
@@ -59,7 +71,9 @@ async function main() {
     output,
     discovered_count: result.discovered_count,
     indexed_count: result.indexed_count,
+    skipped_count: result.skipped_count,
     error_count: result.error_count,
+    skipped: result.skipped,
     errors: result.errors,
   }, null, 2) + "\n");
 
