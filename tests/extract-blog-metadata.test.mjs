@@ -79,3 +79,18 @@ test("falls back to visible Framer article header metadata", () => {
     url: "https://adrock.com.br/blog/webmcp-web-agentes-inteligencia-artificial",
   });
 });
+
+
+test("extracts only category text after the Framer Blog marker", () => {
+  const html = `<!doctype html><html><body>
+    <style>.x { color: var(--token-test, rgb(0, 0, 0)); }</style>
+    <div>Blog Código e Automação</div>
+    <div>21 de set. de 2026</div>
+    <div>Go back</div>
+    <h1>Jev: o modelo de IA criado para tomar decisões dentro de softwares</h1>
+  </body></html>`;
+
+  const record = extractArticleMetadata(html, "https://adrock.com.br/blog/jev-ia-modelos-decisao-software");
+  assert.equal(record.category, "Código e Automação");
+  assert.equal(record.published_at, "2026-09-21");
+});
