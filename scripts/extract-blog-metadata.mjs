@@ -88,8 +88,15 @@ function getVisibleArticleHeader(html) {
 function getVisibleCategory(html) {
   const header = getVisibleArticleHeader(html);
   if (!header) return null;
-  const match = header.match(/(?:^|\s)([^.!?]{2,80}?)\s+(\d{1,2} de [a-zç.]+ de \d{4})\s+Go back$/i);
-  return cleanText(match?.[1]);
+
+  const dateMatch = header.match(/(\d{1,2} de [a-zç.]+ de \d{4})\s+Go back$/i);
+  if (!dateMatch || dateMatch.index == null) return null;
+
+  const beforeDate = header.slice(0, dateMatch.index);
+  const blogMarker = beforeDate.lastIndexOf("Blog ");
+  if (blogMarker < 0) return null;
+
+  return cleanText(beforeDate.slice(blogMarker + "Blog ".length));
 }
 
 function getVisiblePublishedAt(html) {
