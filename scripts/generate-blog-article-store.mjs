@@ -16,14 +16,15 @@ export function canonicalizeSlug(slug) {
   if (typeof slug !== "string" || !slug) return null;
   let decoded;
   try { decoded = decodeURIComponent(slug); } catch { return null; }
-  const canonical = decoded
+
+  const cleaned = decoded
     .replace(/[\u200B-\u200D\uFEFF]/g, "")
     .normalize("NFKD")
     .replace(/[\u0300-\u036f]/g, "")
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
-  return SLUG_PATTERN.test(canonical) ? canonical : null;
+    .toLowerCase();
+
+  if (!SLUG_PATTERN.test(cleaned)) return null;
+  return cleaned;
 }
 
 export function normalizeArticleRecord(article, content) {
