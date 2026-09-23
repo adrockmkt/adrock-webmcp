@@ -33,17 +33,26 @@ function textFromHtml(html) {
 
 function candidateBodies(html) {
   const candidates = [];
-  const patterns = [
-    /<article\b[^>]*>([\s\S]*?)<\/article>/gi,
-    /<main\b[^>]*>([\s\S]*?)<\/main>/gi,
-    /<div\b[^>]*(?:data-framer-name|class)=(["'])[^"']*(?:article|post|content|rich-text)[^"']*\1[^>]*>([\s\S]*?)<\/div>/gi,
-  ];
 
-  for (const pattern of patterns) {
-    for (const match of html.matchAll(pattern)) {
-      candidates.push(match[2] ?? match[1] ?? "");
+  // Extract semantic article blocks independently. A broad parent such as
+  // <main> must not compete with its child articles.
+  const articlePattern = /<article\\b[^>]*>([\\s\\S]*?)<\\/article>/gi;
+  for (const match of html.matchAll(articlePattern)) {
+    candidates.push(match[1] ?? "");
+  }
+
+  // Framer may expose the editorial body through a named/classed container
+  // instead of a semantic <article>. Use this only when no article exists,
+  // avoiding parent containers that aggregate multiple editorial blocks.
+  if (candidates.length === 0) {
+    const namedContainerPattern =
+      /<div\\b[^>]*(?:data-framer-name|class)=(["'])[^"']*(?:article|post|content|rich-text)[^"']*\\1[^>]*>([\\s\\S]*?)<\\/div>/gi;
+
+    for (const match of html.matchAll(namedContainerPattern)) {
+      candidates.push(match[2] ?? "");
     }
   }
+
   return candidates;
 }
 
