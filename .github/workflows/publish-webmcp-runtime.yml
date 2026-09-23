@@ -9,6 +9,10 @@ on:
       - "scripts/build-blog-search-runtime.mjs"
       - "src/adrock-webmcp.js"
       - "src/search-blog-tool.js"
+      - "src/blog-articles.js"
+      - "src/get-blog-article-tool.js"
+      - "data/blog-articles-manifest.json"
+      - "data/blog-articles/**"
       - ".github/workflows/publish-webmcp-runtime.yml"
 
 permissions:
@@ -33,7 +37,7 @@ jobs:
           node-version: "22"
 
       - name: Run runtime tests
-        run: node --test tests/build-blog-search-runtime.test.mjs
+        run: node --test tests/build-blog-search-runtime.test.mjs tests/get-blog-article.test.mjs
 
       - name: Build dynamic blog runtime
         run: node scripts/build-blog-search-runtime.mjs
@@ -44,6 +48,10 @@ jobs:
           cp src/blog-search.generated.js public/blog-search.js
           cp src/adrock-webmcp.js public/adrock-webmcp.js
           cp src/search-blog-tool.js public/search-blog-tool.js
+          cp src/blog-articles.js public/blog-articles.js
+          cp src/get-blog-article-tool.js public/get-blog-article-tool.js
+          cp data/blog-articles-manifest.json public/blog-articles-manifest.json
+          cp -R data/blog-articles public/blog-articles
           printf '%s\n' '<!doctype html><meta charset="utf-8"><title>Ad Rock WebMCP Runtime</title>' > public/index.html
 
       - name: Upload Pages artifact
