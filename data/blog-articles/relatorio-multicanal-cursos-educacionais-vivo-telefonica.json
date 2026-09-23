@@ -1,0 +1,11 @@
+{
+  "slug": "relatorio-multicanal-cursos-educacionais-vivo-telefonica",
+  "url": "https://adrock.com.br/blog/relatorio-multicanal-cursos-educacionais-vivo-telefonica",
+  "title": "Ad Rock Digital Mkt - Blog - Como estruturamos um relatório multicanal para cursos educacionais da Vivo Telefônica/Porvir",
+  "description": "Veja como a Ad Rock estruturou um relatório no Looker Studio para Vivo Telefônica e o Porvir combinando Mautic, GA4 e Google Sheets para analisar disparos, acessos e inscrições em cursos para professores.",
+  "category": "Analytics e Dados",
+  "published_at": "2026-07-30",
+  "content": "Relatórios de marketing educacional raramente dependem de uma única plataforma.\nQuando o objetivo é acompanhar a divulgação de cursos para professores, normalmente precisamos responder a perguntas que atravessam diferentes sistemas:\n- quantos e-mails foram enviados;\n\n- quantas pessoas abriram as mensagens;\n\n- quantos cliques foram registrados pela plataforma de automação;\n\n- quantos usuários efetivamente chegaram ao site;\n\n- quais elementos da peça geraram tráfego;\n\n- quantas inscrições foram concluídas;\n\n- quais cursos, botões, imagens ou textos contribuíram mais para a conversão.\n\nFoi esse o cenário encontrado na construção de um relatório para acompanhamento de cursos educacionais da Vivo Telefônica um cliente do Porvir.org.\nO projeto exigiu a combinação de dados do Mautic, Google Analytics 4, Google Sheets e Looker Studio, com diferentes padrões históricos de UTMs e níveis distintos de granularidade.\nO desafio de cruzar Mautic e GA4\nO Mautic apresenta uma visão do disparo de e-mail.\nEntre os campos disponíveis estavam:\nemail_id\nemail_name\npublish_up\nsent_count\nread_count\nread_tax\nclicks\nclick_tax\nclick_to_open_tax",
+  "content_length": 1135,
+  "content_bytes": 1163
+}

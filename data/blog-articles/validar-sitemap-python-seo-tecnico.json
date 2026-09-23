@@ -1,0 +1,11 @@
+{
+  "slug": "validar-sitemap-python-seo-tecnico",
+  "url": "https://adrock.com.br/blog/validar-sitemap-python-seo-tecnico",
+  "title": "Ad Rock Digital Mkt - Blog - Como validar XML Sitemap automaticamente com Python (SEO técnico)",
+  "description": "Aprenda a validar XML Sitemap com Python verificando status HTTP, indexabilidade e erros técnicos para otimizar SEO e crawl do Google.",
+  "category": "Código e Automação",
+  "published_at": "2026-03-26",
+  "content": "Se você trabalha com SEO técnico, sabe que um sitemap pode facilmente se tornar um problema invisível.\nURLs quebradas, páginas com noindex, redirecionamentos… tudo isso pode estar dentro do seu sitemap sem você perceber.\nE isso impacta diretamente:\n- crawl budget\n\n- indexação\n\n- performance orgânica\n\nNeste post, vamos criar um script em Python para validar automaticamente um XML Sitemap , verificando:\n- status HTTP\n\n- indexabilidade\n\n- redirecionamentos\n\n- erros críticos\n\nO que vamos validar\nO script vai analisar:\n- URLs com erro (404, 500)\n\n- redirecionamentos (301, 302)\n\n- páginas não indexáveis\n\n- tempo de resposta\n\n- estrutura do sitemap\n\nRequisitos\nAntes de começar:",
+  "content_length": 679,
+  "content_bytes": 694
+}

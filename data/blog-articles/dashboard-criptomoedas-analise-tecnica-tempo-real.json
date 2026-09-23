@@ -1,0 +1,11 @@
+{
+  "slug": "dashboard-criptomoedas-analise-tecnica-tempo-real",
+  "url": "https://adrock.com.br/blog/dashboard-criptomoedas-analise-tecnica-tempo-real",
+  "title": "Ad Rock Digital Mkt - Blog - Painel Inteligente para Criptomoedas com Indicadores Técnicos em Tempo Real",
+  "description": "Dashboard de criptomoedas com RSI, Momentum, Bollinger Bands, WebSocket, alertas e análise técnica em tempo real. Desenvolvido por Rafael Lins – Ad Rock.",
+  "category": "Ferramentas e Parcerias",
+  "published_at": "2025-08-15",
+  "content": "Desenvolvido por Rafael Marques Lins , fundador da Ad Rock Digital Mkt , o Crypto Intelligence Dashboard é uma aplicação frontend avançada que entrega uma experiência completa de análise de criptomoedas com foco técnico, responsividade e dados em tempo real. 👉 https://mobiledelivery.com.br/cripto-dashboard/\nProjetado com tecnologias modernas como React , TypeScript e Tailwind CSS , o projeto combina recursos avançados de análise com uma arquitetura acessível, ideal para entusiastas, traders e empresas que monitoram o mercado cripto.\nPrincipais Funcionalidades\n- Análise técnica em tempo real: RSI, Momentum, SMA, Bollinger Bands\n\n- Indicadores para as Top 20 criptomoedas\n\n- Fear & Greed Index atualizado automaticamente\n\n- Dominância do Bitcoin e market cap total\n\n- Gráficos avançados e interativos\n\n- Alertas dinâmicos baseados em indicadores técnicos\n\n- Interface moderna e responsiva com UX otimizado\n\nMelhorias Futuras Planejadas\n- Sistema de alertas personalizados (push, e-mail, stop-loss, take-profit)\n\n- Padrões avançados como candlestick, Ichimoku e Ondas de Elliott\n\n- Gestão de portfólio e performance comparativa\n\n- Exportação de relatórios e backtesting\n\n- Layout personalizável e modo escuro\n\n- Dados em tempo real via WebSocket e visualização de order book\n\nTecnologias Utilizadas\n- React 18 + TypeScript\n\n- Vite + Tailwind CSS\n\n- Shadcn/ui , Lucide React (UI components)\n\n- Recharts para gráficos interativos\n\n- React Query para controle de estado e dados\n\n- APIs públicas: CoinCap e Alternative.me\n\nDeploy e Execução Local\nPré-requisitos\n- Node.js 18+\n\n- npm ou yarn\n\nPassos para rodar:\ngit clone [ URL_DO_REPOSITORIO ]\ncd cripto_dashboard\nnpm install\nnpm run dev",
+  "content_length": 1689,
+  "content_bytes": 1723
+}

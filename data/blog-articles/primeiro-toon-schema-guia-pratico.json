@@ -1,0 +1,11 @@
+{
+  "slug": "primeiro-toon-schema-guia-pratico",
+  "url": "https://adrock.com.br/blog/primeiro-toon-schema-guia-pratico",
+  "title": "Ad Rock Digital Mkt - Blog - Como escrever seu primeiro TOON Schema: guia prático para começar com o protocolo que pode substituir JSON + JSON Schema",
+  "description": "Um guia direto e avançado para criar seu primeiro schema no TOON Protocol. Você aprenderá sintaxe, regras de tipagem, validações, listas, objetos, enums, constraints, erros comuns e boas práticas de design de contratos de dados.",
+  "category": "Código e Automação",
+  "published_at": "2025-11-13",
+  "content": "Introdução\nSe o JSON dominou a comunicação entre sistemas nos últimos 20 anos, o TOON Protocol tenta resolver suas limitações mais profundas: falta de tipagem forte, ausência de validação nativa e dificuldade de documentar regras sobre cada campo.\nEscrever um TOON Schema significa criar um documento que combina dados + tipos + validação + semântica em um único arquivo legível. Isso reduz erros, aumenta segurança e facilita integração entre times e linguagens.\nEste guia mostra, passo a passo, como criar seu primeiro schema.\n1. Estrutura básica de um documento TOON\nA sintaxe do TOON lembra YAML, mas com anotações de tipos usando ::.\nExemplo mínimo:\nuser :\nname : \"Rafael Lins\" : : string ( required )\nage : 34 : : int ( min = 0 , max = 120 )\nemail : \"rafael@adrock.com.br\" : : email ( required )",
+  "content_length": 801,
+  "content_bytes": 823
+}

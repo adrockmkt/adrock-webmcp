@@ -1,0 +1,11 @@
+{
+  "slug": "tiktok-hashtag-scraper-python",
+  "url": "https://adrock.com.br/blog/tiktok-hashtag-scraper-python",
+  "title": "Ad Rock Digital Mkt - Blog - TikTok Hashtag Scraper: Automatizando a Coleta de Dados de Hashtags no TikTok",
+  "description": "Aprenda a usar o TikTok Hashtag Scraper em Python para coletar dados de hashtags de forma automatizada. Guia completo com código aberto e exemplos práticos.",
+  "category": "Código e Automação",
+  "published_at": "2025-09-25",
+  "content": "O TikTok já se consolidou como uma das principais redes sociais do mundo, com bilhões de usuários ativos e hashtags que ditam tendências culturais, de consumo e até de comportamento político. Para profissionais de marketing, criadores de conteúdo e analistas de dados, acompanhar essas hashtags pode gerar insights valiosos.\nPensando nisso, desenvolvemos o TikTok Hashtag Scraper , um script em Python que permite monitorar e coletar dados de hashtags diretamente da plataforma. O objetivo é oferecer uma ferramenta simples, mas poderosa, para análises rápidas e práticas de SEO e social listening.\n👉 O código está disponível no GitHub:\nhttps://github.com/adrockmkt/tiktok_hashtag_scraper\nComo o Script Funciona\nO scraper utiliza Playwright para abrir o TikTok no navegador de forma automatizada. Assim, conseguimos simular uma navegação real, evitando bloqueios comuns em scrapers simples que usam apenas requests.\nFluxo resumido:\n- O script inicia um navegador automatizado.\n\n- Solicita login manual (apenas na primeira execução).\n\n- Salva o estado da sessão no arquivo tiktok_state.json.\n\n- Acessa a página de uma hashtag específica.\n\n- Coleta informações públicas como:\n- Nome da hashtag\n\n- Número de visualizações\n\n- Número de posts associados\n\n- Salva os resultados no arquivo outputs/results.txt para uso posterior.\n\nExemplo de Uso\nRodando o script no terminal:\npython3 scraper . py",
+  "content_length": 1390,
+  "content_bytes": 1420
+}

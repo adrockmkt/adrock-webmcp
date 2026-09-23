@@ -1,0 +1,11 @@
+{
+  "slug": "ga4-filtro-hostname-trafego-sites-bots",
+  "url": "https://adrock.com.br/blog/ga4-filtro-hostname-trafego-sites-bots",
+  "title": "Ad Rock Digital Mkt - Blog - GA4 ganha filtro por hostname: como excluir tráfego de sites, ambientes e bots ruins",
+  "description": "Entenda como funciona o novo filtro Web hostname traffic no GA4, quando usar, exemplos práticos e cuidados antes de aplicar em produção.",
+  "category": "Analytics e Dados",
+  "published_at": "2026-06-29",
+  "content": "O Google Analytics 4 passou a contar com um recurso muito útil para limpeza de dados: o filtro de dados por hostname, chamado de Web hostname traffic .\nNa prática, esse filtro permite excluir eventos com base no hostname de onde os dados estão sendo enviados.\nIsso resolve um problema comum em projetos de analytics: tráfego vindo de domínios, subdomínios, ambientes ou fontes que não deveriam entrar nos relatórios principais.\nPara quem trabalha com GA4, GTM, SEO, mídia paga ou auditoria de dados, essa é uma atualização importante.\nO que é hostname no GA4\nHostname é o domínio ou subdomínio onde o evento foi coletado.\nExemplos:\nwww . site . com . br\nsite . com . br\nblog . site . com . br\nstaging . site . com . br\ndev . site . com . br\ncheckout . parceiro . com",
+  "content_length": 766,
+  "content_bytes": 782
+}

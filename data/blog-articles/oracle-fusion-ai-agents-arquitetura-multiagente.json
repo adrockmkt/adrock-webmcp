@@ -1,0 +1,11 @@
+{
+  "slug": "oracle-fusion-ai-agents-arquitetura-multiagente",
+  "url": "https://adrock.com.br/blog/oracle-fusion-ai-agents-arquitetura-multiagente",
+  "title": "Ad Rock Digital Mkt - Blog - Oracle Fusion AI Agents: como arquiteturas multiagentes estão redefinindo o futuro das aplicações corporativas",
+  "description": "Entenda como os Oracle Fusion AI Agents utilizam arquiteturas multiagentes, RAG, memória, supervisão humana e agentes especializados para automatizar processos complexos em ERP, HCM, CX e SCM.",
+  "category": "SEO e IA",
+  "published_at": "2026-07-08",
+  "content": "A Inteligência Artificial corporativa está entrando em uma nova fase.\nDepois da popularização dos grandes modelos de linguagem (LLMs) como GPT, Gemini, Claude e Llama, o mercado percebeu rapidamente uma limitação importante: um único modelo de IA dificilmente consegue executar processos empresariais completos com segurança, contexto e governança.\nA próxima evolução são as arquiteturas multiagentes , onde diferentes agentes especializados colaboram para executar tarefas complexas, cada um responsável por uma função específica.\nEssa visão está sendo adotada por praticamente todos os grandes fornecedores de software corporativo.\nMicrosoft investe em Copilot Agents.\nSalesforce desenvolve o Agentforce.\nGoogle amplia o uso de agentes com Gemini.\nOpenAI evolui continuamente sua plataforma Agents.\nA Oracle segue exatamente essa direção com os Oracle Fusion AI Agents , incorporados às Oracle Fusion Applications para automatizar processos empresariais utilizando múltiplos agentes especializados trabalhando em conjunto.\nNeste artigo analisamos essa arquitetura em profundidade e mostramos por que ela representa um dos principais caminhos para a IA empresarial nos próximos anos.\nO problema dos LLMs tradicionais\nGrande parte das empresas iniciou sua jornada em IA utilizando um único chatbot conectado a um LLM.\nO fluxo normalmente é parecido com este:\nUsuário\n\n↓\n\nLLM\n\n↓\n\nResposta",
+  "content_length": 1387,
+  "content_bytes": 1418
+}

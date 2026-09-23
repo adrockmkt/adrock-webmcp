@@ -1,0 +1,11 @@
+{
+  "slug": "cloudflare-ai-crawlers-seo-content-independence-day-2026",
+  "url": "https://adrock.com.br/blog/cloudflare-ai-crawlers-seo-content-independence-day-2026",
+  "title": "Ad Rock Digital Mkt - Blog - Cloudflare muda as regras para crawlers de IA: o que todo profissional de SEO precisa fazer antes de setembro de 2026",
+  "description": "A Cloudflare reformulou completamente a classificação de crawlers de IA. Entenda como Search, Agent e Training passam a ser tratados separadamente, o impacto para SEO, AI Visibility e o que muda em setembro de 2026.",
+  "category": "SEO e IA",
+  "published_at": "2026-07-03",
+  "content": "Durante anos, o controle sobre bots era relativamente simples.\nO profissional de SEO precisava responder perguntas como:\n- devo bloquear este crawler?\n\n- devo permitir o Googlebot?\n\n- devo permitir o Bingbot?\n\n- devo bloquear algum scraper?\n\nCom a explosão da Inteligência Artificial, esse modelo deixou de fazer sentido.\nHoje um mesmo fornecedor pode utilizar diversos crawlers diferentes para objetivos completamente distintos.\nUm crawler pode:\n- indexar seu site para mecanismos de busca;\n\n- visitar páginas em nome de um usuário usando um agente de IA;\n\n- copiar conteúdo para treinamento permanente de modelos.\n\nTodos esses comportamentos são diferentes.\nFoi exatamente por isso que a Cloudflare anunciou uma das maiores mudanças já feitas em gerenciamento de crawlers.\nA empresa abandonou o conceito de \"bots de IA\" como uma categoria única e passou a classificá-los pelo comportamento.\nEssa atualização faz parte do segundo Content Independence Day , iniciativa lançada pela Cloudflare para devolver aos proprietários de sites um controle muito maior sobre como seu conteúdo é utilizado por sistemas de IA. oai_citation:0‡The Cloudflare Blog\nO problema do modelo antigo\nAté agora praticamente todas as soluções trabalhavam assim:\nBot\n\n↓\n\nÉ IA ?\n\n↓\n\nBloqueia ou permite",
+  "content_length": 1275,
+  "content_bytes": 1301
+}

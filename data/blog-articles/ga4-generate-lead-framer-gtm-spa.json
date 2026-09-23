@@ -1,0 +1,11 @@
+{
+  "slug": "ga4-generate-lead-framer-gtm-spa",
+  "url": "https://adrock.com.br/blog/ga4-generate-lead-framer-gtm-spa",
+  "title": "Ad Rock Digital Mkt - Blog - Como implementar o evento generate_lead no GA4 usando GTM em sites no Framer (SPA)",
+  "description": "Guia técnico para implementar o evento generate_lead no GA4 via Google Tag Manager em sites feitos no Framer (SPA), garantindo coleta correta de leads.",
+  "category": "Código e Automação",
+  "published_at": "2026-03-25",
+  "content": "A implementação de eventos de conversão no Google Analytics 4 (GA4) em ambientes SPA (Single Page Application), como sites desenvolvidos no Framer, exige uma abordagem diferente da tradicional.\nEventos como generate_lead , que representam conversões críticas para negócios, frequentemente apresentam problemas como:\n- disparos duplicados\n\n- ausência de disparo\n\n- inconsistência entre front-end e GA4\n\n- perda de dados em navegação sem reload\n\nNeste artigo, mostramos como estruturamos uma implementação robusta utilizando Google Tag Manager (GTM) para garantir a coleta correta do evento generate_lead em um site SPA no Framer.\nO problema: eventos inconsistentes em SPA\nDiferente de sites tradicionais, o Framer funciona como uma SPA baseada em React.\n👉 Isso significa que:\n- não há reload completo da página\n\n- navegação acontece via JavaScript\n\n- o evento gtm.js ocorre apenas uma vez\n\nConsequentemente:\n- triggers como \"Page View\" não funcionam corretamente para conversões\n\n- eventos podem disparar mais de uma vez ou não disparar\n\nObjetivo da implementação\nGarantir que o evento:\ngenerate_lead",
+  "content_length": 1100,
+  "content_bytes": 1124
+}

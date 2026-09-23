@@ -1,0 +1,11 @@
+{
+  "slug": "rss-generator-v2-indexnow-cloudflare-framer",
+  "url": "https://adrock.com.br/blog/rss-generator-v2-indexnow-cloudflare-framer",
+  "title": "Ad Rock Digital Mkt - Blog - RSS Generator v2.0: Integrando IndexNow, Cloudflare Workers e Framer para Indexação Quase em Tempo Real",
+  "description": "Evolução do RSS Generator para Framer com integração ao IndexNow, Cloudflare Workers, automação via cron e arquitetura robusta para indexação quase em tempo real no Bing e AI Search.",
+  "category": "Código e Automação",
+  "published_at": "2026-02-11",
+  "content": "Introdução\nNo post anterior 👉 https://adrock.com.br/blog/rss-generator-framer-python mostrei como construir um gerador de RSS em Python para contornar as limitações do Framer CMS.\nAgora o projeto evoluiu para uma arquitetura mais madura:\nRSS Generator v2.0 , com:\n- Integração oficial com IndexNow\n\n- Validação de chave via Cloudflare Workers\n\n- Controle de duplicidade via SQLite\n\n- Automação por cron no servidor\n\n- Ajustes finos de infraestrutura para compatibilidade com Bing e AI Search\n\nEste post é técnico e voltado para desenvolvedores que querem implementar indexação ativa em ambientes headless.\nO Problema: Framer não permite upload de arquivos raiz\nPara que o protocolo IndexNow funcione corretamente, é necessário publicar um arquivo de verificação no domínio principal:\nhttps : //seusite.com/sua-chave.txt",
+  "content_length": 820,
+  "content_bytes": 842
+}

@@ -1,0 +1,11 @@
+{
+  "slug": "variaveis-randomicas-postman",
+  "url": "https://adrock.com.br/blog/variaveis-randomicas-postman",
+  "title": "Ad Rock Digital Mkt - Blog - Usando variáveis dinâmicas no Postman: gere dados aleatórios automaticamente",
+  "description": "O Postman possui dezenas de variáveis dinâmicas para gerar nomes, e-mails, UUIDs e outros dados aleatórios automaticamente. Veja como usar corretamente e evitar erros nos testes de API.",
+  "category": "Código e Automação",
+  "published_at": "2025-11-05",
+  "content": "Introdução\nVocê sabia que o Postman pode gerar automaticamente valores aleatórios e dinâmicos em suas requisições?\nMuita gente usa o Postman apenas para testar endpoints ou validar respostas, mas ele também possui um conjunto poderoso de variáveis internas (as chamadas Dynamic Variables ) que geram dados aleatórios em tempo real, sem precisar de scripts manuais.\nEssas variáveis são extremamente úteis para:\n- Testar criação de usuários, pedidos ou cadastros únicos.\n\n- Simular cenários com dados randômicos.\n\n- Automatizar testes sem risco de duplicidade.\n\nComo usar\nBasta inserir as variáveis dentro de {{chaves duplas}} diretamente no corpo da requisição, headers ou parâmetros.\nO Postman irá substituir automaticamente por um valor dinâmico no momento da execução.\nExemplo prático:\n{\n\"nome\" : \"{{$randomFullName}}\" ,\n\"email\" : \"{{$randomEmail}}\" ,\n\"login\" : \"{{$randomUserName}}\" ,\n\"id\" : \"{{$guid}}\" ,\n\"criado\" : \"{{$isoTimestamp}}\"\n}",
+  "content_length": 941,
+  "content_bytes": 969
+}

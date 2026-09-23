@@ -1,0 +1,11 @@
+{
+  "slug": "utms-parametros-url-problemas-seo",
+  "url": "https://adrock.com.br/blog/utms-parametros-url-problemas-seo",
+  "title": "Ad Rock Digital Mkt - Blog - UTMs podem estar destruindo seu SEO (e quase ninguém percebeu)",
+  "description": "Entenda como UTMs e parâmetros de URL podem gerar problemas de SEO técnico, canonização, indexação e AI Search.",
+  "category": "SEO e IA",
+  "published_at": "2026-05-29",
+  "content": "UTMs são fundamentais para tracking.\nElas ajudam a identificar:\n- campanhas\n\n- canais\n\n- origem de tráfego\n\n- mídia\n\n- performance\n\nO problema é que, quando usadas incorretamente, podem criar um caos técnico silencioso.\nE esse caos impacta diretamente:\n- indexação\n\n- URLs canônicas\n\n- crawl budget\n\n- Google Discover\n\n- AI Search\n\n- performance orgânica\n\nO problema começa aqui\nExemplo clássico:\n/pagina\n/ pagina ? utm_campaign = x\n/ pagina ? source = y",
+  "content_length": 454,
+  "content_bytes": 465
+}

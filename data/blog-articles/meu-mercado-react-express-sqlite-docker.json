@@ -1,0 +1,11 @@
+{
+  "slug": "meu-mercado-react-express-sqlite-docker",
+  "url": "https://adrock.com.br/blog/meu-mercado-react-express-sqlite-docker",
+  "title": "Ad Rock Digital Mkt - Blog - Meu Mercado: construindo uma lista de compras full-stack com React, Express e SQLite",
+  "description": "Veja como foi construído o Meu Mercado, uma aplicação full-stack com React, Express, SQLite e Docker focada em listas de compras mobile-first e arquitetura pragmática.",
+  "category": "Código e Automação",
+  "published_at": "2026-05-07",
+  "content": "O Meu Mercado nasceu como uma aplicação simples na superfície: criar e acompanhar listas de compras mensais. Mas, por baixo da interface, o projeto resolve vários problemas clássicos de uma aplicação full-stack pequena e pronta para produção: autenticação, persistência local, seed de dados, API REST, estado no frontend, build estático, base path em subdiretório e deploy via Docker.\nA ideia principal é transformar um processo doméstico recorrente em um sistema estruturado. Em vez de montar uma lista do zero todo mês, o usuário trabalha com um catálogo pré-cadastrado de produtos, quantidades ideais, categorias e histórico de listas. A aplicação permite criar listas, clonar compras anteriores, marcar itens como comprados, ajustar quantidades e acompanhar o progresso em tempo real.\nStack\nO projeto usa uma stack enxuta, escolhida para reduzir complexidade operacional:\n- React 18 para a interface\n\n- TypeScript no frontend para tipar entidades e contratos\n\n- Vite como ferramenta de desenvolvimento e build\n\n- Tailwind CSS para a camada visual\n\n- Lucide React para iconografia\n\n- Node.js + Express no backend\n\n- SQLite como banco embarcado\n\n- better-sqlite3 como driver síncrono e performático para SQLite\n\n- bcryptjs para hash de senha\n\n- JWT para autenticação stateless\n\n- Docker para empacotamento e deploy\n\n- Nginx como reverse proxy em produção\n\nEssa combinação funciona muito bem para aplicações com baixo custo de infraestrutura, poucos pontos móveis e necessidade de persistência confiável sem provisionar um servidor de banco separado.\nArquitetura geral\nA aplicação é dividida em duas partes:\nFrontend React / Vite\n|\n| HTTP + JWT\nv\nBackend Express\n|\n| better - sqlite3\nv\nSQLite",
+  "content_length": 1693,
+  "content_bytes": 1732
+}

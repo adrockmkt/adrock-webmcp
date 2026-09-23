@@ -1,0 +1,11 @@
+{
+  "slug": "a2ui-google-interfaces-geradas-por-agentes-ia",
+  "url": "https://adrock.com.br/blog/a2ui-google-interfaces-geradas-por-agentes-ia",
+  "title": "Ad Rock Digital Mkt - Blog - A2UI do Google: o início das interfaces geradas por agentes de IA",
+  "description": "Google abre o A2UI como open source e inaugura uma nova arquitetura de software: agentes de IA capazes de gerar interfaces completas em tempo real.",
+  "category": "Código e Automação",
+  "published_at": "2026-03-13",
+  "content": "A forma como interagimos com softwares pode estar prestes a mudar profundamente.\nO Google tornou público um novo projeto open source chamado A2UI (Agent-to-UI) . A proposta é simples, mas potencialmente revolucionária: permitir que agentes de inteligência artificial descrevam interfaces completas de usuário , que depois são renderizadas pela aplicação.\nEm vez de um sistema de IA responder apenas com texto, ele pode gerar a estrutura de uma interface inteira .\nIsso abre caminho para um novo modelo de software: interfaces geradas dinamicamente por agentes de IA .\nO que é o A2UI\nO A2UI (Agent-to-UI) é uma linguagem declarativa criada para permitir que agentes descrevam interfaces de forma estruturada.\nEm vez de retornar respostas em linguagem natural, o agente retorna uma descrição da interface em JSON .\nExemplo simplificado:\n{\n\"component\" : \"form\" ,\n\"title\" : \"Cadastro de cliente\" ,\n\"fields\" : [ \"nome\" , \"email\" , \"telefone\" ]\n}",
+  "content_length": 940,
+  "content_bytes": 952
+}

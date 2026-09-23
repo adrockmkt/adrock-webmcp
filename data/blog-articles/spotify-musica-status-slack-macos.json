@@ -1,0 +1,11 @@
+{
+  "slug": "spotify-musica-status-slack-macos",
+  "url": "https://adrock.com.br/blog/spotify-musica-status-slack-macos",
+  "title": "Ad Rock Digital Mkt - Blog - Como mostrar no Slack a música que você está ouvindo no Spotify",
+  "description": "Veja como configurar gratuitamente no macOS um script que identifica a música reproduzida no Spotify e atualiza automaticamente o status do Slack.",
+  "category": "Código e Automação",
+  "published_at": "2026-07-21",
+  "content": "Às vezes, uma pequena curiosidade técnica termina em uma automação divertida.\nEu queria descobrir se existia uma forma de mostrar no meu perfil do Slack a música que estava ouvindo no Spotify, semelhante ao recurso de atividade musical presente em outras plataformas.\nDepois de vasculhar algumas opções na internet, encontrei soluções comerciais que faziam algo parecido. Porém, também encontrei um pequeno projeto open source no GitHub chamado Spotify Slack Status , criado por Tomas Hubelbauer.\nO projeto tem uma proposta simples: consultar a música que está sendo reproduzida no aplicativo do Spotify no macOS e usar a API do Slack para colocar o artista e o nome da faixa no status do usuário.\nO resultado ficou assim:\n🎧 Rick & Renner - Fim de semana",
+  "content_length": 755,
+  "content_bytes": 771
+}

@@ -1,0 +1,11 @@
+{
+  "slug": "rss-generator-framer-python",
+  "url": "https://adrock.com.br/blog/rss-generator-framer-python",
+  "title": "Ad Rock Digital Mkt - Blog - Solving the RSS Problem in Framer: A Python-Based Feed Generator for Ad Rock Blog",
+  "description": "Build a valid RSS feed for your Framer blog using Python. Solve the lack of native RSS with this open-source generator built by Ad Rock Digital Mkt.",
+  "category": "Analytics e Dados",
+  "published_at": "2025-09-04",
+  "content": "Most Framer sites don’t support native RSS feeds. This can be frustrating for developers or marketers who want to automate content distribution across platforms like LinkedIn, email newsletters, or RSS aggregators.\nAt Ad Rock Digital Mkt , we needed an RSS feed for our technical blog (👉 adrock.com.br/blog ) to improve discoverability and enable syndication. Since Framer doesn’t offer this natively, we built our own solution.\nThe Challenge\nFramer websites are static and lack backend logic to serve a dynamic RSS feed. Even with CMS-like structure, there’s no out-of-the-box way to export content as RSS XML. We also needed:\n- Proper <title>, <link>, <pubDate>, <description>, and <media:content>\n\n- Language and encoding support (pt-br, UTF-8)\n\n- W3C valid output to comply with readers and platforms\n\n- Automatic deployment to a public path like:\n\nhttps : //mobiledelivery.com.br/rss/adrock.xml",
+  "content_length": 900,
+  "content_bytes": 908
+}

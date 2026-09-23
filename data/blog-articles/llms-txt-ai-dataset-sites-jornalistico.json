@@ -1,0 +1,11 @@
+{
+  "slug": "llms-txt-ai-dataset-sites-jornalistico",
+  "url": "https://adrock.com.br/blog/llms-txt-ai-dataset-sites-jornalistico",
+  "title": "Ad Rock Digital Mkt - Blog - llms.txt e ai-dataset.json: Governança de dados para IA em sites jornalísticos",
+  "description": "Descubra como usar llms.txt e ai-dataset.json para proteger e estruturar conteúdos jornalísticos frente à IA. Veja diferenças em relação a sitemaps e boas práticas de implementação.",
+  "category": "SEO e IA",
+  "published_at": "2025-08-19",
+  "content": "A expansão das buscas generativas, dos assistentes de inteligência artificial e dos agentes automatizados criou uma nova discussão para sites jornalísticos: como permitir que conteúdos sejam encontrados, citados e utilizados por sistemas de IA sem perder o controle editorial, a atribuição e a capacidade de gerar audiência?\nNesse cenário, arquivos como llms.txt e endpoints personalizados como ai-dataset.json começaram a aparecer em projetos de SEO e governança digital.\nNo entanto, é necessário separar três conceitos diferentes:\n- Recursos oficialmente reconhecidos pelos buscadores e plataformas de IA.\n\n- Propostas abertas que ainda estão em processo de adoção.\n\n- Estruturas personalizadas que podem ser úteis em projetos específicos, mas não são padrões universais.\n\nO llms.txt pertence atualmente à segunda categoria. Já o ai-dataset.json , quando criado de forma personalizada, pertence à terceira.\nNenhum dos dois substitui o SEO técnico tradicional, o robots.txt , os sitemaps XML, os dados estruturados ou as políticas editoriais do site.\nO que é o llms.txt\nO llms.txt é uma proposta aberta para disponibilizar, na raiz de um domínio, uma seleção organizada de conteúdos que possam ser facilmente interpretados por sistemas baseados em grandes modelos de linguagem.\nO arquivo normalmente fica disponível em:\nhttps : //exemplo.com/llms.txt",
+  "content_length": 1351,
+  "content_bytes": 1385
+}

@@ -1,0 +1,11 @@
+{
+  "slug": "jev-ia-modelos-decisao-software",
+  "url": "https://adrock.com.br/blog/jev-ia-modelos-decisao-software",
+  "title": "Ad Rock Digital Mkt - Blog - Jev: o modelo de IA criado para tomar decisões dentro de softwares",
+  "description": "Entenda o que é o Jev, modelo de IA da TypeSafe voltado para decisões probabilísticas, e como ele pode ser usado em automações, agentes e sistemas.",
+  "category": "Código e Automação",
+  "published_at": "2026-09-21",
+  "content": "A Inteligência Artificial generativa popularizou uma arquitetura relativamente simples: um software envia contexto para um Large Language Model, o modelo processa essas informações e devolve uma resposta em linguagem natural.\nEsse modelo funciona muito bem quando o objetivo é escrever, resumir, analisar ou raciocinar sobre informações complexas.\nMas existe outra categoria de problema muito comum em sistemas e automações:\no software não precisa de um texto. Ele precisa de uma decisão.\nÉ exatamente nesse espaço que surge o Jev , modelo desenvolvido pela TypeSafe AI com uma proposta diferente dos LLMs tradicionais.\nEm vez de competir diretamente com modelos como GPT, Claude ou Gemini na geração de linguagem, o Jev foi desenvolvido para transformar informações em decisões estruturadas e probabilísticas que possam ser consumidas diretamente por software .\nA diferença parece pequena, mas pode representar uma mudança importante na arquitetura de aplicações baseadas em IA.\nO problema de usar LLMs para todas as decisões\nImagine um sistema de qualificação automática de leads.\nO sistema possui informações como:\n- cargo;\n\n- empresa;\n\n- orçamento;\n\n- origem;\n\n- interesse;\n\n- histórico de interações.\n\nUm LLM tradicional poderia receber essas informações junto de uma instrução:",
+  "content_length": 1283,
+  "content_bytes": 1319
+}

@@ -1,0 +1,11 @@
+{
+  "slug": "xml-sitemap-arquitetura-seo-tecnico-2026",
+  "url": "https://adrock.com.br/blog/xml-sitemap-arquitetura-seo-tecnico-2026",
+  "title": "Ad Rock Digital Mkt - Blog - XML Sitemap: arquitetura ideal para SEO técnico em 2026",
+  "description": "Entenda como estruturar um XML Sitemap eficiente para SEO em 2026, com arquitetura escalável, indexação otimizada e boas práticas oficiais do Google.",
+  "category": "SEO e IA",
+  "published_at": "2026-03-26",
+  "content": "O XML Sitemap sempre foi uma das bases do SEO técnico.\nMas em 2026, com sites mais complexos, IA e indexação mais seletiva, a forma como você estrutura esse arquivo faz diferença real.\nNão é mais apenas “ter um sitemap”.\nÉ sobre arquitetar corretamente o sitemap para ajudar o Google a entender, priorizar e indexar seu site .\nO que é um XML Sitemap\nO XML Sitemap é um arquivo que lista URLs importantes do seu site para os motores de busca.\nEle ajuda o Google a:\n- descobrir páginas\n\n- entender estrutura do site\n\n- priorizar rastreamento\n\nFonte oficial: https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview\nO erro mais comum\nA maioria dos sites usa sitemap automático e pronto.\nExemplo:\n- um único sitemap\n\n- todas as URLs misturadas\n\n- sem segmentação\n\nIsso funciona — mas não é eficiente.\nO que mudou em 2026\nHoje, o Google:\n- não indexa tudo automaticamente\n\n- prioriza páginas com valor\n\n- otimiza crawl budget\n\nOu seja:\nsitemap virou ferramenta de priorização, não apenas de descoberta\n\nArquitetura ideal de sitemap\nA melhor prática atual é usar uma estrutura hierárquica:\nSitemap Index (principal)\nArquivo principal que organiza outros sitemaps.\nExemplo:\n< sitemapindex >\n< sitemap >\n< loc > /sitemap-posts.xml </ loc >\n</ sitemap >\n< sitemap >\n< loc > /sitemap-pages.xml </ loc >\n</ sitemap >\n</ sitemapindex >",
+  "content_length": 1344,
+  "content_bytes": 1375
+}

@@ -1,0 +1,11 @@
+{
+  "slug": "identificar-prompts-ia-trafego-google-search-console",
+  "url": "https://adrock.com.br/blog/identificar-prompts-ia-trafego-google-search-console",
+  "title": "Ad Rock Digital Mkt - Blog - Como identificar prompts de IA que geram tráfego para seu site usando apenas o Google Search Console",
+  "description": "Aprenda como usar regex no Google Search Console para identificar consultas longas que podem indicar prompts de IA gerando tráfego para seu site.",
+  "category": "SEO e IA",
+  "published_at": "2026-03-06",
+  "content": "Com o crescimento de ferramentas de inteligência artificial como ChatGPT, Gemini, Perplexity e outros assistentes de busca baseados em LLMs , muitas empresas passaram a se perguntar algo importante:\nÉ possível ver os prompts que as pessoas usam em IA antes de clicar no nosso site?\nA resposta curta é: não diretamente .\nMas existe um método prático para identificar consultas que provavelmente foram geradas por interações com IA , utilizando apenas dados do Google Search Console .\nPor que não é possível ver os prompts exatos das IAs\nAtualmente nenhuma ferramenta de analytics ou SEO consegue acessar diretamente os prompts que usuários digitam em plataformas de IA.\nIsso ocorre por dois motivos principais:\n1. Privacidade das plataformas\nFerramentas como ChatGPT, Gemini ou Perplexity não compartilham os prompts dos usuários com os sites de destino .\nQuando alguém clica em um link gerado por uma IA, o site recebe apenas uma requisição normal de navegação.\n2. Arquitetura técnica das buscas\nPara que um site soubesse exatamente qual prompt foi usado, seria necessário que:\n- o LLM compartilhasse o histórico da conversa com o site\n\n- ou o navegador enviasse o prompt como parâmetro da URL\n\nAlgo como:\nhttps : //site.com/artigo?prompt=o+que+é+predictive+maintenance",
+  "content_length": 1269,
+  "content_bytes": 1294
+}

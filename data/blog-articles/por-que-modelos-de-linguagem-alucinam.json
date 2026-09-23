@@ -1,0 +1,11 @@
+{
+  "slug": "por-que-modelos-de-linguagem-alucinam",
+  "url": "https://adrock.com.br/blog/por-que-modelos-de-linguagem-alucinam",
+  "title": "Ad Rock Digital Mkt - Blog - Por que Modelos de Linguagem Alucinam? Uma Visão Técnica Baseada em Estatística e Avaliação",
+  "description": "Entenda por que modelos de linguagem como GPT-4 e Claude 3 ainda cometem alucinações. Descubra as causas estatísticas, falhas em benchmarks e como resolver isso.",
+  "category": "SEO e IA",
+  "published_at": "2025-09-08",
+  "content": "Introdução\nMesmo os modelos de linguagem mais avançados — como GPT-4, Claude 3 e Grok — ainda cometem um tipo específico de erro conhecido como alucinação : quando fornecem respostas falsas, porém plausíveis, com alta confiança. Mas por que isso acontece?\nEste artigo, baseado na pesquisa de 👉 Kalai et al., 2025 , oferece uma análise estatística profunda sobre as causas matemáticas e sociais das alucinações em LLMs (Large Language Models). Spoiler: o problema vai muito além dos dados de treino — ele está enraizado em como treinamos e avaliamos os modelos.\nParte 1 – A Matemática das Alucinações\nO modelo não sabe dizer “não sei”\nDurante o pré-treinamento, o modelo aprende padrões de linguagem a partir de grandes corpora (ex: Wikipedia, livros, fóruns, etc.). Mesmo com dados 100% corretos, a otimização via entropia cruzada incentiva o modelo a gerar a resposta mais provável — não necessariamente a mais verdadeira .\nA alucinação, nesse contexto, é uma consequência estatística inevitável da tarefa de modelagem de linguagem, como mostrar que “há 2 letras D em DEEPSEEK”, quando há apenas uma.\n\nA redução para classificação binária\nOs autores mostram que gerar texto válido é, estatisticamente, mais difícil do que classificar se uma frase é válida ou não.\nEsse problema é modelado como IIV — Is It Valid?\n- + = frase válida\n\n- – = frase incorreta\n\nO erro gerado durante a geração está matematicamente ligado ao erro nessa classificação binária:\nErro na geração ≥ 2 × Erro de classificação",
+  "content_length": 1498,
+  "content_bytes": 1584
+}

@@ -1,0 +1,11 @@
+{
+  "slug": "analise-google-news-python",
+  "url": "https://adrock.com.br/blog/analise-google-news-python",
+  "title": "Ad Rock Digital Mkt - Blog - Análise de Concorrentes no Google News com Python",
+  "description": "Aprenda a analisar concorrentes no Google News com Python. Scraper open source que coleta manchetes, agrupa fontes, exporta relatórios e envia e-mails automáticos para insights de SEO.",
+  "category": "Código e Automação",
+  "published_at": "2025-09-26",
+  "content": "O Google News é uma das principais vitrines de visibilidade para portais e blogs de notícias. Estar bem posicionado ali pode trazer tráfego qualificado e autoridade de marca. Mas como saber quem são os seus principais concorrentes e quais conteúdos estão ganhando destaque?\nPara responder essa pergunta, desenvolvemos o projeto Análise Google News — um scraper em Python que coleta resultados do Google News e organiza em relatórios úteis para análise de SEO e monitoramento de concorrentes.\n👉 Código aberto disponível em: GitHub - Ad Rockers\nO que o projeto faz\n- Busca notícias por palavra-chave no Google News .\n\n- Extrai título, snippet, fonte e data de publicação.\n\n- Exporta os resultados em CSV, JSON e TXT .\n\n- Permite definir limite de resultados (--limit).\n\n- Agrupa as notícias por fonte (quantas do G1, CNN, Estadão, etc.).\n\n- Suporta retries automáticos com backoff exponencial, evitando bloqueios do Google.\n\n- Envia os relatórios por e-mail automaticamente (via configuração .env).\n\n- Pode ser agendado com cron para rodar diariamente.\n\nComo instalar\nClone o repositório e instale as dependências:\ngit clone https : //github.com/adrockmkt/analise_google_news.git\ncd analise_google_news\npip install - r requirements . txt",
+  "content_length": 1236,
+  "content_bytes": 1264
+}

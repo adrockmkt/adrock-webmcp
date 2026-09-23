@@ -1,0 +1,11 @@
+{
+  "slug": "protocolo-toon-vs-json",
+  "url": "https://adrock.com.br/blog/protocolo-toon-vs-json",
+  "title": "Ad Rock Digital Mkt - Blog - TOON Protocol: o novo padrão que tenta superar o JSON",
+  "description": "O TOON Protocol propõe uma abordagem moderna para representar e transmitir dados estruturados, integrando tipagem forte, validação embutida e semântica rígida. Neste artigo, analisamos o protocolo, comparamos com JSON, Avro, Protobuf, Zod e Pydantic, e discutimos seu potencial real de adoção.",
+  "category": "Código e Automação",
+  "published_at": "2025-11-13",
+  "content": "TOON Protocol: o que é, por que surgiu e por que estão chamando de “concorrente do JSON”\nO TOON Protocol começou a ganhar espaço na comunidade técnica por propor um formato alternativo ao JSON — hoje onipresente em APIs, webhooks, microserviços e comunicação de sistemas.\nSites, apps, integrações de marketing, automações e data pipelines dependem massivamente do JSON. Mas, apesar do domínio, o formato carrega limitações importantes: validação fraca, ambiguidade de tipos, erros silenciosos e inconsistência semântica entre linguagens.\nO TOON surge justamente para endereçar estas fragilidades, trazendo uma combinação rara: dados + schema + regras de validação no mesmo documento , mantendo legibilidade semelhante ao YAML.\nUm exemplo simplificado:\nuser :\nname : \"Rafael Lins\" : : string ( required )\nage : 34 : : int ( min = 0 , max = 150 )\nemail : \"rafael@adrock.com.br\" : : email ( required )\nroles : [ \"admin\" , \"editor\" ] : : list ( string )",
+  "content_length": 949,
+  "content_bytes": 979
+}

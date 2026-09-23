@@ -1,0 +1,11 @@
+{
+  "slug": "rigor-estatistico-avaliacao-ia",
+  "url": "https://adrock.com.br/blog/rigor-estatistico-avaliacao-ia",
+  "title": "Ad Rock Digital Mkt - Blog - Por que métricas isoladas mentem: rigor estatístico na avaliação de IA",
+  "description": "Entenda por que métricas isoladas podem enganar na avaliação de IA e como rigor estatístico garante decisões técnicas mais confiáveis.",
+  "category": "SEO e IA",
+  "published_at": "2026-01-14",
+  "content": "LLMs são estocásticos. Dois testes idênticos podem gerar resultados diferentes.\nO problema da aleatoriedade\nSem medir variância:\n- Diferenças pequenas podem ser sorte\n\n- Rankings podem inverter\n\n- Decisões podem ser erradas\n\nO papel do rigor estatístico\nAvaliações sérias consideram:\n- Intervalo de confiança\n\n- Consistência entre execuções\n\n- Estabilidade do método\n\nPerformance sem consistência não é confiável.\nDecisão técnica exige sinal, não ruído\nSem estatística, dashboards enganam.\nCom estatística, decisões se sustentam.\nConteúdos relacionados\nSEO Orientado a IA: como preparar seu site para mecanismos de busca, LLMs e agentes inteligentes Como avaliar a qualidade de busca em sistemas de IA, LLMs e agentes inteligentes Golden Set: o erro invisível que invalida avaliações de SEO, IA e mecanismos de busca SEO tradicional não mede qualidade de resposta — e isso é um problema para a IA LLM-as-a-Judge: como a própria IA é usada para avaliar mecanismos de busca Framework em 4 fases para avaliar Search, SEO e IA de forma confiável Por que métricas isoladas mentem: rigor estatístico na avaliação de IA O que é avaliação de AI Search e por que isso importa para SEO em 2026",
+  "content_length": 1183,
+  "content_bytes": 1227
+}

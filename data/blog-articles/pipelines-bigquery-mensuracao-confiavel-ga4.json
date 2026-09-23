@@ -1,0 +1,11 @@
+{
+  "slug": "pipelines-bigquery-mensuracao-confiavel-ga4",
+  "url": "https://adrock.com.br/blog/pipelines-bigquery-mensuracao-confiavel-ga4",
+  "title": "Ad Rock Digital Mkt - Blog - Como construir pipelines confiáveis com BigQuery: coleta, limpeza e versionamento de métricas",
+  "description": "Como estruturar pipelines de dados com BigQuery para garantir métricas limpas, deduplicadas e auditáveis no GA4, Ads e CRM.",
+  "category": "Analytics e Dados",
+  "published_at": "2025-11-26",
+  "content": "BigQuery é a única forma de construir métricas auditáveis , histórico imutável e pipelines consistentes em 2025.\nSe você trabalha com GA4, Ads, Meta, CRM, SGTM, ou múltiplas fontes, não existe governança real sem BigQuery.\nEste post explica como construir pipelines confiáveis , como padronizar dados, como atualizar métricas e como evitar erros que distorcem relatórios e decisões de negócio.\n1. O que é um pipeline de dados confiável?\nUm pipeline confiável precisa cumprir três requisitos:\n1) Integridade\nOs dados precisam chegar completos, com todos os campos críticos.\n2) Consistência temporal\nMétricas precisam ser comparáveis entre dias, semanas e meses (evitando retrabalho).\n3) Imutabilidade + versionamento\nCada alteração em métricas deve ser rastreável.\nSem esses três elementos, qualquer relatório no Looker ou Data Studio vira decoração — não decisão.\n2. As 4 camadas oficiais de um pipeline moderno no BigQuery\nO pipeline ideal segue a estrutura:\nRaw → Clean → Model → Analytics",
+  "content_length": 991,
+  "content_bytes": 1032
+}

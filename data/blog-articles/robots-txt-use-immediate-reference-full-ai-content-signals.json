@@ -1,0 +1,11 @@
+{
+  "slug": "robots-txt-use-immediate-reference-full-ai-content-signals",
+  "url": "https://adrock.com.br/blog/robots-txt-use-immediate-reference-full-ai-content-signals",
+  "title": "Ad Rock Digital Mkt - Blog - O novo parâmetro use= para IA: como funcionam immediate, reference e full no robots.txt",
+  "description": "Entenda como funcionam os novos parâmetros use=immediate, use=reference e use=full, quais são as diferenças para robots.txt e llms.txt e como preparar seu site para AI Search.",
+  "category": "SEO e IA",
+  "published_at": "2026-07-07",
+  "content": "A forma como controlamos bots está mudando.\nDurante mais de 30 anos o arquivo robots.txt foi praticamente a única maneira de informar aos crawlers quais áreas de um site poderiam ou não ser acessadas.\nDepois vieram iniciativas como:\n- Google-Extended\n\n- llms.txt\n\n- AI Dataset\n\n- AI Visibility\n\n- Content Signals\n\nAgora a Cloudflare apresentou mais um passo importante nessa evolução: um novo conjunto de preferências chamado use= , incorporado aos Content Signals.\nNa prática, deixa de existir apenas a decisão \"permitir ou bloquear\".\nAgora também passa a existir uma preferência sobre como um sistema de IA pode utilizar seu conteúdo.\nÉ uma mudança importante para quem trabalha com SEO, AI Visibility, monetização de conteúdo e governança digital.\nO problema do robots.txt tradicional\nO robots.txt sempre respondeu apenas uma pergunta:\nEste bot pode rastrear esta página",
+  "content_length": 873,
+  "content_bytes": 892
+}

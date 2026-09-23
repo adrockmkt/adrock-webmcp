@@ -1,0 +1,11 @@
+{
+  "slug": "integracao-mailchimp-apps-script-looker-studio-dashboard-latam",
+  "url": "https://adrock.com.br/blog/integracao-mailchimp-apps-script-looker-studio-dashboard-latam",
+  "title": "Ad Rock Digital Mkt - Blog - Como integrei Mailchimp, Google Apps Script e Looker Studio para monitorar inscrições de um projeto LATAM",
+  "description": "Veja como integrei Mailchimp, Google Apps Script, Google Sheets, GA4 e Looker Studio para automatizar inscrições e análises de um projeto LATAM.",
+  "category": "Código e Automação",
+  "published_at": "2026-08-19",
+  "content": "Projetos digitais que operam em vários países costumam esbarrar em um problema que parece simples até chegar a hora de construir o relatório: os dados existem, mas não necessariamente estão estruturados da forma necessária para análise.\nFoi exatamente esse o cenário de um projeto educacional com atuação em toda a América Latina.\nAs inscrições para um curso estavam sendo realizadas por meio de landing pages no Mailchimp, separadas entre português e espanhol. O Mailchimp armazenava corretamente os contatos, países, estados e demais informações coletadas pelos formulários.\nO desafio era outro.\nPrecisávamos transformar esses registros em uma fonte de dados automaticamente atualizada e utilizável no Looker Studio, antigo Google Data Studio, permitindo acompanhar:\n- total de inscritos;\n\n- inscrições em português;\n\n- inscrições em espanhol;\n\n- evolução diária das inscrições;\n\n- distribuição por país;\n\n- quantidade de países alcançados;\n\n- inscrições fora do Brasil;\n\n- distribuição dos inscritos brasileiros por estado;\n\n- identificação dos países e estados com maior participação.\n\nEm vez de exportar CSVs manualmente do Mailchimp e alimentar relatórios periodicamente, desenvolvi uma integração usando a API do Mailchimp, Google Apps Script, Google Sheets e Looker Studio.\nO resultado foi uma pequena pipeline de dados serverless, automatizada e praticamente sem infraestrutura própria.\nO problema: Mailchimp é a origem dos dados, não a camada analítica\nO Mailchimp funciona muito bem para captura e gerenciamento dos contatos.\nPara esse projeto, existiam dois fluxos principais de inscrição:\nLanding Page PT\n↓\nMailchimp\n↓\nTag de inscritos em português",
+  "content_length": 1661,
+  "content_bytes": 1720
+}

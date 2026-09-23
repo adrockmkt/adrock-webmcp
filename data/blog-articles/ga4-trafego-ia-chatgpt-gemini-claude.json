@@ -1,0 +1,11 @@
+{
+  "slug": "ga4-trafego-ia-chatgpt-gemini-claude",
+  "url": "https://adrock.com.br/blog/ga4-trafego-ia-chatgpt-gemini-claude",
+  "title": "Ad Rock Digital Mkt - Blog - GA4 agora identifica tráfego vindo de IA: ChatGPT, Gemini e Claude ganham canal próprio",
+  "description": "Google Analytics 4 agora identifica tráfego vindo de ChatGPT, Gemini e Claude em um novo canal AI Assistant. Entenda o impacto para SEO e AI Search.",
+  "category": "Analytics e Dados",
+  "published_at": "2026-06-03",
+  "content": "O Google Analytics 4 acaba de dar um dos passos mais importantes da era AI Search.\nAgora o GA4 consegue identificar tráfego originado de assistentes de IA como:\n- ChatGPT\n\n- Gemini\n\n- Claude\n\nE categorizar essas visitas automaticamente em um novo canal chamado:\n👉 AI Assistant\nEssa mudança parece pequena.\nMas, na prática, ela muda completamente a forma como empresas poderão medir:\n- impacto de IA\n\n- AI Search\n\n- descoberta por LLMs\n\n- tráfego vindo de chatbots\n\n- comportamento de usuários originados por IA\n\nO que mudou no GA4\nSegundo atualização oficial do Google Analytics publicada em maio de 2026:\n👉 o GA4 agora possui uma nova classificação de tráfego para assistentes de IA.\nDocumentação oficial:\n👉 https://support.google.com/analytics/answer/9164320?hl=en#05132026\nO novo canal “AI Assistant”\nO Google passou a adicionar automaticamente:\nMedium = ai - assistant",
+  "content_length": 875,
+  "content_bytes": 898
+}

@@ -1,0 +1,11 @@
+{
+  "slug": "link-builder-api-flask-gpt-automacao",
+  "url": "https://adrock.com.br/blog/link-builder-api-flask-gpt-automacao",
+  "title": "Ad Rock Digital Mkt - Blog - Link Builder – Da Ideia ao Middleware Inteligente com Flask, Nginx e GPT Actions",
+  "description": "O Link Builder é uma API em Python/Flask desenvolvida pela Ad Rock Digital Mkt para geração automática de links UTM e QR Codes. O projeto integra infraestrutura com Nginx, HTTPS e GPT Actions, servindo como base para automações futuras com o OpenAI Assistant API.",
+  "category": "Código e Automação",
+  "published_at": "2025-10-09",
+  "content": "Introdução\nO Link Builder nasceu como uma necessidade interna da Ad Rock Digital Mkt : automatizar a geração de links rastreáveis (UTM) e QR Codes para campanhas digitais.\nCom o tempo, o projeto evoluiu de um simples script Python para uma API robusta , integrada a um Custom GPT , e hoje serve como base para futuras automações com o OpenAI Assistants API .\nTela do CustomGPT com a pergunta inicial onde o usuário inseri os valores para gerar o link.\n\nO Desafio Inicial\nNa rotina da Ad Rock, o time de mídia precisava criar rapidamente links parametrizados para campanhas no Google Ads, Meta Ads e newsletters, garantindo rastreabilidade via GA4.\nO problema?\n- Processos manuais, suscetíveis a erros.\n\n- Falta de padronização de nomenclaturas.\n\n- Necessidade de gerar QR Codes individualmente para cada link.\n\nA solução ideal deveria:\n- Gerar links UTM automaticamente.\n\n- Produzir QR Codes prontos para uso.\n\n- Registrar logs de cada criação.\n\n- Ser acessível via API para integração com ferramentas de IA e automação.\n\nA Construção da API com Flask\nO backend foi construído em Flask , pela leveza e flexibilidade.\nA estrutura base ficou assim:\nlink_builder /\n├── main . py\n├── database . py\n├── static /\n├── templates /\n├── openapi . yaml\n├── . well - known /\n├── requirements . txt\n└── README . md",
+  "content_length": 1301,
+  "content_bytes": 1373
+}
