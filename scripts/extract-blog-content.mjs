@@ -36,7 +36,7 @@ function candidateBodies(html) {
 
   // Extract semantic article blocks independently. A broad parent such as
   // <main> must not compete with its child articles.
-  const articlePattern = /<article\\b[^>]*>([\\s\\S]*?)<\\/article>/gi;
+  const articlePattern = /<article\b[^>]*>([\s\S]*?)<\/article>/gi;
   for (const match of html.matchAll(articlePattern)) {
     candidates.push(match[1] ?? "");
   }
@@ -46,7 +46,7 @@ function candidateBodies(html) {
   // avoiding parent containers that aggregate multiple editorial blocks.
   if (candidates.length === 0) {
     const namedContainerPattern =
-      /<div\\b[^>]*(?:data-framer-name|class)=(["'])[^"']*(?:article|post|content|rich-text)[^"']*\\1[^>]*>([\\s\\S]*?)<\\/div>/gi;
+      /<div\b[^>]*(?:data-framer-name|class)=(["'])[^"']*(?:article|post|content|rich-text)[^"']*\1[^>]*>([\s\S]*?)<\/div>/gi;
 
     for (const match of html.matchAll(namedContainerPattern)) {
       candidates.push(match[2] ?? "");
