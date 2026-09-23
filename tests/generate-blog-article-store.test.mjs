@@ -5,13 +5,21 @@ import { join } from "node:path";
 import { tmpdir } from "node:os";
 
 import {
-  buildManifest,
+  buildManifest,\n  canonicalizeSlug,
   generateArticleStore,
   normalizeArticleRecord,
   writeArticleStore,
 } from "../scripts/generate-blog-article-store.mjs";
 
-test("normalizes an article without inventing optional metadata", () => {
+
+test("canonicalizes percent-encoded invisible characters in public slugs", () => {
+  assert.equal(
+    canonicalizeSlug("google-sponso%E2%80%8Bred-results-nova-interface-anuncios"),
+    "google-sponsored-results-nova-interface-anuncios",
+  );
+  assert.equal(canonicalizeSlug("%E0%A4%A"), null);
+});
+\ntest("normalizes an article without inventing optional metadata", () => {
   const record = normalizeArticleRecord({
     slug: "ga4-audit",
     url: "https://adrock.com.br/blog/ga4-audit",
