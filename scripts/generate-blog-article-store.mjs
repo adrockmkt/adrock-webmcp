@@ -12,12 +12,26 @@ const MANIFEST_PATH = join(ROOT, "data", "blog-articles-manifest.json");
 const DEFAULT_CONCURRENCY = 6;
 const SLUG_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
+export function canonicalizeSlug(slug) {
+  if (typeof slug !== "string" || !slug) return null;
+  let decoded;
+  try { decoded = decodeURIComponent(slug); } catch { return null; }
+  const canonical = decoded
+    .replace(/[\u200B-\u200D\uFEFF]/g, "")
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+  return SLUG_PATTERN.test(canonical) ? canonical : null;
+}
+
 export function normalizeArticleRecord(article, content) {
   if (!article || !SLUG_PATTERN.test(article.slug ?? "")) {
     throw new Error(`Invalid article slug: ${article?.slug ?? "<missing>"}`);
   }
   if (typeof content !== "string" || !content.trim()) {
-    throw new Error(`No extractable content for slug: ${article.slug}`);
+    throw new Error(`No extractable content for slug: ${slug}`);
   }
 
   return {
