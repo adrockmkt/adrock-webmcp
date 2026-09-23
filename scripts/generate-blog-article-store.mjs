@@ -27,7 +27,8 @@ export function canonicalizeSlug(slug) {
 }
 
 export function normalizeArticleRecord(article, content) {
-  if (!article || !SLUG_PATTERN.test(article.slug ?? "")) {
+  const slug = canonicalizeSlug(article?.slug);
+  if (!article || !slug) {
     throw new Error(`Invalid article slug: ${article?.slug ?? "<missing>"}`);
   }
   if (typeof content !== "string" || !content.trim()) {
@@ -35,7 +36,7 @@ export function normalizeArticleRecord(article, content) {
   }
 
   return {
-    slug: article.slug,
+    slug,
     url: article.url,
     title: article.title ?? null,
     description: article.description ?? null,
