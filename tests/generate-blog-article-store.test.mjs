@@ -5,7 +5,8 @@ import { join } from "node:path";
 import { tmpdir } from "node:os";
 
 import {
-  buildManifest,\n  canonicalizeSlug,
+  buildManifest,
+  canonicalizeSlug,
   generateArticleStore,
   normalizeArticleRecord,
   writeArticleStore,
@@ -19,7 +20,8 @@ test("canonicalizes percent-encoded invisible characters in public slugs", () =>
   );
   assert.equal(canonicalizeSlug("%E0%A4%A"), null);
 });
-\ntest("normalizes an article without inventing optional metadata", () => {
+
+test("normalizes an article without inventing optional metadata", () => {
   const record = normalizeArticleRecord({
     slug: "ga4-audit",
     url: "https://adrock.com.br/blog/ga4-audit",
