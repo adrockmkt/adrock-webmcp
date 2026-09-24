@@ -1,4 +1,4 @@
-name: Sync WebMCP blog index
+name: Sync WebMCP blog content
 
 on:
   workflow_dispatch:
@@ -9,13 +9,13 @@ permissions:
   contents: write
 
 concurrency:
-  group: webmcp-blog-index-sync
+  group: webmcp-blog-content-sync
   cancel-in-progress: false
 
 jobs:
   sync:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 45
 
     steps:
       - name: Checkout repository
@@ -28,14 +28,13 @@ jobs:
         with:
           node-version: "22"
 
-      - name: Run discovery tests
-        run: node --test tests/discover-blog-urls.test.mjs
-
-      - name: Run metadata tests
-        run: node --test tests/extract-blog-metadata.test.mjs
-
-      - name: Run index generator tests
-        run: node --test tests/generate-blog-index.test.mjs
+      - name: Run discovery and extraction tests
+        run: |
+          node --test tests/discover-blog-urls.test.mjs
+          node --test tests/extract-blog-metadata.test.mjs
+          node --test tests/generate-blog-index.test.mjs
+          node --test tests/extract-blog-content.test.mjs
+          node --test tests/generate-blog-article-store.test.mjs
 
       - name: Generate public blog index
         run: node scripts/generate-blog-index.mjs
@@ -44,38 +43,50 @@ jobs:
         run: |
           node - <<'NODE'
           const fs = require("fs");
-          const path = "data/blog-index.generated.json";
-          const data = JSON.parse(fs.readFileSync(path, "utf8"));
-
-          if (!Array.isArray(data) || data.length === 0) {
-            throw new Error("Generated blog index is empty or invalid.");
-          }
-
+          const data = JSON.parse(fs.readFileSync("data/blog-index.generated.json", "utf8"));
+          if (!Array.isArray(data) || data.length === 0) throw new Error("Generated blog index is empty or invalid.");
           for (const record of data) {
             for (const field of ["title", "slug", "url", "published_at"]) {
-              if (!record[field]) {
-                throw new Error(`Invalid indexed article: missing ${field} for ${record.url ?? record.slug ?? "unknown record"}`);
-              }
+              if (!record[field]) throw new Error(`Invalid indexed article: missing ${field} for ${record.url ?? record.slug ?? "unknown"}`);
             }
           }
-
           console.log(`Validated ${data.length} indexed articles.`);
           NODE
 
-      - name: Detect index changes
+      - name: Generate normalized article store
+        run: node scripts/generate-blog-article-store.mjs
+
+      - name: Validate index and article store consistency
+        run: |
+          node - <<'NODE'
+          const fs = require("fs");
+          const index = JSON.parse(fs.readFileSync("data/blog-index.generated.json", "utf8"));
+          const manifest = JSON.parse(fs.readFileSync("data/blog-articles-manifest.json", "utf8"));
+          if (manifest.schema_version !== 1) throw new Error("Unexpected article manifest schema.");
+          if (manifest.article_count !== index.length || manifest.articles.length !== index.length) {
+            throw new Error(`Index/store count mismatch: index=${index.length}, manifest=${manifest.article_count}, entries=${manifest.articles.length}`);
+          }
+          for (const entry of manifest.articles) {
+            if (!entry.slug || !entry.url || !entry.path) throw new Error("Invalid manifest entry.");
+            if (!fs.existsSync(`data/${entry.path}`)) throw new Error(`Missing article artifact: data/${entry.path}`);
+          }
+          console.log(`Validated ${manifest.article_count} article artifacts.`);
+          NODE
+
+      - name: Detect generated content changes
         id: changes
         run: |
-          if [ -z "$(git status --porcelain -- data/blog-index.generated.json)" ]; then
+          if [ -z "$(git status --porcelain -- data/blog-index.generated.json data/blog-articles-manifest.json data/blog-articles)" ]; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Commit updated index
+      - name: Commit updated public content
         if: steps.changes.outputs.changed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/blog-index.generated.json
-          git commit -m "chore: sync WebMCP blog index"
+          git add data/blog-index.generated.json data/blog-articles-manifest.json data/blog-articles
+          git commit -m "chore: sync WebMCP blog content"
           git push
