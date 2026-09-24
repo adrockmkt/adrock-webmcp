@@ -5,6 +5,8 @@ import { discoverPublishedBlogUrls } from "./discover-blog-urls.mjs";
 import { fetchArticleMetadata } from "./extract-blog-metadata.mjs";
 
 const DEFAULT_OUTPUT = "data/blog-index.generated.json";
+const DEFAULT_METADATA_ATTEMPTS = 3;
+const DEFAULT_RETRY_DELAY_MS = 500;
 
 export function normalizeIndexRecord(record) {
   return {
@@ -31,6 +33,34 @@ export function buildDeterministicIndex(records) {
   return [...byUrl.values()].sort((a, b) => a.url.localeCompare(b.url, "en"));
 }
 
+async function wait(ms) {
+  if (ms <= 0) return;
+  await new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+export async function fetchIndexableMetadata(url, fetchMetadata, options = {}) {
+  const attempts = options.metadataAttempts ?? DEFAULT_METADATA_ATTEMPTS;
+  const retryDelayMs = options.retryDelayMs ?? DEFAULT_RETRY_DELAY_MS;
+  let lastRecord = null;
+  let lastError = null;
+
+  for (let attempt = 1; attempt <= attempts; attempt += 1) {
+    try {
+      lastRecord = normalizeIndexRecord(await fetchMetadata(url));
+      if (isIndexableArticle(lastRecord)) {
+        return { record: lastRecord, attempts: attempt, error: null };
+      }
+      lastError = new Error("Incomplete article metadata");
+    } catch (error) {
+      lastError = error instanceof Error ? error : new Error(String(error));
+    }
+
+    if (attempt < attempts) await wait(retryDelayMs * attempt);
+  }
+
+  return { record: lastRecord, attempts, error: lastError };
+}
+
 export async function generateBlogIndex(options = {}) {
   const urls = options.urls ?? await discoverPublishedBlogUrls(options);
   const fetchMetadata = options.fetchMetadata ?? fetchArticleMetadata;
@@ -38,10 +68,10 @@ export async function generateBlogIndex(options = {}) {
   const errors = [];
 
   for (const url of urls) {
-    try {
-      records.push(await fetchMetadata(url));
-    } catch (error) {
-      errors.push({ url, error: error instanceof Error ? error.message : String(error) });
+    const result = await fetchIndexableMetadata(url, fetchMetadata, options);
+    if (result.record) records.push(result.record);
+    if (result.error && !result.record) {
+      errors.push({ url, attempts: result.attempts, error: result.error.message });
     }
   }
 
@@ -77,7 +107,7 @@ async function main() {
     errors: result.errors,
   }, null, 2) + "\n");
 
-  if (result.error_count > 0) process.exitCode = 2;
+  if (result.error_count > 0 || result.skipped_count > 6) process.exitCode = 2;
 }
 
 const isDirectExecution =
