@@ -7,6 +7,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: webmcp-blog-content-sync
@@ -90,3 +92,30 @@ jobs:
           git add data/blog-index.generated.json data/blog-articles-manifest.json data/blog-articles
           git commit -m "chore: sync WebMCP blog content"
           git push
+
+      - name: Build dynamic blog runtime
+        if: steps.changes.outputs.changed == 'true'
+        run: node scripts/build-blog-search-runtime.mjs
+
+      - name: Prepare Pages artifact
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          mkdir -p public
+          cp src/blog-search.generated.js public/blog-search.js
+          cp src/adrock-webmcp.js public/adrock-webmcp.js
+          cp src/search-blog-tool.js public/search-blog-tool.js
+          cp src/blog-articles.js public/blog-articles.js
+          cp src/get-blog-article-tool.js public/get-blog-article-tool.js
+          cp data/blog-articles-manifest.json public/blog-articles-manifest.json
+          cp -R data/blog-articles public/blog-articles
+          printf '%s\n' '<!doctype html><meta charset="utf-8"><title>Ad Rock WebMCP Runtime</title>' > public/index.html
+
+      - name: Upload Pages artifact
+        if: steps.changes.outputs.changed == 'true'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+      - name: Deploy to GitHub Pages
+        if: steps.changes.outputs.changed == 'true'
+        uses: actions/deploy-pages@v4
