@@ -4,6 +4,7 @@ import test from "node:test";
 import {
   buildDeterministicIndex,
   generateBlogIndex,
+  fetchIndexableMetadata,
   isIndexableArticle,
   normalizeIndexRecord,
 } from "../scripts/generate-blog-index.mjs";
@@ -82,6 +83,43 @@ test("reports structurally skipped pages separately from HTTP errors", async () 
     }),
   });
   assert.equal(result.discovered_count, 1);
+  assert.equal(result.indexed_count, 0);
+  assert.equal(result.skipped_count, 1);
+  assert.equal(result.error_count, 0);
+});
+
+
+test("retries incomplete transient metadata until the article is indexable", async () => {
+  let calls = 0;
+  const result = await fetchIndexableMetadata(
+    "https://adrock.com.br/blog/kiro",
+    async (url) => {
+      calls += 1;
+      if (calls < 3) return { title: null, slug: "kiro", url, published_at: null };
+      return { title: "Kiro", slug: "kiro", url, published_at: "2026-04-02" };
+    },
+    { metadataAttempts: 3, retryDelayMs: 0 },
+  );
+
+  assert.equal(calls, 3);
+  assert.equal(result.error, null);
+  assert.equal(result.attempts, 3);
+  assert.equal(result.record.title, "Kiro");
+});
+
+test("keeps a persistently incomplete page as skipped after retries", async () => {
+  let calls = 0;
+  const result = await generateBlogIndex({
+    urls: ["https://adrock.com.br/blog/incomplete"],
+    metadataAttempts: 3,
+    retryDelayMs: 0,
+    fetchMetadata: async (url) => {
+      calls += 1;
+      return { title: null, slug: "incomplete", url, published_at: null };
+    },
+  });
+
+  assert.equal(calls, 3);
   assert.equal(result.indexed_count, 0);
   assert.equal(result.skipped_count, 1);
   assert.equal(result.error_count, 0);
