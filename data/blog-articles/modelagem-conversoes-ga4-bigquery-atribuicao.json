@@ -1,0 +1,11 @@
+{
+  "slug": "modelagem-conversoes-ga4-bigquery-atribuicao",
+  "url": "https://adrock.com.br/blog/modelagem-conversoes-ga4-bigquery-atribuicao",
+  "title": "Ad Rock Digital Mkt - Blog - Como modelar conversões corretamente: lógica, deduplicação, janelas e atribuição multi-origem",
+  "description": "Um guia técnico para modelar conversões com precisão usando GA4, BigQuery e regras de negócio. Inclui deduplicação, janelas, validações e atribuição multi-toque.",
+  "category": "Analytics e Dados",
+  "published_at": "2025-11-28",
+  "content": "A modelagem de conversões é uma das áreas mais sensíveis e críticas da mensuração moderna.\nFazer isso errado significa relatórios distorcidos, decisões erradas e campanhas sub ou superavaliadas.\nNeste post, vamos construir um framework técnico completo para modelar conversões usando GA4 + BigQuery, considerando:\n- deduplicação\n\n- validação de eventos\n\n- janelas de conversão\n\n- lógica de negócio\n\n- reconciliação client-side × server-side\n\n- atribuição multi-origem\n\n- fallback para sessões sem UTM/referrer\n\n1. O que é modelagem de conversão?\nModelar conversões significa:\nTransformar eventos capturados pelo GA4 (ou APIs) em dados confiáveis de negócio, aplicando regras para:\n- Remover duplicidades\n\n- Validar campos essenciais\n\n- Definir janelas (ex.: 7, 28 ou 90 dias)\n\n- Classificar origem válida\n\n- Calcular métricas derivadas\n\n- Conciliar várias fontes (GA4, CRM, CAPI, SGTM)\n\nSem esse processo, “purchase”, “generate_lead” ou “subscribe” são apenas eventos crus — não métricas reais .\n2. As quatro fontes de duplicação que precisam ser tratadas\n2.1. Client-side + Server-side enviando o mesmo evento\nO caso mais comum:\n- GA4 Web envia purchase\n\n- CAPI envia purchase\n\n- SGTM server-side envia novamente\n\n- Webhooks do CRM enviam outro registro\n\nRegra: A dedupe deve usar o campo event_id , com fallback para transaction_id.\nExemplo SQL:\nCREATE OR REPLACE TABLE model . purchase_deduped AS\nSELECT\nevent_id ,\nANY_VALUE ( transaction_id ) AS transaction_id ,\nANY_VALUE ( value ) AS value ,\nANY_VALUE ( currency ) AS currency ,\nMIN ( event_timestamp ) AS canonical_timestamp\nFROM clean . events\nWHERE event_name = \"purchase\"\nGROUP BY event_id ;",
+  "content_length": 1651,
+  "content_bytes": 1702
+}

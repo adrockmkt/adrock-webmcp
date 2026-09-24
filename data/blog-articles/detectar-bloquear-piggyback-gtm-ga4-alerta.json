@@ -1,0 +1,11 @@
+{
+  "slug": "detectar-bloquear-piggyback-gtm-ga4-alerta",
+  "url": "https://adrock.com.br/blog/detectar-bloquear-piggyback-gtm-ga4-alerta",
+  "title": "Ad Rock Digital Mkt - Blog - Como detectamos e neutralizamos um caso de piggyback usando GTM + GA4",
+  "description": "Detectamos que alguém estava piggybacking nosso container e criamos um detector com Google Tag Manager + GA4, relatório exploratório e alertas automáticos. Guia prático com código e checklist.",
+  "category": "Analytics e Dados",
+  "published_at": "2025-09-19",
+  "content": "Contexto rápido\nDetectamos tráfego e eventos vindo de um domínio externo (hipotético https://site-exemplo-falso.com) que estava disparando nosso GTM/GA4 — ou seja, alguém “pegou” nosso código e estava executando tags em outro site ( piggyback ). A investigação começou pelo relatório de Páginas no GA4 — encontramos um título/URL inesperado que levou até o host suspeito.\nAbaixo está o passo a passo técnico que usamos para detectar, validar e gerar alerta sempre que isso acontecer.\n1) Diagnóstico inicial (onde vimos o problema)\n- Relatório: GA4 → Engagement → Pages and screens (Páginas e telas)\n- Vimos um título/URL com visualizações que não batiam com nosso site.\n\n- Ao checar hostnames no GTM Preview / Tag Assistant encontramos site-exemplo-falso.com aparecendo em eventos.\n\n- Objetivo: criar um detector automático que envie evento host_suspeito para GA4 e dispare um alerta por e-mail/webhook.\n\n2) Variável no GTM — capturar hostname real (Custom JS)\nCriamos uma variável do tipo Custom JavaScript que retorna o hostname atual do container (ou do dataLayer quando enviado pelo site invasor). Nome: hostname.\nfunction ( ) {\n// Retorna primeiro um valor presente no dataLayer (se existir)\ntry {\nvar dl = window . dataLayer || [ ] ;\nfor ( var i = dl . length - 1 ; i >= 0 ; i -- ) {\nvar item = dl [ i ] ;\nif ( item && item . hostname ) return item . hostname ;\nif ( item && item . page_hostname ) return item . page_hostname ;\n}\n} catch ( e ) { }\n\n// Se não houver no dataLayer, volta para document.location.hostname\nreturn document . location && document . location . hostname ? document . location . hostname : '' ;\n}",
+  "content_length": 1626,
+  "content_bytes": 1666
+}

@@ -1,0 +1,11 @@
+{
+  "slug": "auditoria-tecnica-metricas-ga4-bigquery",
+  "url": "https://adrock.com.br/blog/auditoria-tecnica-metricas-ga4-bigquery",
+  "title": "Ad Rock Digital Mkt - Blog - Auditoria técnica de métricas: como validar dados, detectar erros e garantir integridade no GA4 + BigQuery",
+  "description": "Como auditar métricas, identificar inconsistências e garantir integridade dos dados usando GA4, BigQuery e validações sistemáticas.",
+  "category": "Analytics e Dados",
+  "published_at": "2025-11-29",
+  "content": "A construção de um sistema confiável de mensuração não termina no tracking, nem na unificação, nem na modelagem de conversões.\nA última camada — e talvez a mais negligenciada pela maioria das empresas — é a auditoria técnica contínua.\nSem auditoria:\n- métricas são publicadas com erro\n\n- análises estratégicas viram “achismos”\n\n- atribuição fica distorcida\n\n- decisões de investimento tornam-se imprecisas\n\n- erros pequenos se acumulam e se tornam invisíveis\n\nEste post apresenta um framework técnico real , aplicável hoje em GA4 + BigQuery, e usado em pipelines maduros de mensuração.\n1. O que é auditoria técnica de métricas?\nÉ o processo contínuo de:\n- validar a integridade dos dados\n\n- detectar anomalias\n\n- identificar erros de implementação\n\n- corrigir discrepâncias entre fontes\n\n- testar consistência temporal\n\n- validar regras de negócio\n\n- documentar mudanças no sistema\n\nAuditar é garantir que os dados usados para decisões são verdadeiros , e não apenas “parecem certos”.\n2. Os quatro tipos essenciais de auditoria\nA auditoria técnica deve ocorrer em quatro níveis:\n2.1. Auditoria estrutural (schema + campos)\nPergunta: “Os eventos têm todos os campos exigidos?”\nChecklist:\n- nome do evento está correto?\n\n- parâmetros obrigatórios existem?\n\n- tipos (string, number, boolean) estão coerentes?\n\n- valores estão dentro de limites esperados?\n\n- houve mudança silenciosa no front-end?\n\nSQL típico:\nSELECT\nevent_name ,\nCOUNT ( * ) AS rows ,\nCOUNTIF ( param . value . string_param IS NULL ) AS missing_strings ,\nCOUNTIF ( param . value . int_param IS NULL ) AS missing_ints\nFROM clean . events e ,\nUNNEST ( event_params ) param\nWHERE event_name IN ( 'purchase' , 'generate_lead' )\nGROUP BY event_name ;",
+  "content_length": 1709,
+  "content_bytes": 1775
+}

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "article_count": 241,
+  "article_count": 316,
   "articles": [
     {
       "slug": "10-pilares-do-geo-visibilidade-ia-search",
@@ -15,6 +15,13 @@
       "path": "blog-articles/a2ui-google-interfaces-geradas-por-agentes-ia.json",
       "content_length": 940,
       "content_bytes": 952
+    },
+    {
+      "slug": "acp-protocolo-comercio-agentico",
+      "url": "https://adrock.com.br/blog/acp-protocolo-comercio-agentico",
+      "path": "blog-articles/acp-protocolo-comercio-agentico.json",
+      "content_length": 3124,
+      "content_bytes": 3223
     },
     {
       "slug": "activecampaign-automacao-marketing-ia",
@@ -80,6 +87,13 @@
       "content_bytes": 4278
     },
     {
+      "slug": "ai-search-2026-o-que-muda-para-seo-tecnico",
+      "url": "https://adrock.com.br/blog/ai-search-2026-o-que-muda-para-seo-tecnico",
+      "path": "blog-articles/ai-search-2026-o-que-muda-para-seo-tecnico.json",
+      "content_length": 4172,
+      "content_bytes": 4354
+    },
+    {
       "slug": "ai-search-nonprofit-digital-strategy-latin-america",
       "url": "https://adrock.com.br/blog/ai-search-nonprofit-digital-strategy-latin-america",
       "path": "blog-articles/ai-search-nonprofit-digital-strategy-latin-america.json",
@@ -94,11 +108,32 @@
       "content_bytes": 3996
     },
     {
+      "slug": "ai-seo-metehan-yesilyurt-john-shehata",
+      "url": "https://adrock.com.br/blog/ai-seo-metehan-yesilyurt-john-shehata",
+      "path": "blog-articles/ai-seo-metehan-yesilyurt-john-shehata.json",
+      "content_length": 756,
+      "content_bytes": 775
+    },
+    {
+      "slug": "alexa-skill-jogos-futebol-brasileiro-vozes",
+      "url": "https://adrock.com.br/blog/alexa-skill-jogos-futebol-brasileiro-vozes",
+      "path": "blog-articles/alexa-skill-jogos-futebol-brasileiro-vozes.json",
+      "content_length": 4905,
+      "content_bytes": 5070
+    },
+    {
       "slug": "alinhar-conversoes-ga4-crm-google-ads",
       "url": "https://adrock.com.br/blog/alinhar-conversoes-ga4-crm-google-ads",
       "path": "blog-articles/alinhar-conversoes-ga4-crm-google-ads.json",
       "content_length": 5858,
       "content_bytes": 6120
+    },
+    {
+      "slug": "alternativas-ao-google-analytics-2025",
+      "url": "https://adrock.com.br/blog/alternativas-ao-google-analytics-2025",
+      "path": "blog-articles/alternativas-ao-google-analytics-2025.json",
+      "content_length": 4382,
+      "content_bytes": 4550
     },
     {
       "slug": "alternativas-ao-wordpress-construtores-e-cms-enterprise",
@@ -129,6 +164,13 @@
       "content_bytes": 6501
     },
     {
+      "slug": "apple-safari-bloqueio-gclid-rastreamento-conversoes",
+      "url": "https://adrock.com.br/blog/apple-safari-bloqueio-gclid-rastreamento-conversoes",
+      "path": "blog-articles/apple-safari-bloqueio-gclid-rastreamento-conversoes.json",
+      "content_length": 4588,
+      "content_bytes": 4713
+    },
+    {
       "slug": "argumentando-com-ai-booster-viralidade-versus-especializacao",
       "url": "https://adrock.com.br/blog/argumentando-com-ai-booster-viralidade-versus-especializacao",
       "path": "blog-articles/argumentando-com-ai-booster-viralidade-versus-especializacao.json",
@@ -150,11 +192,25 @@
       "content_bytes": 4028
     },
     {
+      "slug": "arquitetura-tecnica-e-frameworks-de-ai-agents",
+      "url": "https://adrock.com.br/blog/arquitetura-tecnica-e-frameworks-de-ai-agents",
+      "path": "blog-articles/arquitetura-tecnica-e-frameworks-de-ai-agents.json",
+      "content_length": 5929,
+      "content_bytes": 6130
+    },
+    {
       "slug": "ascensao-conteudo-gerado-por-ia-2025",
       "url": "https://adrock.com.br/blog/ascensao-conteudo-gerado-por-ia-2025",
       "path": "blog-articles/ascensao-conteudo-gerado-por-ia-2025.json",
       "content_length": 4220,
       "content_bytes": 4386
+    },
+    {
+      "slug": "auditoria-tecnica-metricas-ga4-bigquery",
+      "url": "https://adrock.com.br/blog/auditoria-tecnica-metricas-ga4-bigquery",
+      "path": "blog-articles/auditoria-tecnica-metricas-ga4-bigquery.json",
+      "content_length": 1709,
+      "content_bytes": 1775
     },
     {
       "slug": "automacao-google-ads-api-keywords-baixo-volume",
@@ -171,6 +227,13 @@
       "content_bytes": 3519
     },
     {
+      "slug": "automacao-reels-ia-imagem-video-instagram",
+      "url": "https://adrock.com.br/blog/automacao-reels-ia-imagem-video-instagram",
+      "path": "blog-articles/automacao-reels-ia-imagem-video-instagram.json",
+      "content_length": 2939,
+      "content_bytes": 3034
+    },
+    {
       "slug": "automacao-relatorios-ia-claude-supermetrics",
       "url": "https://adrock.com.br/blog/automacao-relatorios-ia-claude-supermetrics",
       "path": "blog-articles/automacao-relatorios-ia-claude-supermetrics.json",
@@ -183,6 +246,27 @@
       "path": "blog-articles/automacao-relatorios-seo-ia-arquitetura-conhecimento.json",
       "content_length": 10683,
       "content_bytes": 11067
+    },
+    {
+      "slug": "automating-email-extraction-with-python-from-local-scripts-to-apify",
+      "url": "https://adrock.com.br/blog/automating-email-extraction-with-python-from-local-scripts-to-apify",
+      "path": "blog-articles/automating-email-extraction-with-python-from-local-scripts-to-apify.json",
+      "content_length": 3904,
+      "content_bytes": 3926
+    },
+    {
+      "slug": "automatizando-newsletter-rss-mailchimp-imagens",
+      "url": "https://adrock.com.br/blog/automatizando-newsletter-rss-mailchimp-imagens",
+      "path": "blog-articles/automatizando-newsletter-rss-mailchimp-imagens.json",
+      "content_length": 2008,
+      "content_bytes": 2027
+    },
+    {
+      "slug": "automatizar-extracao-emails-google-maps-python",
+      "url": "https://adrock.com.br/blog/automatizar-extracao-emails-google-maps-python",
+      "path": "blog-articles/automatizar-extracao-emails-google-maps-python.json",
+      "content_length": 4066,
+      "content_bytes": 4201
     },
     {
       "slug": "avaliacao-ai-search-seo-2026",
@@ -227,6 +311,13 @@
       "content_bytes": 1053
     },
     {
+      "slug": "bolt-for-business-corporate-travel-expense-management",
+      "url": "https://adrock.com.br/blog/bolt-for-business-corporate-travel-expense-management",
+      "path": "blog-articles/bolt-for-business-corporate-travel-expense-management.json",
+      "content_length": 13808,
+      "content_bytes": 13872
+    },
+    {
       "slug": "brevo-email-marketing-crm-automacao-whatsapp",
       "url": "https://adrock.com.br/blog/brevo-email-marketing-crm-automacao-whatsapp",
       "path": "blog-articles/brevo-email-marketing-crm-automacao-whatsapp.json",
@@ -239,6 +330,13 @@
       "path": "blog-articles/building-ai-ready-websites-technical-seo-automation.json",
       "content_length": 3784,
       "content_bytes": 3802
+    },
+    {
+      "slug": "capsule-crm-for-smbs",
+      "url": "https://adrock.com.br/blog/capsule-crm-for-smbs",
+      "path": "blog-articles/capsule-crm-for-smbs.json",
+      "content_length": 889,
+      "content_bytes": 897
     },
     {
       "slug": "chatgpt-ads-brasil-precos-segmentacao-ads-manager",
@@ -318,6 +416,20 @@
       "content_bytes": 5458
     },
     {
+      "slug": "como-google-escolhe-urls-canonicas-seo",
+      "url": "https://adrock.com.br/blog/como-google-escolhe-urls-canonicas-seo",
+      "path": "blog-articles/como-google-escolhe-urls-canonicas-seo.json",
+      "content_length": 1021,
+      "content_bytes": 1063
+    },
+    {
+      "slug": "como-o-llms-txt-do-magalu-mostra-a-nova-geracao-do-seo-para",
+      "url": "https://adrock.com.br/blog/como-o-llms-txt-do-magalu-mostra-a-nova-geracao-do-seo-para",
+      "path": "blog-articles/como-o-llms-txt-do-magalu-mostra-a-nova-geracao-do-seo-para.json",
+      "content_length": 2248,
+      "content_bytes": 2300
+    },
+    {
       "slug": "como-planejar-uma-plataforma-de-impacto-social",
       "url": "https://adrock.com.br/blog/como-planejar-uma-plataforma-de-impacto-social",
       "path": "blog-articles/como-planejar-uma-plataforma-de-impacto-social.json",
@@ -353,11 +465,25 @@
       "content_bytes": 2302
     },
     {
+      "slug": "content-signals-robots-ia-seo",
+      "url": "https://adrock.com.br/blog/content-signals-robots-ia-seo",
+      "path": "blog-articles/content-signals-robots-ia-seo.json",
+      "content_length": 1781,
+      "content_bytes": 1852
+    },
+    {
       "slug": "corrigir-agrupamento-canais-ga4",
       "url": "https://adrock.com.br/blog/corrigir-agrupamento-canais-ga4",
       "path": "blog-articles/corrigir-agrupamento-canais-ga4.json",
       "content_length": 4172,
       "content_bytes": 4340
+    },
+    {
+      "slug": "corrigir-trafego-nao-atribuido-ga4-gtm-server-side",
+      "url": "https://adrock.com.br/blog/corrigir-trafego-nao-atribuido-ga4-gtm-server-side",
+      "path": "blog-articles/corrigir-trafego-nao-atribuido-ga4-gtm-server-side.json",
+      "content_length": 4224,
+      "content_bytes": 4411
     },
     {
       "slug": "cpc-medio-meta-ads-brasil-2026",
@@ -381,6 +507,13 @@
       "content_bytes": 2929
     },
     {
+      "slug": "cripto-dashboard-v3-analise-em-tempo-real",
+      "url": "https://adrock.com.br/blog/cripto-dashboard-v3-analise-em-tempo-real",
+      "path": "blog-articles/cripto-dashboard-v3-analise-em-tempo-real.json",
+      "content_length": 1780,
+      "content_bytes": 1832
+    },
+    {
       "slug": "crm-capsule-para-pmes",
       "url": "https://adrock.com.br/blog/crm-capsule-para-pmes",
       "path": "blog-articles/crm-capsule-para-pmes.json",
@@ -402,11 +535,74 @@
       "content_bytes": 1723
     },
     {
+      "slug": "dashboards-verdade-negocio-ga4-bigquery",
+      "url": "https://adrock.com.br/blog/dashboards-verdade-negocio-ga4-bigquery",
+      "path": "blog-articles/dashboards-verdade-negocio-ga4-bigquery.json",
+      "content_length": 2183,
+      "content_bytes": 2268
+    },
+    {
+      "slug": "databox-business-intelligence-automated-reporting-kpi-management",
+      "url": "https://adrock.com.br/blog/databox-business-intelligence-automated-reporting-kpi-management",
+      "path": "blog-articles/databox-business-intelligence-automated-reporting-kpi-management.json",
+      "content_length": 12855,
+      "content_bytes": 12955
+    },
+    {
+      "slug": "declinio-web-aberta-google",
+      "url": "https://adrock.com.br/blog/declinio-web-aberta-google",
+      "path": "blog-articles/declinio-web-aberta-google.json",
+      "content_length": 2894,
+      "content_bytes": 2965
+    },
+    {
+      "slug": "desenvolvimento-web-wordpress-framer-adrock",
+      "url": "https://adrock.com.br/blog/desenvolvimento-web-wordpress-framer-adrock",
+      "path": "blog-articles/desenvolvimento-web-wordpress-framer-adrock.json",
+      "content_length": 5028,
+      "content_bytes": 5201
+    },
+    {
+      "slug": "detectar-bloquear-piggyback-gtm-ga4-alerta",
+      "url": "https://adrock.com.br/blog/detectar-bloquear-piggyback-gtm-ga4-alerta",
+      "path": "blog-articles/detectar-bloquear-piggyback-gtm-ga4-alerta.json",
+      "content_length": 1626,
+      "content_bytes": 1666
+    },
+    {
+      "slug": "dia-de-doar-ongs-google-grants-2025",
+      "url": "https://adrock.com.br/blog/dia-de-doar-ongs-google-grants-2025",
+      "path": "blog-articles/dia-de-doar-ongs-google-grants-2025.json",
+      "content_length": 5276,
+      "content_bytes": 5464
+    },
+    {
+      "slug": "diferenca-crawling-indexacao-ranking",
+      "url": "https://adrock.com.br/blog/diferenca-crawling-indexacao-ranking",
+      "path": "blog-articles/diferenca-crawling-indexacao-ranking.json",
+      "content_length": 3755,
+      "content_bytes": 3869
+    },
+    {
       "slug": "digitalocean-cloud-brasil-beneficios",
       "url": "https://adrock.com.br/blog/digitalocean-cloud-brasil-beneficios",
       "path": "blog-articles/digitalocean-cloud-brasil-beneficios.json",
       "content_length": 882,
       "content_bytes": 906
+    },
+    {
+      "slug": "direct-traffic-ga4-nao-e-o-que-voce-pensa",
+      "url": "https://adrock.com.br/blog/direct-traffic-ga4-nao-e-o-que-voce-pensa",
+      "path": "blog-articles/direct-traffic-ga4-nao-e-o-que-voce-pensa.json",
+      "content_length": 5855,
+      "content_bytes": 6080
+    },
+    {
+      "slug": "elevenlabs-ai-voice-text-to-speech",
+      "url": "https://adrock.com.br/blog/elevenlabs-ai-voice-text-to-speech",
+      "path": "blog-articles/elevenlabs-ai-voice-text-to-speech.json",
+      "content_length": 1112,
+      "content_bytes": 1114
     },
     {
       "slug": "elevenlabs-voz-ia-sintese-audio",
@@ -430,11 +626,32 @@
       "content_bytes": 3446
     },
     {
+      "slug": "estrategia-conteudo-2025-ia-seo",
+      "url": "https://adrock.com.br/blog/estrategia-conteudo-2025-ia-seo",
+      "path": "blog-articles/estrategia-conteudo-2025-ia-seo.json",
+      "content_length": 3610,
+      "content_bytes": 3751
+    },
+    {
+      "slug": "estrategia-de-ia-e-descobribilidade-fundamentos",
+      "url": "https://adrock.com.br/blog/estrategia-de-ia-e-descobribilidade-fundamentos",
+      "path": "blog-articles/estrategia-de-ia-e-descobribilidade-fundamentos.json",
+      "content_length": 5824,
+      "content_bytes": 6100
+    },
+    {
       "slug": "estrategia-youtube-2026-playbook-crescimento",
       "url": "https://adrock.com.br/blog/estrategia-youtube-2026-playbook-crescimento",
       "path": "blog-articles/estrategia-youtube-2026-playbook-crescimento.json",
       "content_length": 4270,
       "content_bytes": 4438
+    },
+    {
+      "slug": "evitar-trafego-direto-cache-ga4",
+      "url": "https://adrock.com.br/blog/evitar-trafego-direto-cache-ga4",
+      "path": "blog-articles/evitar-trafego-direto-cache-ga4.json",
+      "content_length": 3560,
+      "content_bytes": 3654
     },
     {
       "slug": "evolucao-alerta-boletos-banco-inter-ia-automacao",
@@ -493,6 +710,13 @@
       "content_bytes": 1741
     },
     {
+      "slug": "framework-avaliacao-search-seo-ia",
+      "url": "https://adrock.com.br/blog/framework-avaliacao-search-seo-ia",
+      "path": "blog-articles/framework-avaliacao-search-seo-ia.json",
+      "content_length": 1273,
+      "content_bytes": 1321
+    },
+    {
       "slug": "framework-bullseye-marketing-distribuicao-startups",
       "url": "https://adrock.com.br/blog/framework-bullseye-marketing-distribuicao-startups",
       "path": "blog-articles/framework-bullseye-marketing-distribuicao-startups.json",
@@ -514,11 +738,32 @@
       "content_bytes": 3523
     },
     {
+      "slug": "funil-de-marketing-2025-ia",
+      "url": "https://adrock.com.br/blog/funil-de-marketing-2025-ia",
+      "path": "blog-articles/funil-de-marketing-2025-ia.json",
+      "content_length": 7016,
+      "content_bytes": 7224
+    },
+    {
+      "slug": "futuro-da-ia-pesquisa-fli-superinteligencia",
+      "url": "https://adrock.com.br/blog/futuro-da-ia-pesquisa-fli-superinteligencia",
+      "path": "blog-articles/futuro-da-ia-pesquisa-fli-superinteligencia.json",
+      "content_length": 3478,
+      "content_bytes": 3616
+    },
+    {
       "slug": "futuro-do-seo-ai-readability-semantic-geo",
       "url": "https://adrock.com.br/blog/futuro-do-seo-ai-readability-semantic-geo",
       "path": "blog-articles/futuro-do-seo-ai-readability-semantic-geo.json",
       "content_length": 3367,
       "content_bytes": 3515
+    },
+    {
+      "slug": "ga4-analytics-advisor-e-ads-advisor",
+      "url": "https://adrock.com.br/blog/ga4-analytics-advisor-e-ads-advisor",
+      "path": "blog-articles/ga4-analytics-advisor-e-ads-advisor.json",
+      "content_length": 6266,
+      "content_bytes": 6535
     },
     {
       "slug": "ga4-assistant-agente-marketing-rag-gemini",
@@ -561,6 +806,13 @@
       "path": "blog-articles/ga4-generate-lead-framer-gtm-spa.json",
       "content_length": 1100,
       "content_bytes": 1124
+    },
+    {
+      "slug": "ga4-mcp-google-analytics-mensuracao-ia",
+      "url": "https://adrock.com.br/blog/ga4-mcp-google-analytics-mensuracao-ia",
+      "path": "blog-articles/ga4-mcp-google-analytics-mensuracao-ia.json",
+      "content_length": 2258,
+      "content_bytes": 2316
     },
     {
       "slug": "ga4-relatorios-atribuicao-automacao-ia",
@@ -640,6 +892,13 @@
       "content_bytes": 828
     },
     {
+      "slug": "google-ads-ia-modo-transformacao",
+      "url": "https://adrock.com.br/blog/google-ads-ia-modo-transformacao",
+      "path": "blog-articles/google-ads-ia-modo-transformacao.json",
+      "content_length": 5824,
+      "content_bytes": 6019
+    },
+    {
       "slug": "google-ads-orcamento-minimo-demand-gen-api-2026",
       "url": "https://adrock.com.br/blog/google-ads-orcamento-minimo-demand-gen-api-2026",
       "path": "blog-articles/google-ads-orcamento-minimo-demand-gen-api-2026.json",
@@ -682,6 +941,13 @@
       "content_bytes": 3447
     },
     {
+      "slug": "google-chrome-ai-mode-impacto-seo",
+      "url": "https://adrock.com.br/blog/google-chrome-ai-mode-impacto-seo",
+      "path": "blog-articles/google-chrome-ai-mode-impacto-seo.json",
+      "content_length": 962,
+      "content_bytes": 987
+    },
+    {
       "slug": "google-data-manager-api-guia-completo",
       "url": "https://adrock.com.br/blog/google-data-manager-api-guia-completo",
       "path": "blog-articles/google-data-manager-api-guia-completo.json",
@@ -694,6 +960,13 @@
       "path": "blog-articles/google-data-manager-vs-zapier-vs-make-vs-hubspot.json",
       "content_length": 717,
       "content_bytes": 735
+    },
+    {
+      "slug": "google-discover-como-otimizar-conteudo",
+      "url": "https://adrock.com.br/blog/google-discover-como-otimizar-conteudo",
+      "path": "blog-articles/google-discover-como-otimizar-conteudo.json",
+      "content_length": 1072,
+      "content_bytes": 1118
     },
     {
       "slug": "google-discover-core-update-2026-impactos",
@@ -717,11 +990,25 @@
       "content_bytes": 5797
     },
     {
+      "slug": "google-html-2mb-indexacao-documentacao-oficial",
+      "url": "https://adrock.com.br/blog/google-html-2mb-indexacao-documentacao-oficial",
+      "path": "blog-articles/google-html-2mb-indexacao-documentacao-oficial.json",
+      "content_length": 4821,
+      "content_bytes": 4975
+    },
+    {
       "slug": "google-io-2026-gemini-agentes-ia",
       "url": "https://adrock.com.br/blog/google-io-2026-gemini-agentes-ia",
       "path": "blog-articles/google-io-2026-gemini-agentes-ia.json",
       "content_length": 1024,
       "content_bytes": 1045
+    },
+    {
+      "slug": "google-limita-num-100-busca-serp-seo",
+      "url": "https://adrock.com.br/blog/google-limita-num-100-busca-serp-seo",
+      "path": "blog-articles/google-limita-num-100-busca-serp-seo.json",
+      "content_length": 3065,
+      "content_bytes": 3165
     },
     {
       "slug": "google-nao-esta-matando-o-schema",
@@ -794,6 +1081,13 @@
       "content_bytes": 4151
     },
     {
+      "slug": "google-workspace-produto-colaboracao",
+      "url": "https://adrock.com.br/blog/google-workspace-produto-colaboracao",
+      "path": "blog-articles/google-workspace-produto-colaboracao.json",
+      "content_length": 932,
+      "content_bytes": 955
+    },
+    {
       "slug": "googlebot-por-dentro-crawling-google-seo-tecnico",
       "url": "https://adrock.com.br/blog/googlebot-por-dentro-crawling-google-seo-tecnico",
       "path": "blog-articles/googlebot-por-dentro-crawling-google-seo-tecnico.json",
@@ -801,11 +1095,32 @@
       "content_bytes": 6096
     },
     {
+      "slug": "gtag-server-side-container-sgtm-configuracao",
+      "url": "https://adrock.com.br/blog/gtag-server-side-container-sgtm-configuracao",
+      "path": "blog-articles/gtag-server-side-container-sgtm-configuracao.json",
+      "content_length": 2738,
+      "content_bytes": 2795
+    },
+    {
+      "slug": "gtm-variaveis-nativas-client-id-session-id-ga4",
+      "url": "https://adrock.com.br/blog/gtm-variaveis-nativas-client-id-session-id-ga4",
+      "path": "blog-articles/gtm-variaveis-nativas-client-id-session-id-ga4.json",
+      "content_length": 2767,
+      "content_bytes": 2842
+    },
+    {
       "slug": "guia-oficial-google-ai-search-seo",
       "url": "https://adrock.com.br/blog/guia-oficial-google-ai-search-seo",
       "path": "blog-articles/guia-oficial-google-ai-search-seo.json",
       "content_length": 7195,
       "content_bytes": 7464
+    },
+    {
+      "slug": "hostgator-hospedagem-sites",
+      "url": "https://adrock.com.br/blog/hostgator-hospedagem-sites",
+      "path": "blog-articles/hostgator-hospedagem-sites.json",
+      "content_length": 910,
+      "content_bytes": 933
     },
     {
       "slug": "hostman-cloud-alternativa-digitalocean-brasil",
@@ -841,6 +1156,13 @@
       "path": "blog-articles/identificar-prompts-ia-trafego-google-search-console.json",
       "content_length": 1269,
       "content_bytes": 1294
+    },
+    {
+      "slug": "impacto-atfp-ios26-em-urls-e-rastreamento",
+      "url": "https://adrock.com.br/blog/impacto-atfp-ios26-em-urls-e-rastreamento",
+      "path": "blog-articles/impacto-atfp-ios26-em-urls-e-rastreamento.json",
+      "content_length": 4089,
+      "content_bytes": 4185
     },
     {
       "slug": "impacto-cliques-ia-navegador-chatgpt-atlas",
@@ -899,6 +1221,13 @@
       "content_bytes": 4374
     },
     {
+      "slug": "inteligencia-artificial-midia-google-facebook-ads",
+      "url": "https://adrock.com.br/blog/inteligencia-artificial-midia-google-facebook-ads",
+      "path": "blog-articles/inteligencia-artificial-midia-google-facebook-ads.json",
+      "content_length": 4450,
+      "content_bytes": 4579
+    },
+    {
       "slug": "javascript-seo-best-practices-2025",
       "url": "https://adrock.com.br/blog/javascript-seo-best-practices-2025",
       "path": "blog-articles/javascript-seo-best-practices-2025.json",
@@ -925,6 +1254,13 @@
       "path": "blog-articles/kiro-ide-ia-desenvolvimento-produtividade-orca.json",
       "content_length": 8165,
       "content_bytes": 8332
+    },
+    {
+      "slug": "kit-email-marketing",
+      "url": "https://adrock.com.br/blog/kit-email-marketing",
+      "path": "blog-articles/kit-email-marketing.json",
+      "content_length": 919,
+      "content_bytes": 940
     },
     {
       "slug": "kitty-chat-react-2-evolucao-sqlite-digitalocean",
@@ -955,6 +1291,13 @@
       "content_bytes": 964
     },
     {
+      "slug": "limpar-conversoes-ga4-deduplicacao-validacao",
+      "url": "https://adrock.com.br/blog/limpar-conversoes-ga4-deduplicacao-validacao",
+      "path": "blog-articles/limpar-conversoes-ga4-deduplicacao-validacao.json",
+      "content_length": 1222,
+      "content_bytes": 1289
+    },
+    {
       "slug": "link-builder-api-flask-gpt-automacao",
       "url": "https://adrock.com.br/blog/link-builder-api-flask-gpt-automacao",
       "path": "blog-articles/link-builder-api-flask-gpt-automacao.json",
@@ -974,6 +1317,13 @@
       "path": "blog-articles/llms-txt-ai-dataset-sites-jornalistico.json",
       "content_length": 1351,
       "content_bytes": 1385
+    },
+    {
+      "slug": "looker-studio-data-studio-o-que-mudou",
+      "url": "https://adrock.com.br/blog/looker-studio-data-studio-o-que-mudou",
+      "path": "blog-articles/looker-studio-data-studio-o-que-mudou.json",
+      "content_length": 4243,
+      "content_bytes": 4373
     },
     {
       "slug": "loop-marketing-era-ia-fim-funil-tradicional",
@@ -1053,6 +1403,13 @@
       "content_bytes": 2101
     },
     {
+      "slug": "meta-business-agent-ia-empresas",
+      "url": "https://adrock.com.br/blog/meta-business-agent-ia-empresas",
+      "path": "blog-articles/meta-business-agent-ia-empresas.json",
+      "content_length": 2344,
+      "content_bytes": 2389
+    },
+    {
       "slug": "metodo-bcg-ad-rock-portfolio-midia-paga-limitacoes",
       "url": "https://adrock.com.br/blog/metodo-bcg-ad-rock-portfolio-midia-paga-limitacoes",
       "path": "blog-articles/metodo-bcg-ad-rock-portfolio-midia-paga-limitacoes.json",
@@ -1065,6 +1422,13 @@
       "path": "blog-articles/metodo-bcg-organizacao-campanhas-ad-rock.json",
       "content_length": 5082,
       "content_bytes": 5298
+    },
+    {
+      "slug": "metricas-marketing-sem-contexto-erro",
+      "url": "https://adrock.com.br/blog/metricas-marketing-sem-contexto-erro",
+      "path": "blog-articles/metricas-marketing-sem-contexto-erro.json",
+      "content_length": 3108,
+      "content_bytes": 3242
     },
     {
       "slug": "meu-mercado-app-analytics-firebase-ga4-relatorios",
@@ -1109,11 +1473,32 @@
       "content_bytes": 1427
     },
     {
+      "slug": "mito-do-geo-promessas-falsas",
+      "url": "https://adrock.com.br/blog/mito-do-geo-promessas-falsas",
+      "path": "blog-articles/mito-do-geo-promessas-falsas.json",
+      "content_length": 6531,
+      "content_bytes": 6842
+    },
+    {
       "slug": "mix-orcamento-seo-google-ads-brasil",
       "url": "https://adrock.com.br/blog/mix-orcamento-seo-google-ads-brasil",
       "path": "blog-articles/mix-orcamento-seo-google-ads-brasil.json",
       "content_length": 5093,
       "content_bytes": 5308
+    },
+    {
+      "slug": "mobbin-ux-research-design-library",
+      "url": "https://adrock.com.br/blog/mobbin-ux-research-design-library",
+      "path": "blog-articles/mobbin-ux-research-design-library.json",
+      "content_length": 1632,
+      "content_bytes": 1667
+    },
+    {
+      "slug": "modelagem-conversoes-ga4-bigquery-atribuicao",
+      "url": "https://adrock.com.br/blog/modelagem-conversoes-ga4-bigquery-atribuicao",
+      "path": "blog-articles/modelagem-conversoes-ga4-bigquery-atribuicao.json",
+      "content_length": 1651,
+      "content_bytes": 1702
     },
     {
       "slug": "monday-com-gestao-de-projetos-work-os",
@@ -1156,6 +1541,13 @@
       "path": "blog-articles/netlify-modern-deployment-vs-vercel-cloudflare.json",
       "content_length": 902,
       "content_bytes": 908
+    },
+    {
+      "slug": "novidades-google-ads-2025-ai-max-ads-advisor",
+      "url": "https://adrock.com.br/blog/novidades-google-ads-2025-ai-max-ads-advisor",
+      "path": "blog-articles/novidades-google-ads-2025-ai-max-ads-advisor.json",
+      "content_length": 5436,
+      "content_bytes": 5620
     },
     {
       "slug": "novo-algoritmo-linkedin-2025-queda-alcance-e-estrategias-para-crescer",
@@ -1228,11 +1620,32 @@
       "content_bytes": 5485
     },
     {
+      "slug": "perfil-design-ui-minimalista",
+      "url": "https://adrock.com.br/blog/perfil-design-ui-minimalista",
+      "path": "blog-articles/perfil-design-ui-minimalista.json",
+      "content_length": 1357,
+      "content_bytes": 1394
+    },
+    {
       "slug": "performance-marketing-beyond-google-meta-2026",
       "url": "https://adrock.com.br/blog/performance-marketing-beyond-google-meta-2026",
       "path": "blog-articles/performance-marketing-beyond-google-meta-2026.json",
       "content_length": 3891,
       "content_bytes": 3895
+    },
+    {
+      "slug": "performance-max-canibaliza-trafego-organico",
+      "url": "https://adrock.com.br/blog/performance-max-canibaliza-trafego-organico",
+      "path": "blog-articles/performance-max-canibaliza-trafego-organico.json",
+      "content_length": 6112,
+      "content_bytes": 6308
+    },
+    {
+      "slug": "pesquisa-concorrentes-google-ads-semrush",
+      "url": "https://adrock.com.br/blog/pesquisa-concorrentes-google-ads-semrush",
+      "path": "blog-articles/pesquisa-concorrentes-google-ads-semrush.json",
+      "content_length": 4866,
+      "content_bytes": 5045
     },
     {
       "slug": "pipedrive-crm-sales-marketing-automation",
@@ -1291,6 +1704,13 @@
       "content_bytes": 823
     },
     {
+      "slug": "prompt-injections-invisiveis-browsers-ia",
+      "url": "https://adrock.com.br/blog/prompt-injections-invisiveis-browsers-ia",
+      "path": "blog-articles/prompt-injections-invisiveis-browsers-ia.json",
+      "content_length": 6284,
+      "content_bytes": 6539
+    },
+    {
       "slug": "proporcao-aurea-aplicada-ao-design",
       "url": "https://adrock.com.br/blog/proporcao-aurea-aplicada-ao-design",
       "path": "blog-articles/proporcao-aurea-aplicada-ao-design.json",
@@ -1333,6 +1753,13 @@
       "content_bytes": 4066
     },
     {
+      "slug": "publicidade-programatica-predicta-adrock",
+      "url": "https://adrock.com.br/blog/publicidade-programatica-predicta-adrock",
+      "path": "blog-articles/publicidade-programatica-predicta-adrock.json",
+      "content_length": 4093,
+      "content_bytes": 4242
+    },
+    {
       "slug": "qualidade-excelente-google-ads-nao-garante-resultado",
       "url": "https://adrock.com.br/blog/qualidade-excelente-google-ads-nao-garante-resultado",
       "path": "blog-articles/qualidade-excelente-google-ads-nao-garante-resultado.json",
@@ -1345,6 +1772,13 @@
       "path": "blog-articles/quando-parar-escalar-campanhas-investir-seo.json",
       "content_length": 2583,
       "content_bytes": 2682
+    },
+    {
+      "slug": "rastreamento-conversoes-google-ads-com-ga4",
+      "url": "https://adrock.com.br/blog/rastreamento-conversoes-google-ads-com-ga4",
+      "path": "blog-articles/rastreamento-conversoes-google-ads-com-ga4.json",
+      "content_length": 4118,
+      "content_bytes": 4260
     },
     {
       "slug": "rd-station-automacao-crm",
@@ -1380,6 +1814,13 @@
       "path": "blog-articles/relatorio-multicanal-cursos-educacionais-vivo-telefonica.json",
       "content_length": 1135,
       "content_bytes": 1163
+    },
+    {
+      "slug": "replacing-spreadsheets-with-system-adrock",
+      "url": "https://adrock.com.br/blog/replacing-spreadsheets-with-system-adrock",
+      "path": "blog-articles/replacing-spreadsheets-with-system-adrock.json",
+      "content_length": 3389,
+      "content_bytes": 3435
     },
     {
       "slug": "retrospectiva-adrock-blog-2025",
@@ -1494,6 +1935,13 @@
       "content_bytes": 2612
     },
     {
+      "slug": "semrush-seo-ferramenta-marketing-digital",
+      "url": "https://adrock.com.br/blog/semrush-seo-ferramenta-marketing-digital",
+      "path": "blog-articles/semrush-seo-ferramenta-marketing-digital.json",
+      "content_length": 4165,
+      "content_bytes": 4288
+    },
+    {
       "slug": "seo-geo-aio-aeo-sxo-explicado",
       "url": "https://adrock.com.br/blog/seo-geo-aio-aeo-sxo-explicado",
       "path": "blog-articles/seo-geo-aio-aeo-sxo-explicado.json",
@@ -1506,6 +1954,20 @@
       "path": "blog-articles/seo-inteligencia-artificial-mudancas-otimizacao.json",
       "content_length": 5016,
       "content_bytes": 5134
+    },
+    {
+      "slug": "seo-mentalidade-produto-funcao-horizontal",
+      "url": "https://adrock.com.br/blog/seo-mentalidade-produto-funcao-horizontal",
+      "path": "blog-articles/seo-mentalidade-produto-funcao-horizontal.json",
+      "content_length": 1859,
+      "content_bytes": 1946
+    },
+    {
+      "slug": "seo-nextjs-governanca",
+      "url": "https://adrock.com.br/blog/seo-nextjs-governanca",
+      "path": "blog-articles/seo-nextjs-governanca.json",
+      "content_length": 1115,
+      "content_bytes": 1148
     },
     {
       "slug": "seo-orientado-a-ia",
@@ -1564,6 +2026,13 @@
       "content_bytes": 2690
     },
     {
+      "slug": "soft-navigations-chrome-spa-seo-analytics",
+      "url": "https://adrock.com.br/blog/soft-navigations-chrome-spa-seo-analytics",
+      "path": "blog-articles/soft-navigations-chrome-spa-seo-analytics.json",
+      "content_length": 3834,
+      "content_bytes": 3966
+    },
+    {
       "slug": "spocket-dropshipping-ecommerce-fornecedores-automacao",
       "url": "https://adrock.com.br/blog/spocket-dropshipping-ecommerce-fornecedores-automacao",
       "path": "blog-articles/spocket-dropshipping-ecommerce-fornecedores-automacao.json",
@@ -1578,11 +2047,53 @@
       "content_bytes": 771
     },
     {
+      "slug": "structured-seo-wins-ai-search",
+      "url": "https://adrock.com.br/blog/structured-seo-wins-ai-search",
+      "path": "blog-articles/structured-seo-wins-ai-search.json",
+      "content_length": 3591,
+      "content_bytes": 3601
+    },
+    {
       "slug": "supermetrics-automated-reporting",
       "url": "https://adrock.com.br/blog/supermetrics-automated-reporting",
       "path": "blog-articles/supermetrics-automated-reporting.json",
       "content_length": 873,
       "content_bytes": 879
+    },
+    {
+      "slug": "supermetrics-relatorios-automatizados",
+      "url": "https://adrock.com.br/blog/supermetrics-relatorios-automatizados",
+      "path": "blog-articles/supermetrics-relatorios-automatizados.json",
+      "content_length": 970,
+      "content_bytes": 993
+    },
+    {
+      "slug": "surveymonkey-data-driven-insights",
+      "url": "https://adrock.com.br/blog/surveymonkey-data-driven-insights",
+      "path": "blog-articles/surveymonkey-data-driven-insights.json",
+      "content_length": 726,
+      "content_bytes": 728
+    },
+    {
+      "slug": "surveymonkey-pesquisas-inteligentes",
+      "url": "https://adrock.com.br/blog/surveymonkey-pesquisas-inteligentes",
+      "path": "blog-articles/surveymonkey-pesquisas-inteligentes.json",
+      "content_length": 959,
+      "content_bytes": 979
+    },
+    {
+      "slug": "tendencias-captacao-recursos-2026-ongs",
+      "url": "https://adrock.com.br/blog/tendencias-captacao-recursos-2026-ongs",
+      "path": "blog-articles/tendencias-captacao-recursos-2026-ongs.json",
+      "content_length": 3682,
+      "content_bytes": 3838
+    },
+    {
+      "slug": "tidio-chatbot-atendimento-omnichannel",
+      "url": "https://adrock.com.br/blog/tidio-chatbot-atendimento-omnichannel",
+      "path": "blog-articles/tidio-chatbot-atendimento-omnichannel.json",
+      "content_length": 1038,
+      "content_bytes": 1064
     },
     {
       "slug": "tiktok-hashtag-scraper-python",
@@ -1604,6 +2115,13 @@
       "path": "blog-articles/universal-commerce-protocol-ucp-google-vs-acp-openai.json",
       "content_length": 5441,
       "content_bytes": 5625
+    },
+    {
+      "slug": "utm-builder-links-em-lote-campanhas-ga4",
+      "url": "https://adrock.com.br/blog/utm-builder-links-em-lote-campanhas-ga4",
+      "path": "blog-articles/utm-builder-links-em-lote-campanhas-ga4.json",
+      "content_length": 7151,
+      "content_bytes": 7331
     },
     {
       "slug": "utm-builder-slack-feature-opcional-governanca-campanhas",
@@ -1688,6 +2206,13 @@
       "path": "blog-articles/xml-sitemap-arquitetura-seo-tecnico-2026.json",
       "content_length": 1344,
       "content_bytes": 1375
+    },
+    {
+      "slug": "youtube-thumbnail-downloader-python",
+      "url": "https://adrock.com.br/blog/youtube-thumbnail-downloader-python",
+      "path": "blog-articles/youtube-thumbnail-downloader-python.json",
+      "content_length": 1278,
+      "content_bytes": 1306
     }
   ]
 }

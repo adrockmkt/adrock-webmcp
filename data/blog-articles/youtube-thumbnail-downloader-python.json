@@ -1,0 +1,11 @@
+{
+  "slug": "youtube-thumbnail-downloader-python",
+  "url": "https://adrock.com.br/blog/youtube-thumbnail-downloader-python",
+  "title": "Ad Rock Digital Mkt - Blog - YouTube Thumbnail Downloader em Python: Baixe Thumbnails de Vídeos com um Script Simples",
+  "description": "Aprenda a baixar thumbnails de vídeos do YouTube com um script simples em Python. Código open source, fácil de usar e ideal para automações e relatórios de marketing.",
+  "category": "Código e Automação",
+  "published_at": "2025-09-25",
+  "content": "No mundo do marketing digital e da criação de conteúdo, muitas vezes precisamos extrair thumbnails de vídeos do YouTube — seja para ilustrar relatórios, mockups de campanhas, apresentações ou até para automações internas. Pensando nisso, criamos um script open source chamado YouTube Thumbnail Downloader , que permite baixar rapidamente imagens de capa de qualquer vídeo do YouTube.\n\nO código é simples, direto e ideal para desenvolvedores, analistas e entusiastas que querem automatizar esse processo.\n👉 O projeto completo está disponível no GitHub: adrockmkt/youtube_thumbnail_downloader\nO que o script faz\nCom apenas uma URL de vídeo do YouTube, o script:\n- Extrai o ID do vídeo a partir do link.\n\n- Monta a URL da imagem de thumbnail (padrão maxresdefault.jpg).\n\n- Faz o download da imagem.\n\n- Salva automaticamente dentro de uma pasta chamada images.\n\nResultado: em poucos segundos você tem a thumbnail original em alta resolução, pronta para uso.\nRequisitos\nO projeto roda com Python 3+ e utiliza apenas bibliotecas padrão e requests.\nBasta instalar o ambiente virtual e as dependências:\n# Criar ambiente virtual\npython3 - m venv venv\nsource venv / bin / activate # Linux / Mac\nvenv \\Scripts\\activate # Windows\n\n# Instalar dependências\npip install - r requirements . txt",
+  "content_length": 1278,
+  "content_bytes": 1306
+}

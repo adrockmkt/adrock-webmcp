@@ -1,0 +1,11 @@
+{
+  "slug": "como-google-escolhe-urls-canonicas-seo",
+  "url": "https://adrock.com.br/blog/como-google-escolhe-urls-canonicas-seo",
+  "title": "Ad Rock Digital Mkt - Blog - Como o Google escolhe URLs canônicas e por que isso pode estar prejudicando seu SEO",
+  "description": "Entenda como o Google escolhe URLs canônicas, por que a tag rel=canonical pode ser ignorada e os impactos disso em SEO técnico e indexação.",
+  "category": "SEO e IA",
+  "published_at": "2026-05-28",
+  "content": "Você definiu corretamente a tag rel=canonical .\nMas o Google escolheu outra URL.\nEsse é um dos problemas mais comuns — e menos percebidos — dentro de SEO técnico atualmente.\nMuitos profissionais acreditam que a canonical tag funciona como uma instrução obrigatória para o Google.\nMas não funciona assim.\nNa prática:\n👉 a canonical é apenas um sinal.\nE o Google avalia dezenas de outros fatores antes de decidir qual URL realmente será indexada.\nO que é uma URL canônica\nUma URL canônica representa a versão principal de uma página quando existem múltiplas versões semelhantes ou duplicadas.\nExemplos comuns:\n- URLs com parâmetros\n\n- páginas com filtros\n\n- versões HTTP e HTTPS\n\n- páginas com UTMs\n\n- conteúdo duplicado\n\n- paginação\n\n- variações de categoria\n\nO objetivo da canonização é ajudar o Google a entender:\n👉 qual versão deve consolidar autoridade, indexação e ranking.\nO mito da tag rel=canonical\nUm dos maiores erros em SEO técnico é acreditar que:\n< link rel = \"canonical\" href = \"https://site.com/pagina/\" />",
+  "content_length": 1021,
+  "content_bytes": 1063
+}

@@ -1,5 +1,13 @@
 [
   {
+    "title": "Ad Rock Digital Mkt - Blog - Os 10 Pilares do GEO: como alcançar visibilidade contínua na era da busca por IA",
+    "slug": "10-pilares-do-geo-visibilidade-ia-search",
+    "url": "https://adrock.com.br/blog/10-pilares-do-geo-visibilidade-ia-search",
+    "description": "Conheça os 10 pilares do GEO (Generative Engine Optimization) e aprenda como estruturar conteúdo para alcançar visibilidade contínua em buscas baseadas em IA.",
+    "category": "SEO e IA",
+    "published_at": "2025-10-14"
+  },
+  {
     "title": "Ad Rock Digital Mkt - Blog - A2UI do Google: o início das interfaces geradas por agentes de IA",
     "slug": "a2ui-google-interfaces-geradas-por-agentes-ia",
     "url": "https://adrock.com.br/blog/a2ui-google-interfaces-geradas-por-agentes-ia",
@@ -56,6 +64,14 @@
     "published_at": "2026-02-23"
   },
   {
+    "title": "Ad Rock Digital Mkt - Blog - AdCreative.ai: AI-Powered Ad Creatives for Performance Marketing",
+    "slug": "adcreative-ai-performance-ad-creatives",
+    "url": "https://adrock.com.br/blog/adcreative-ai-performance-ad-creatives",
+    "description": "Discover how AdCreative.ai uses artificial intelligence to generate high-performing ad creatives for Google and Meta Ads. Start your free trial via Ad Rock.",
+    "category": "Ferramentas e Parcerias",
+    "published_at": "2026-02-23"
+  },
+  {
     "title": "Ad Rock Digital Mkt - Blog - AEO, LLMs e o futuro do SEO: lições de Dharmesh Shah para a era da busca por IA",
     "slug": "aeo-llms-seo-era-ia-dharmesh-shah",
     "url": "https://adrock.com.br/blog/aeo-llms-seo-era-ia-dharmesh-shah",
@@ -64,12 +80,28 @@
     "published_at": "2025-12-19"
   },
   {
+    "title": "Ad Rock Digital Mkt - Blog - Spoofing de Agentes de IA: a nova fronteira de ataques automatizados",
+    "slug": "ai-agent-spoofing-ataques-seguranca-2026",
+    "url": "https://adrock.com.br/blog/ai-agent-spoofing-ataques-seguranca-2026",
+    "description": "Entenda o que é AI Agent Spoofing, como bots se passam por agentes de IA legítimos e por que esse novo tipo de ataque será um dos maiores riscos de segurança em 2026.",
+    "category": "Código e Automação",
+    "published_at": "2026-02-03"
+  },
+  {
     "title": "Ad Rock Digital Mkt - Blog - Visibilidade em AI Overviews do Google: como seu site aparece (ou desaparece) na busca por IA",
     "slug": "ai-overviews-visibilidade-google-como-aparecer",
     "url": "https://adrock.com.br/blog/ai-overviews-visibilidade-google-como-aparecer",
     "description": "Entenda como funciona a visibilidade em AI Overviews do Google, quais fatores influenciam a seleção de fontes e como estruturar seu site para aparecer nos resultados de IA.",
     "category": "SEO e IA",
     "published_at": "2026-01-14"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - AI Search em 2026: O Que Realmente Muda Para Quem Já Faz SEO Técnico?",
+    "slug": "ai-search-2026-o-que-muda-para-seo-tecnico",
+    "url": "https://adrock.com.br/blog/ai-search-2026-o-que-muda-para-seo-tecnico",
+    "description": "AI Search não substitui SEO técnico — ele amplifica quem já faz o básico bem feito. Veja o que realmente muda em 2026 e como preparar seu site para Google AI Mode, Gemini e LLMs.",
+    "category": "SEO e IA",
+    "published_at": "2026-02-19"
   },
   {
     "title": "Ad Rock Digital Mkt - Blog - How AI Search Is Changing Nonprofit Digital Strategy in Latin America",
@@ -120,12 +152,44 @@
     "published_at": "2025-10-28"
   },
   {
+    "title": "Ad Rock Digital Mkt - Blog - Alternativas ao WordPress: quando faz sentido ir além do CMS mais popular do mundo",
+    "slug": "alternativas-ao-wordpress-construtores-e-cms-enterprise",
+    "url": "https://adrock.com.br/blog/alternativas-ao-wordpress-construtores-e-cms-enterprise",
+    "description": "Conheça as principais alternativas ao WordPress, desde construtores simples até CMS enterprise, e entenda quando faz sentido migrar ou manter a plataforma.",
+    "category": "Código e Automação",
+    "published_at": "2026-01-16"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - Amazon QuickSight com IA: como automatizar análises e relatórios com Generative BI",
+    "slug": "amazon-quicksight-ia-generative-bi-relatorios-automaticos",
+    "url": "https://adrock.com.br/blog/amazon-quicksight-ia-generative-bi-relatorios-automaticos",
+    "description": "Descubra como o Amazon QuickSight usa IA generativa para criar dashboards, insights automáticos e análises avançadas sem dependência de analistas.",
+    "category": "Mídia e Performance",
+    "published_at": "2026-04-02"
+  },
+  {
     "title": "Ad Rock Digital Mkt - Blog - Análise de Concorrentes no Google News com Python",
     "slug": "analise-google-news-python",
     "url": "https://adrock.com.br/blog/analise-google-news-python",
     "description": "Aprenda a analisar concorrentes no Google News com Python. Scraper open source que coleta manchetes, agrupa fontes, exporta relatórios e envia e-mails automáticos para insights de SEO.",
     "category": "Código e Automação",
     "published_at": "2025-09-26"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - Aplicações práticas de AI Agents em marketing e startups",
+    "slug": "aplicacoes-praticas-de-ai-agents-em-marketing-e-startups",
+    "url": "https://adrock.com.br/blog/aplicacoes-praticas-de-ai-agents-em-marketing-e-startups",
+    "description": "Veja como os AI Agents estão revolucionando o marketing digital, SEO e automação de startups. Casos reais, frameworks e boas práticas para aplicar hoje mesmo.",
+    "category": "SEO e IA",
+    "published_at": "2025-10-08"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - Apple vai matar o gclid no Safari: o que isso muda no rastreamento de campanhas (e como se preparar)",
+    "slug": "apple-safari-bloqueio-gclid-rastreamento-conversoes",
+    "url": "https://adrock.com.br/blog/apple-safari-bloqueio-gclid-rastreamento-conversoes",
+    "description": null,
+    "category": "Tendências e Mercado",
+    "published_at": "2025-09-02"
   },
   {
     "title": "Ad Rock Digital Mkt - Blog - Quando a visibilidade derrota a expertise (e como argumentar com um AI Booster)",
@@ -144,12 +208,36 @@
     "published_at": "2026-09-11"
   },
   {
+    "title": "Ad Rock Digital Mkt - Blog - Arquitetura de links internos: como estruturar seu site para SEO e IA",
+    "slug": "arquitetura-links-internos-seo",
+    "url": "https://adrock.com.br/blog/arquitetura-links-internos-seo",
+    "description": "Aprenda como estruturar a arquitetura de links internos para melhorar SEO, distribuição de autoridade e desempenho em AI Search.",
+    "category": "SEO e IA",
+    "published_at": "2026-04-15"
+  },
+  {
     "title": "Ad Rock Digital Mkt - Blog - Arquitetura técnica e frameworks dos AI Agents",
     "slug": "arquitetura-tecnica-e-frameworks-de-ai-agents",
     "url": "https://adrock.com.br/blog/arquitetura-tecnica-e-frameworks-de-ai-agents",
     "description": "Entenda a arquitetura técnica dos AI Agents, seus componentes, frameworks populares e como integrá-los em sistemas corporativos e de marketing modernos.",
     "category": "SEO e IA",
     "published_at": "2025-10-08"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - A ascensão do conteúdo gerado por IA: quando as máquinas superam os humanos",
+    "slug": "ascensao-conteudo-gerado-por-ia-2025",
+    "url": "https://adrock.com.br/blog/ascensao-conteudo-gerado-por-ia-2025",
+    "description": "O conteúdo gerado por IA ultrapassou o humano em 2025. Entenda os dados, os impactos para o SEO e por que a curadoria inteligente será o diferencial competitivo da próxima década.",
+    "category": "SEO e IA",
+    "published_at": "2025-10-15"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - Auditoria técnica de métricas: como validar dados, detectar erros e garantir integridade no GA4 + BigQuery",
+    "slug": "auditoria-tecnica-metricas-ga4-bigquery",
+    "url": "https://adrock.com.br/blog/auditoria-tecnica-metricas-ga4-bigquery",
+    "description": "Como auditar métricas, identificar inconsistências e garantir integridade dos dados usando GA4, BigQuery e validações sistemáticas.",
+    "category": "Analytics e Dados",
+    "published_at": "2025-11-29"
   },
   {
     "title": "Ad Rock Digital Mkt - Blog - Automação com Google Ads API: Como Otimizar Keywords de Baixo Volume com Dados Reais",
@@ -214,6 +302,14 @@
     "description": "Aprenda como automatizar a extração de e-mails com Python e conheça a versão escalável do projeto via Apify, com exportação automática em CSV.",
     "category": "Código e Automação",
     "published_at": "2025-12-15"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - O que é avaliação de AI Search e por que isso importa para SEO em 2026",
+    "slug": "avaliacao-ai-search-seo-2026",
+    "url": "https://adrock.com.br/blog/avaliacao-ai-search-seo-2026",
+    "description": "Avaliação de AI Search será fundamental para o SEO em 2026. Entenda o conceito, os impactos e como preparar seu site para esse cenário.",
+    "category": "SEO e IA",
+    "published_at": "2026-01-15"
   },
   {
     "title": "Ad Rock Digital Mkt - Blog - Como avaliar a qualidade de busca em sistemas de IA, LLMs e agentes inteligentes",
@@ -328,12 +424,36 @@
     "published_at": "2025-10-04"
   },
   {
+    "title": "Ad Rock Digital Mkt - Blog - Codecon 2026: IA, SDD, arquitetura e agentes de código",
+    "slug": "codecon-2026-aprendizados-ia-arquitetura-sdd-agentes",
+    "url": "https://adrock.com.br/blog/codecon-2026-aprendizados-ia-arquitetura-sdd-agentes",
+    "description": "Principais aprendizados da Codecon 2026 sobre IA generativa, Spec Driven Development, arquitetura, contexto, agentes de código, observabilidade e novas práticas de engenharia de software.",
+    "category": "Tendências e Mercado",
+    "published_at": "2026-08-17"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - Guia completo de IndexNow: como colocar seu site no protocolo (com e sem acesso ao servidor)",
+    "slug": "como-colocar-site-no-indexnow",
+    "url": "https://adrock.com.br/blog/como-colocar-site-no-indexnow",
+    "description": "Aprenda a configurar IndexNow no seu site com passo a passo técnico, incluindo cenários com acesso ao servidor e alternativas para CMSs como Framer (plano Basic) usando Cloudflare Workers.",
+    "category": "SEO e IA",
+    "published_at": "2026-02-11"
+  },
+  {
     "title": "Ad Rock Digital Mkt - Blog - Como conquistar desenvolvedores: pare de dizer “precisamos disso para o Google” e comece por acessibilidade e arquitetura",
     "slug": "como-conquistar-desenvolvedores-seo-acessibilidade-arquitetura",
     "url": "https://adrock.com.br/blog/como-conquistar-desenvolvedores-seo-acessibilidade-arquitetura",
     "description": "Como SEOs podem trabalhar melhor com desenvolvedores usando princípios de acessibilidade e arquitetura da informação, e abandonando o discurso “faça isso para o Google”.",
     "category": "SEO e IA",
     "published_at": "2025-12-04"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - Como Escrever Conteúdo Pensado Para Chunking e Extração por LLMs",
+    "slug": "como-escrever-conteudo-para-chunking-e-llms",
+    "url": "https://adrock.com.br/blog/como-escrever-conteudo-para-chunking-e-llms",
+    "description": "Aprenda a estruturar conteúdo para ser facilmente extraído por LLMs como Gemini e ChatGPT. Guia técnico de chunking, clareza semântica e formatação para AI Search.",
+    "category": "SEO e IA",
+    "published_at": "2026-02-24"
   },
   {
     "title": "Ad Rock Digital Mkt - Blog - Como funciona o crawling do Google: o que todo site precisa entender sobre rastreamento",
@@ -408,12 +528,28 @@
     "published_at": "2026-01-05"
   },
   {
+    "title": "Ad Rock Digital Mkt - Blog - Content Signals – Inteligência de Conteúdo para SEO e Estratégia Digital",
+    "slug": "content-signals-robots-ia-seo",
+    "url": "https://adrock.com.br/blog/content-signals-robots-ia-seo",
+    "description": "Entenda como o Content Signals complementa o robots.txt e permite controlar se seu conteúdo pode ser usado por buscadores e Inteligência Artificial.",
+    "category": "SEO e IA",
+    "published_at": "2025-09-26"
+  },
+  {
     "title": "Ad Rock Digital Mkt - Blog - Google errou: a forma correta de agrupar canais no GA4",
     "slug": "corrigir-agrupamento-canais-ga4",
     "url": "https://adrock.com.br/blog/corrigir-agrupamento-canais-ga4",
     "description": "O agrupamento padrão de canais do GA4 está errado. Saiba por que o “Tráfego Direto” deve ser o último da lista — e como isso impacta diretamente suas métricas, relatórios e atribuição de marketing.",
     "category": "Analytics e Dados",
     "published_at": "2025-11-05"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - Como corrigir tráfego “não atribuído” (unassigned traffic) no GA4 com GTM Server-Side Tagging",
+    "slug": "corrigir-trafego-nao-atribuido-ga4-gtm-server-side",
+    "url": "https://adrock.com.br/blog/corrigir-trafego-nao-atribuido-ga4-gtm-server-side",
+    "description": "Saiba como corrigir o tráfego “não atribuído” no GA4 ao usar GTM Server-Side Tagging. Veja as causas mais comuns e as configurações ideais para garantir dados precisos.",
+    "category": "Analytics e Dados",
+    "published_at": "2025-10-09"
   },
   {
     "title": "Ad Rock Digital Mkt - Blog - CPC médio Meta Ads Brasil 2026: quanto custa anunciar por nicho",
@@ -438,6 +574,22 @@
     "description": "Entenda como o Google descobre, indexa e ranqueia seu site em 2025. Crawling, indexação e ranqueamento explicados em passos simples com dicas práticas de SEO.",
     "category": "SEO e IA",
     "published_at": "2025-10-01"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - Cripto Dashboard V3: A evolução da análise de criptomoedas em tempo real",
+    "slug": "cripto-dashboard-v3-analise-em-tempo-real",
+    "url": "https://adrock.com.br/blog/cripto-dashboard-v3-analise-em-tempo-real",
+    "description": "Cripto Dashboard V3 com análises técnicas, Fear & Greed Index, alertas e gráficos em tempo real. Acompanhe o mercado de criptomoedas com precisão.",
+    "category": "Código e Automação",
+    "published_at": "2025-09-01"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - CRM Capsule: Organize e escale seu relacionamento com clientes",
+    "slug": "crm-capsule-para-pmes",
+    "url": "https://adrock.com.br/blog/crm-capsule-para-pmes",
+    "description": "Conheça o CRM Capsule, ferramenta simples e poderosa para gestão de clientes, contatos e vendas. Ideal para PMEs que buscam escalar com organização.",
+    "category": "Ferramentas e Parcerias",
+    "published_at": "2025-09-09"
   },
   {
     "title": "Ad Rock Digital Mkt - Blog - O que são Custom GPTs e como eles podem transformar o seu dia a dia",
@@ -488,6 +640,14 @@
     "published_at": "2025-12-03"
   },
   {
+    "title": "Ad Rock Digital Mkt - Blog - Como detectamos e neutralizamos um caso de piggyback usando GTM + GA4",
+    "slug": "detectar-bloquear-piggyback-gtm-ga4-alerta",
+    "url": "https://adrock.com.br/blog/detectar-bloquear-piggyback-gtm-ga4-alerta",
+    "description": "Detectamos que alguém estava piggybacking nosso container e criamos um detector com Google Tag Manager + GA4, relatório exploratório e alertas automáticos. Guia prático com código e checklist.",
+    "category": "Analytics e Dados",
+    "published_at": "2025-09-19"
+  },
+  {
     "title": "Ad Rock Digital Mkt - Blog - Dia de Doar (30 de Novembro): Como ONGs podem se preparar para a maior data de mobilização do ano",
     "slug": "dia-de-doar-ongs-google-grants-2025",
     "url": "https://adrock.com.br/blog/dia-de-doar-ongs-google-grants-2025",
@@ -512,6 +672,14 @@
     "published_at": "2025-08-25"
   },
   {
+    "title": "Ad Rock Digital Mkt - Blog - Direct Traffic no GA4 NÃO é o que você pensa — e por que isso importa para sua atribuição",
+    "slug": "direct-traffic-ga4-nao-e-o-que-voce-pensa",
+    "url": "https://adrock.com.br/blog/direct-traffic-ga4-nao-e-o-que-voce-pensa",
+    "description": "Direct traffic no GA4 não significa visita digitada — é um fallback causado pela ausência de referrer, UTMs ou identificadores. Entenda por que o canal Direct infla, como diagnosticar o problema e como corrigir sua atribuição de origem.",
+    "category": "Analytics e Dados",
+    "published_at": "2025-11-17"
+  },
+  {
     "title": "Ad Rock Digital Mkt - Blog - ElevenLabs: AI voice generation for products, marketing, and automation",
     "slug": "elevenlabs-ai-voice-text-to-speech",
     "url": "https://adrock.com.br/blog/elevenlabs-ai-voice-text-to-speech",
@@ -528,12 +696,28 @@
     "published_at": "2026-01-28"
   },
   {
+    "title": "Ad Rock Digital Mkt - Blog - As empresas de SEO certas para você",
+    "slug": "empresas-de-seo-brasil-ad-rock",
+    "url": "https://adrock.com.br/blog/empresas-de-seo-brasil-ad-rock",
+    "description": "Descubra como escolher empresas de SEO no Brasil e entenda por que a Ad Rock Digital Mkt se destaca com uma abordagem simples, técnica e preparada para IA.",
+    "category": "SEO e IA",
+    "published_at": "2026-02-05"
+  },
+  {
     "title": "Ad Rock Digital Mkt - Blog - Bling: ERP Online Completo para Pequenos e Médios Negócios",
     "slug": "erp-bling-integracao-gestao-adrock",
     "url": "https://adrock.com.br/blog/erp-bling-integracao-gestao-adrock",
     "description": "Conheça o Bling, ERP ideal para e-commerces e pequenos negócios. Veja como a Ad Rock integra a ferramenta e transforme sua gestão.",
     "category": "Ferramentas e Parcerias",
     "published_at": "2025-09-09"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - Estratégia de Conteúdo 2025: Como Conectar Sua Marca em um Cenário Guiado por IA",
+    "slug": "estrategia-conteudo-2025-ia-seo",
+    "url": "https://adrock.com.br/blog/estrategia-conteudo-2025-ia-seo",
+    "description": "Descubra como estruturar sua estratégia de conteúdo em 2025 com foco em SEO, IA, dados e distribuição multicanal. Saiba quais práticas vão diferenciar sua marca.",
+    "category": "SEO e IA",
+    "published_at": "2025-09-29"
   },
   {
     "title": "Ad Rock Digital Mkt - Blog - Sua “estratégia de IA” não é uma estratégia — é SEO com novo nome",
@@ -550,6 +734,14 @@
     "description": "Um playbook prático de estratégia para YouTube em 2026: modelos de operação, vantagem competitiva, audiência, ideação de conteúdo e ações essenciais para crescimento sustentável.",
     "category": "Mídia e Performance",
     "published_at": "2026-01-08"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - Como o Cache Pode Prejudicar sua Atribuição no GA4 (e Como Corrigir)",
+    "slug": "evitar-trafego-direto-cache-ga4",
+    "url": "https://adrock.com.br/blog/evitar-trafego-direto-cache-ga4",
+    "description": "Evite que o cache distorça seus dados no GA4. Aprenda 6 práticas técnicas que impedem que campanhas pagas sejam atribuídas como tráfego direto, com exemplos de CDN, UTMs, SPAs e cabeçalhos HTTP.",
+    "category": "Analytics e Dados",
+    "published_at": "2025-09-05"
   },
   {
     "title": "Ad Rock Digital Mkt - Blog - Evolução do sistema de alerta de boletos do Banco Inter: IA, automação e WhatsApp Business API",
@@ -608,6 +800,14 @@
     "published_at": "2026-05-02"
   },
   {
+    "title": "Ad Rock Digital Mkt - Blog - Como criar uma camada semântica AI-first no Framer usando Cloudflare Workers",
+    "slug": "framer-basic-cloudflare-workers-seo-ia",
+    "url": "https://adrock.com.br/blog/framer-basic-cloudflare-workers-seo-ia",
+    "description": "Como contornar as limitações do Framer Basic usando Cloudflare Workers no plano gratuito e transformar seu site em uma arquitetura preparada para AI Search, IndexNow e visibilidade para LLMs.",
+    "category": "SEO e IA",
+    "published_at": "2026-02-12"
+  },
+  {
     "title": "Ad Rock Digital Mkt - Blog - Framework em 4 fases para avaliar Search, SEO e IA de forma confiável",
     "slug": "framework-avaliacao-search-seo-ia",
     "url": "https://adrock.com.br/blog/framework-avaliacao-search-seo-ia",
@@ -632,6 +832,14 @@
     "published_at": "2026-07-15"
   },
   {
+    "title": "Ad Rock Digital Mkt - Blog - From SEO to AI Visibility: How Technical Content Becomes an Entity",
+    "slug": "from-seo-to-ai-visibility-entity-strategy",
+    "url": "https://adrock.com.br/blog/from-seo-to-ai-visibility-entity-strategy",
+    "description": "Learn how technical SEO evolves into AI visibility by building entity authority, structured content, and extractable architecture.",
+    "category": "SEO e IA",
+    "published_at": "2026-03-11"
+  },
+  {
     "title": "Ad Rock Digital Mkt - Blog - O Funil de Marketing em 2025: Como a IA Está Redefinindo a Jornada do Cliente",
     "slug": "funil-de-marketing-2025-ia",
     "url": "https://adrock.com.br/blog/funil-de-marketing-2025-ia",
@@ -640,12 +848,36 @@
     "published_at": "2025-10-06"
   },
   {
+    "title": "Ad Rock Digital Mkt - Blog - O Público Quer Freios na Corrida pela Superinteligência: 64% dos Americanos Apoiam Pausa no Desenvolvimento até Prova de Segurança",
+    "slug": "futuro-da-ia-pesquisa-fli-superinteligencia",
+    "url": "https://adrock.com.br/blog/futuro-da-ia-pesquisa-fli-superinteligencia",
+    "description": "Pesquisa do Future of Life Institute mostra que 64% dos americanos querem pausa no desenvolvimento da superinteligência artificial até prova de segurança. O estudo revela ceticismo, medo e pedidos por regulação global.",
+    "category": "Tendências e Mercado",
+    "published_at": "2025-10-23"
+  },
+  {
     "title": "Ad Rock Digital Mkt - Blog - O Futuro do SEO: Como Preparar Seu Conteúdo Para IA Search, SGE e Modelos de Extração",
     "slug": "futuro-do-seo-ai-readability-semantic-geo",
     "url": "https://adrock.com.br/blog/futuro-do-seo-ai-readability-semantic-geo",
     "description": "O futuro do SEO passa por IA Search, modelagem semântica e conteúdo estruturado para extração. Veja o framework completo para preparar seu site para o Google SGE e mecanismos de IA.",
     "category": "SEO e IA",
     "published_at": "2025-11-14"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - 🤖 Google Analytics 4 lança “Analytics Advisor” e “Ads Advisor”: IA para otimização de dados e mídia",
+    "slug": "ga4-analytics-advisor-e-ads-advisor",
+    "url": "https://adrock.com.br/blog/ga4-analytics-advisor-e-ads-advisor",
+    "description": "O Google lançou o Analytics Advisor e Ads Advisor no GA4 — ferramentas com IA que fornecem recomendações automáticas para otimizar campanhas e dados analíticos. Veja como ativar e usar.",
+    "category": "Analytics e Dados",
+    "published_at": "2025-10-17"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - Como transformamos o GA4 Assistant em um agente de marketing com RAG, Gemini e análise contextual",
+    "slug": "ga4-assistant-agente-marketing-rag-gemini",
+    "url": "https://adrock.com.br/blog/ga4-assistant-agente-marketing-rag-gemini",
+    "description": "Conheça a nova evolução do GA4 Assistant da Ad Rock. De consultas simples ao Google Analytics 4 para um agente de marketing com RAG, Gemini, banco vetorial e análise contextual automatizada.",
+    "category": "Código e Automação",
+    "published_at": "2026-06-22"
   },
   {
     "title": "Ad Rock Digital Mkt - Blog - GA4 Assistant Bot: Consultas Inteligentes ao Google Analytics 4 com IA e Linguagem Natural",
@@ -686,6 +918,14 @@
     "description": "Guia técnico para implementar o evento generate_lead no GA4 via Google Tag Manager em sites feitos no Framer (SPA), garantindo coleta correta de leads.",
     "category": "Código e Automação",
     "published_at": "2026-03-25"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - GA4, GTM, MCP e o Futuro da Mensuração com IA: O Que Mudou e Como se Preparar",
+    "slug": "ga4-mcp-google-analytics-mensuracao-ia",
+    "url": "https://adrock.com.br/blog/ga4-mcp-google-analytics-mensuracao-ia",
+    "description": "Como a IA está transformando o GA4, GTM e Search Console. Entenda o MCP, os novos modelos de jornada e o que adaptar no seu site para 2025.",
+    "category": "Analytics e Dados",
+    "published_at": "2025-08-15"
   },
   {
     "title": "Ad Rock Digital Mkt - Blog - Como dominar relatórios, atribuição e automação no GA4 com IA e Python",
@@ -752,12 +992,36 @@
     "published_at": "2026-02-06"
   },
   {
+    "title": "Ad Rock Digital Mkt - Blog - Novidades em Google Ads: Pagamentos, Ferramentas de Controle, WhatsApp Leads e Visitas à Loja",
+    "slug": "google-ads-atualizacoes-pagamentos-whatsapp-store-visits",
+    "url": "https://adrock.com.br/blog/google-ads-atualizacoes-pagamentos-whatsapp-store-visits",
+    "description": "Confira as últimas atualizações do Google Ads: novas formas de pagamento (PIX/Mercado Pago), controles avançados de campanhas com IA, medição de leads via WhatsApp e métricas de visitas à loja — com implicações práticas para estratégias de mídia paga.",
+    "category": "Mídia e Performance",
+    "published_at": "2026-01-28"
+  },
+  {
     "title": "Ad Rock Digital Mkt - Blog - Google Ads muda a lógica de lances para campanhas limitadas pelo orçamento: o que revisar antes de 17 de agosto de 2026",
     "slug": "google-ads-cpa-roas-limitado-orcamento-agosto-2026",
     "url": "https://adrock.com.br/blog/google-ads-cpa-roas-limitado-orcamento-agosto-2026",
     "description": "O Google Ads mudará em 17 de agosto de 2026 a lógica das campanhas limitadas pelo orçamento que usam CPA desejado, ROAS desejado e estratégias baseadas em metas. Entenda os impactos e saiba o que revisar.",
     "category": "Mídia e Performance",
     "published_at": "2026-08-03"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - Google Ads muda importação de conversões offline: o que empresas e agências precisam fazer até junho de 2026",
+    "slug": "google-ads-data-manager-conversoes-offline",
+    "url": "https://adrock.com.br/blog/google-ads-data-manager-conversoes-offline",
+    "description": "Google Ads vai substituir o UploadClickConversions pelo Data Manager para conversões offline. Entenda o que muda e como isso afeta CRM, vendas e geração de leads.",
+    "category": "Mídia e Performance",
+    "published_at": "2026-06-17"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - Como o Novo Modo de IA do Google Vai Transformar o Marketing Digital (e o Que Sua Empresa Precisa Fazer Agora)",
+    "slug": "google-ads-ia-modo-transformacao",
+    "url": "https://adrock.com.br/blog/google-ads-ia-modo-transformacao",
+    "description": "Descubra como o novo modo de IA do Google está substituindo as palavras-chave por conversas e transformando o marketing digital. Entenda como preparar sua marca, seus dados e seus anúncios para essa revolução.",
+    "category": "Mídia e Performance",
+    "published_at": "2025-09-10"
   },
   {
     "title": "Ad Rock Digital Mkt - Blog - Google Ads passa a exigir orçamento mínimo em campanhas Demand Gen via API a partir de abril de 2026",
@@ -782,6 +1046,22 @@
     "description": "Compare Google Ads e ChatGPT Ads em 2026 com simulação de ROI, CPM de US$ 60 no ChatGPT e análise estratégica para decisões de investimento em mídia paga.",
     "category": "Mídia e Performance",
     "published_at": "2026-02-26"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - Google Ads vs ChatGPT Ads: onde focar com a chegada de um CPM estimado de US$ 60?",
+    "slug": "google-ads-vs-chatgpt-ads-custo-estrategia-2026",
+    "url": "https://adrock.com.br/blog/google-ads-vs-chatgpt-ads-custo-estrategia-2026",
+    "description": "Google Ads ou ChatGPT Ads? Entenda as diferenças estratégicas, o impacto do CPM de US$ 60 no ChatGPT Ads e como integrar mídia paga, SEO e IA em 2026.",
+    "category": "Mídia e Performance",
+    "published_at": "2026-01-30"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - Google explica como aumentar tráfego em AI Search — e a resposta é menos “nova” do que parece",
+    "slug": "google-ai-search-seo-fundamentos-danny-sullivan",
+    "url": "https://adrock.com.br/blog/google-ai-search-seo-fundamentos-danny-sullivan",
+    "description": "Google explica como ganhar tráfego em AI Search: fundamentos de SEO continuam sendo a base. Veja o que muda, o que não muda e como se preparar corretamente.",
+    "category": "SEO e IA",
+    "published_at": "2026-01-06"
   },
   {
     "title": "Ad Rock Digital Mkt - Blog - Google Business Profile ganha agente de IA: o futuro do atendimento local já começou",
@@ -848,6 +1128,14 @@
     "published_at": "2026-01-12"
   },
   {
+    "title": "Ad Rock Digital Mkt - Blog - Google passa a processar apenas os primeiros 2 MB de HTML na indexação: o que diz a documentação oficial e quais os impactos reais",
+    "slug": "google-html-2mb-indexacao-documentacao-oficial",
+    "url": "https://adrock.com.br/blog/google-html-2mb-indexacao-documentacao-oficial",
+    "description": "Entenda o limite oficial de 2MB de HTML processado pelo Google para indexação, o que diz a documentação do Search Central e os impactos reais para SEO e arquitetura.",
+    "category": "Artigo",
+    "published_at": "2026-02-10"
+  },
+  {
     "title": "Ad Rock Digital Mkt - Blog - Google I/O 2026: Gemini, agentes, Omni, Veo e o futuro da internet segundo Sundar Pichai",
     "slug": "google-io-2026-gemini-agentes-ia",
     "url": "https://adrock.com.br/blog/google-io-2026-gemini-agentes-ia",
@@ -870,6 +1158,14 @@
     "description": "Apesar dos rumores, o Google não está eliminando o uso de Schema. O que está mudando é o papel do structured data em um ecossistema dominado por IA generativa e respostas sem cliques. Entenda o que isso significa para sites, editores e estratégias de SEO.",
     "category": "SEO e IA",
     "published_at": "2025-11-12"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - Google.org vs Google for Nonprofits: qual a diferença e como ONGs devem se posicionar",
+    "slug": "google-org-vs-google-for-nonprofits-diferenca-ongs",
+    "url": "https://adrock.com.br/blog/google-org-vs-google-for-nonprofits-diferenca-ongs",
+    "description": "Entenda a diferença entre Google.org e Google for Nonprofits e como ONGs podem acessar recursos, tecnologia e financiamento.",
+    "category": "Ferramentas e Parcerias",
+    "published_at": "2026-03-23"
   },
   {
     "title": "Ad Rock Digital Mkt - Blog - Preferred Sources do Google: o novo controle de fontes para AI Overviews e buscas",
@@ -936,6 +1232,22 @@
     "published_at": "2025-12-17"
   },
   {
+    "title": "Ad Rock Digital Mkt - Blog - Google Workspace: Produtividade e Colaboração em Nuvem",
+    "slug": "google-workspace-produto-colaboracao",
+    "url": "https://adrock.com.br/blog/google-workspace-produto-colaboracao",
+    "description": "Descubra como o Google Workspace pode transformar a colaboração e produtividade da sua empresa. Conheça funcionalidades, vantagens e como contratar pela Ad Rock.",
+    "category": "Ferramentas e Parcerias",
+    "published_at": "2025-09-23"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - Googlebot por dentro: o que o Google realmente revelou sobre crawling (e o que muda no seu SEO)",
+    "slug": "googlebot-por-dentro-crawling-google-seo-tecnico",
+    "url": "https://adrock.com.br/blog/googlebot-por-dentro-crawling-google-seo-tecnico",
+    "description": "Entenda como o Googlebot realmente funciona por trás do crawling, segundo o próprio Google. Insights técnicos e acionáveis para SEO moderno e IA.",
+    "category": "SEO e IA",
+    "published_at": "2026-04-10"
+  },
+  {
     "title": "Ad Rock Digital Mkt - Blog - Mudança no SGTM: Como o carregamento do gtag.js passou a ser responsabilidade do Web Container Client",
     "slug": "gtag-server-side-container-sgtm-configuracao",
     "url": "https://adrock.com.br/blog/gtag-server-side-container-sgtm-configuracao",
@@ -944,12 +1256,28 @@
     "published_at": "2025-09-07"
   },
   {
+    "title": "Ad Rock Digital Mkt - Blog - Google Tag Manager: novas variáveis nativas de Client ID e Session ID no GA4",
+    "slug": "gtm-variaveis-nativas-client-id-session-id-ga4",
+    "url": "https://adrock.com.br/blog/gtm-variaveis-nativas-client-id-session-id-ga4",
+    "description": "O Google Tag Manager lançou novas variáveis nativas de Client ID e Session ID para GA4. Veja o que mudou, como ativar e por que scripts customizados ficaram obsoletos.",
+    "category": "Analytics e Dados",
+    "published_at": "2025-12-15"
+  },
+  {
     "title": "Ad Rock Digital Mkt - Blog - Guia oficial do Google para AI Search: o que realmente importa para otimizar sites para IA",
     "slug": "guia-oficial-google-ai-search-seo",
     "url": "https://adrock.com.br/blog/guia-oficial-google-ai-search-seo",
     "description": "Google publica guia oficial de otimização para AI Search. Entenda o que realmente importa para SEO, AI Overviews, GEO e visibilidade em IA.",
     "category": "SEO e IA",
     "published_at": "2026-06-05"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - HostGator: Hospedagem de Sites Confiável e Flexível para Negócios Digitais",
+    "slug": "hostgator-hospedagem-sites",
+    "url": "https://adrock.com.br/blog/hostgator-hospedagem-sites",
+    "description": "Conheça a HostGator, uma das maiores plataformas globais de hospedagem de sites. Saiba como funciona, principais recursos, comparativo com concorrentes e como contratar pela Ad Rock.",
+    "category": "Ferramentas e Parcerias",
+    "published_at": "2025-09-22"
   },
   {
     "title": "Ad Rock Digital Mkt - Blog - Hostman: alternativa à DigitalOcean com cloud simples, previsível e em reais no Brasil",
@@ -990,6 +1318,14 @@
     "description": "Aprenda como usar regex no Google Search Console para identificar consultas longas que podem indicar prompts de IA gerando tráfego para seu site.",
     "category": "SEO e IA",
     "published_at": "2026-03-06"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - iOS 26 e ATFP: Como a Apple está mudando o rastreamento por URL (e como reagir)",
+    "slug": "impacto-atfp-ios26-em-urls-e-rastreamento",
+    "url": "https://adrock.com.br/blog/impacto-atfp-ios26-em-urls-e-rastreamento",
+    "description": "Entenda como o ATFP no Safari e o iOS 26 afetam a captura de gclid, fbclid e outros parametros de URL. Veja soluções técnicas para manter a atribuição de conversões em ferramentas como Google Ads, Meta Ads e GA4.",
+    "category": "Tendências e Mercado",
+    "published_at": "2025-09-03"
   },
   {
     "title": "Ad Rock Digital Mkt - Blog - Quando os cliques de IA começam a consumir o seu orçamento de anúncios",
@@ -1048,6 +1384,14 @@
     "published_at": "2026-08-19"
   },
   {
+    "title": "Ad Rock Digital Mkt - Blog - Como a Inteligência Artificial Está Revolucionando o Desenvolvimento e a Automação de Processos",
+    "slug": "inteligencia-artificial-automacao-processos-desenvolvimento",
+    "url": "https://adrock.com.br/blog/inteligencia-artificial-automacao-processos-desenvolvimento",
+    "description": "Como a IA está transformando o desenvolvimento de sistemas e a automação de processos. Veja exemplos práticos e como aplicar na sua empresa.",
+    "category": "Código e Automação",
+    "published_at": "2025-08-15"
+  },
+  {
     "title": "Ad Rock Digital Mkt - Blog - A Revolução da Mídia Online com Inteligência Artificial: Google Ads, Meta Ads e o Futuro da Performance",
     "slug": "inteligencia-artificial-midia-google-facebook-ads",
     "url": "https://adrock.com.br/blog/inteligencia-artificial-midia-google-facebook-ads",
@@ -1088,6 +1432,22 @@
     "published_at": "2026-09-21"
   },
   {
+    "title": "Ad Rock Digital Mkt - Blog - Kit: Automação de E-mail Marketing Focada em Criadores",
+    "slug": "kit-email-marketing",
+    "url": "https://adrock.com.br/blog/kit-email-marketing",
+    "description": "Descubra o Kit, ferramenta de e-mail marketing ideal para criadores e empresas. Veja funcionalidades, planos e como contratar pela Ad Rock.",
+    "category": "Ferramentas e Parcerias",
+    "published_at": "2025-09-23"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - 🐱 Kitty Chat React 2.0: evolução para infraestrutura própria com SQLite e DigitalOcean",
+    "slug": "kitty-chat-react-2-evolucao-sqlite-digitalocean",
+    "url": "https://adrock.com.br/blog/kitty-chat-react-2-evolucao-sqlite-digitalocean",
+    "description": "Veja a evolução do Kitty Chat React: saída do Supabase, backend próprio em Node.js, SQLite e nova arquitetura mais leve e controlada.",
+    "category": "Código e Automação",
+    "published_at": "2026-04-17"
+  },
+  {
     "title": "Ad Rock Digital Mkt - Blog - 🐱 Kitty Chat React Sistema de Feedback com Emojis e Supabase (Atualizado)",
     "slug": "kitty-chat-react-feedback-emojis-supabase",
     "url": "https://adrock.com.br/blog/kitty-chat-react-feedback-emojis-supabase",
@@ -1104,12 +1464,44 @@
     "published_at": "2025-09-23"
   },
   {
+    "title": "Ad Rock Digital Mkt - Blog - LearnWorlds — Crie, Venda e Escale Cursos Online com Experiência Premium",
+    "slug": "learnworlds-criar-cursos-online",
+    "url": "https://adrock.com.br/blog/learnworlds-criar-cursos-online",
+    "description": "Descubra o LearnWorlds, a plataforma completa para criar e vender cursos online com design, gamificação e automação de marketing integrados.",
+    "category": "Ferramentas e Parcerias",
+    "published_at": "2025-10-22"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - Como limpar conversões no GA4: deduplicação, parâmetros obrigatórios e validação técnica",
+    "slug": "limpar-conversoes-ga4-deduplicacao-validacao",
+    "url": "https://adrock.com.br/blog/limpar-conversoes-ga4-deduplicacao-validacao",
+    "description": "Como eliminar conversões duplicadas, sujas ou inválidas no GA4 usando regras técnicas, validações e deduplicação de eventos.",
+    "category": "Analytics e Dados",
+    "published_at": "2025-11-25"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - Link Builder – Da Ideia ao Middleware Inteligente com Flask, Nginx e GPT Actions",
+    "slug": "link-builder-api-flask-gpt-automacao",
+    "url": "https://adrock.com.br/blog/link-builder-api-flask-gpt-automacao",
+    "description": "O Link Builder é uma API em Python/Flask desenvolvida pela Ad Rock Digital Mkt para geração automática de links UTM e QR Codes. O projeto integra infraestrutura com Nginx, HTTPS e GPT Actions, servindo como base para automações futuras com o OpenAI Assistant API.",
+    "category": "Código e Automação",
+    "published_at": "2025-10-09"
+  },
+  {
     "title": "Ad Rock Digital Mkt - Blog - LLM-as-a-Judge: como a própria IA é usada para avaliar mecanismos de busca",
     "slug": "llm-as-a-judge-avaliacao-mecanismos-busca",
     "url": "https://adrock.com.br/blog/llm-as-a-judge-avaliacao-mecanismos-busca",
     "description": "Veja como modelos de linguagem são usados para avaliar a qualidade de mecanismos de busca, escalando análises semânticas com rigor técnico.",
     "category": "SEO e IA",
     "published_at": "2026-01-12"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - llms.txt e ai-dataset.json: Governança de dados para IA em sites jornalísticos",
+    "slug": "llms-txt-ai-dataset-sites-jornalistico",
+    "url": "https://adrock.com.br/blog/llms-txt-ai-dataset-sites-jornalistico",
+    "description": "Descubra como usar llms.txt e ai-dataset.json para proteger e estruturar conteúdos jornalísticos frente à IA. Veja diferenças em relação a sitemaps e boas práticas de implementação.",
+    "category": "SEO e IA",
+    "published_at": "2025-08-19"
   },
   {
     "title": "Ad Rock Digital Mkt - Blog - Looker Studio é o novo Data Studio: o que mudou e o que isso impacta na análise de dados",
@@ -1240,6 +1632,14 @@
     "published_at": "2026-05-13"
   },
   {
+    "title": "Ad Rock Digital Mkt - Blog - Meu Mercado: analytics com Firebase e GA4 no app Flutter e os relatórios que transformam uso em decisão",
+    "slug": "meu-mercado-app-analytics-firebase-ga4-relatorios",
+    "url": "https://adrock.com.br/blog/meu-mercado-app-analytics-firebase-ga4-relatorios",
+    "description": "Continuação do case Meu Mercado: implementação de Firebase Analytics e GA4 no app Flutter online, eventos de produto, relatórios por plataforma, funis e leitura de dados para produto e marketing.",
+    "category": "Código e Automação",
+    "published_at": "2026-05-21"
+  },
+  {
     "title": "Ad Rock Digital Mkt - Blog - Meu Mercado: app Flutter estável, analytics com Firebase/GA4 e o próximo passo para apps offline",
     "slug": "meu-mercado-app-flutter-com-firebase-ga4",
     "url": "https://adrock.com.br/blog/meu-mercado-app-flutter-com-firebase-ga4",
@@ -1304,6 +1704,14 @@
     "published_at": "2025-10-23"
   },
   {
+    "title": "Ad Rock Digital Mkt - Blog - Como modelar conversões corretamente: lógica, deduplicação, janelas e atribuição multi-origem",
+    "slug": "modelagem-conversoes-ga4-bigquery-atribuicao",
+    "url": "https://adrock.com.br/blog/modelagem-conversoes-ga4-bigquery-atribuicao",
+    "description": "Um guia técnico para modelar conversões com precisão usando GA4, BigQuery e regras de negócio. Inclui deduplicação, janelas, validações e atribuição multi-toque.",
+    "category": "Analytics e Dados",
+    "published_at": "2025-11-28"
+  },
+  {
     "title": "Ad Rock Digital Mkt - Blog - Monday.com: o Work OS que transforma a gestão de projetos, times e processos",
     "slug": "monday-com-gestao-de-projetos-work-os",
     "url": "https://adrock.com.br/blog/monday-com-gestao-de-projetos-work-os",
@@ -1318,6 +1726,14 @@
     "description": "Discover monday.com, a Work OS platform for project management, team collaboration and process automation. Learn benefits and how to sign up with Ad Rock.",
     "category": "Ferramentas e Parcerias",
     "published_at": "2026-01-07"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - Mídia paga em 2026: as mudanças que profissionais de marketing precisam fazer agora",
+    "slug": "mudancas-midia-paga-2026-o-que-marketers-precisam-ajustar",
+    "url": "https://adrock.com.br/blog/mudancas-midia-paga-2026-o-que-marketers-precisam-ajustar",
+    "description": "Veja as principais mudanças em mídia paga para 2026 e o que profissionais de marketing precisam ajustar em estratégia, dados, IA, mensuração e orçamento.",
+    "category": "Mídia e Performance",
+    "published_at": "2026-01-14"
   },
   {
     "title": "Ad Rock Digital Mkt - Blog - O que é n8n e como essa ferramenta de automação pode transformar seus processos digitais",
@@ -1336,6 +1752,14 @@
     "published_at": "2026-04-01"
   },
   {
+    "title": "Ad Rock Digital Mkt - Blog - Netlify: modern deployment platform — and how it compares to Vercel and Cloudflare",
+    "slug": "netlify-modern-deployment-vs-vercel-cloudflare",
+    "url": "https://adrock.com.br/blog/netlify-modern-deployment-vs-vercel-cloudflare",
+    "description": "Learn how Netlify works and how it compares to Vercel and Cloudflare Pages for modern deployment, performance, and scalabilit",
+    "category": "Ferramentas e Parcerias",
+    "published_at": "2026-04-01"
+  },
+  {
     "title": "Ad Rock Digital Mkt - Blog - Novidades do Google Ads 2025: IA generativa, Ads Advisor e campanhas AI Max",
     "slug": "novidades-google-ads-2025-ai-max-ads-advisor",
     "url": "https://adrock.com.br/blog/novidades-google-ads-2025-ai-max-ads-advisor",
@@ -1350,6 +1774,14 @@
     "description": "Descubra como o novo algoritmo do LinkedIn™ 2025 mudou o alcance orgânico e o que os top 1% estão fazendo para crescer com dados e formatos de alto desempenho.",
     "category": "Mídia e Performance",
     "published_at": "2025-10-13"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - 🛒 Nuvemshop: A Plataforma de E-commerce que Impulsiona Negócios",
+    "slug": "nuvemshop-plataforma-ecommerce",
+    "url": "https://adrock.com.br/blog/nuvemshop-plataforma-ecommerce",
+    "description": "Conheça a Nuvemshop, plataforma de e-commerce líder na América Latina. Veja funcionalidades, tipos de produtos, planos disponíveis e como contratar pela Ad Rock.",
+    "category": "Ferramentas e Parcerias",
+    "published_at": "2025-09-23"
   },
   {
     "title": "Ad Rock Digital Mkt - Blog - O que é a DigitalOcean e para quais projetos ela faz sentido em 2026?",
@@ -1400,12 +1832,44 @@
     "published_at": "2025-09-04"
   },
   {
+    "title": "Ad Rock Digital Mkt - Blog - Como padronizar métricas entre equipes e ferramentas (GA4, CRM, Ads e BigQuery)",
+    "slug": "padronizar-metricas-ga4-crm-ads-bigquery",
+    "url": "https://adrock.com.br/blog/padronizar-metricas-ga4-crm-ads-bigquery",
+    "description": null,
+    "category": "Analytics e Dados",
+    "published_at": "2025-11-23"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - Patagon: automação de leads que pode aumentar em até 30% os resultados de campanhas de mídia",
+    "slug": "patagon-automacao-leads-concessionarias-imobiliarias",
+    "url": "https://adrock.com.br/blog/patagon-automacao-leads-concessionarias-imobiliarias",
+    "description": "Conheça a Patagon, plataforma de automação de leads para concessionárias e imobiliárias que pode aumentar em até 30% os resultados de campanhas de mídia digital.",
+    "category": "Ferramentas e Parcerias",
+    "published_at": "2026-03-06"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - Perfil Design: UI minimalista para perfis digitais modernos",
+    "slug": "perfil-design-ui-minimalista",
+    "url": "https://adrock.com.br/blog/perfil-design-ui-minimalista",
+    "description": "Conheça o projeto Perfil Design, desenvolvido pela Ad Rock Digital, que cria interfaces de perfil modernas e responsivas em React. Veja como funciona e como usar o repositório no GitHub.",
+    "category": "Código e Automação",
+    "published_at": "2025-10-02"
+  },
+  {
     "title": "Ad Rock Digital Mkt - Blog - Performance Marketing Beyond Google and Meta: Strategic Channel Diversification",
     "slug": "performance-marketing-beyond-google-meta-2026",
     "url": "https://adrock.com.br/blog/performance-marketing-beyond-google-meta-2026",
     "description": "Explore how to diversify performance marketing beyond Google and Meta in 2026 with mobile apps, retail media, AI platforms, and strategic channel allocation.",
     "category": "Mídia e Performance",
     "published_at": "2026-03-12"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - Performance Max está canibalizando o tráfego orgânico? O debate que o e-commerce precisa enfrentar",
+    "slug": "performance-max-canibaliza-trafego-organico",
+    "url": "https://adrock.com.br/blog/performance-max-canibaliza-trafego-organico",
+    "description": "Performance Max pode estar capturando vendas que antes vinham do SEO? Entenda o debate sobre canibalização de tráfego orgânico, atribuição e impacto real no ROI de e-commerce.",
+    "category": "Mídia e Performance",
+    "published_at": "2026-03-10"
   },
   {
     "title": "Ad Rock Digital Mkt - Blog - Tutorial - Pesquisa de Concorrentes no Google Ads com o Semrush",
@@ -1424,12 +1888,28 @@
     "published_at": "2026-06-19"
   },
   {
+    "title": "Ad Rock Digital Mkt - Blog - Pipedrive CRM: como organizar vendas, integrar marketing e aumentar a previsibilidade comercial",
+    "slug": "pipedrive-crm-vendas-marketing-automacao",
+    "url": "https://adrock.com.br/blog/pipedrive-crm-vendas-marketing-automacao",
+    "description": "Conheça o Pipedrive CRM, uma das principais plataformas de gestão comercial do mercado. Veja recursos, integrações, automações e benefícios para empresas em crescimento.",
+    "category": "Ferramentas e Parcerias",
+    "published_at": "2026-06-19"
+  },
+  {
     "title": "Ad Rock Digital Mkt - Blog - Do GA4 Data API ao Looker Studio: como programamos um pipeline automatizado de Analytics para um curso Latam",
     "slug": "pipeline-analytics-ga4-data-api-github-actions-looker-studio",
     "url": "https://adrock.com.br/blog/pipeline-analytics-ga4-data-api-github-actions-looker-studio",
     "description": "Como programamos um pipeline de Analytics com GA4 Data API, Node.js, Apps Script, Sheets, testes, GitHub Actions e Looker Studio para um curso Latam.",
     "category": "Código e Automação",
     "published_at": "2026-09-11"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - Como Transformei um Extrator de Emails em um Pipeline Industrial de Prospecção B2B",
+    "slug": "pipeline-industrial-prospeccao-b2b-python",
+    "url": "https://adrock.com.br/blog/pipeline-industrial-prospeccao-b2b-python",
+    "description": "Veja como evoluí um simples extrator de emails para um pipeline industrial de prospecção B2B com segmentação empresarial, enriquecimento via API, controle incremental por hash, logs por execução e arquitetura escalável em Python.",
+    "category": "Código e Automação",
+    "published_at": "2026-02-26"
   },
   {
     "title": "Ad Rock Digital Mkt - Blog - Como construir pipelines confiáveis com BigQuery: coleta, limpeza e versionamento de métricas",
@@ -1446,6 +1926,14 @@
     "description": "Descubra por que empresas perdem até 70% dos leads gerados por campanhas de Google Ads e Meta Ads e como a automação pode recuperar essas oportunidades.",
     "category": "Ferramentas e Parcerias",
     "published_at": "2026-03-06"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - Por que Modelos de Linguagem Alucinam? Uma Visão Técnica Baseada em Estatística e Avaliação",
+    "slug": "por-que-modelos-de-linguagem-alucinam",
+    "url": "https://adrock.com.br/blog/por-que-modelos-de-linguagem-alucinam",
+    "description": "Entenda por que modelos de linguagem como GPT-4 e Claude 3 ainda cometem alucinações. Descubra as causas estatísticas, falhas em benchmarks e como resolver isso.",
+    "category": "SEO e IA",
+    "published_at": "2025-09-08"
   },
   {
     "title": "Ad Rock Digital Mkt - Blog - Como escrever seu primeiro TOON Schema: guia prático para começar com o protocolo que pode substituir JSON + JSON Schema",
@@ -1512,6 +2000,14 @@
     "published_at": "2026-02-13"
   },
   {
+    "title": "Ad Rock Digital Mkt - Blog - Publicidade Programática com Predicta e Ad Rock Digital Mkt",
+    "slug": "publicidade-programatica-predicta-adrock",
+    "url": "https://adrock.com.br/blog/publicidade-programatica-predicta-adrock",
+    "description": "Conheça a parceria entre Ad Rock Digital Mkt e Predicta — pioneira em mídia programática no Brasil. Soluções completas em DV360, YouTube Ads, CTV, pDOOH e geolocalização, com dados em tempo real e mensuração avançada.",
+    "category": "Mídia e Performance",
+    "published_at": "2025-10-27"
+  },
+  {
     "title": "Ad Rock Digital Mkt - Blog - Qualidade excelente no Google Ads não garante resultado (e às vezes até atrapalha)",
     "slug": "qualidade-excelente-google-ads-nao-garante-resultado",
     "url": "https://adrock.com.br/blog/qualidade-excelente-google-ads-nao-garante-resultado",
@@ -1534,6 +2030,14 @@
     "description": "Aprenda como configurar corretamente o rastreamento de conversões do Google Ads com GA4, garantindo dados rápidos, confiáveis e alinhados com as melhores práticas de atribuição e otimização.",
     "category": "Mídia e Performance",
     "published_at": "2025-08-21"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - RD Station: Automação de Marketing e CRM para Crescimento de Empresas",
+    "slug": "rd-station-automacao-crm",
+    "url": "https://adrock.com.br/blog/rd-station-automacao-crm",
+    "description": "Descubra como o RD Station pode transformar o marketing digital e as vendas da sua empresa. Veja funcionalidades, comparativo com concorrentes e como contratar pela Ad Rock.",
+    "category": "Ferramentas e Parcerias",
+    "published_at": "2025-09-22"
   },
   {
     "title": "Ad Rock Digital Mkt - Blog - O verificador da realidade da IA: a IA não é inteligente — é automação avançada",
@@ -1576,12 +2080,36 @@
     "published_at": "2026-03-27"
   },
   {
+    "title": "Ad Rock Digital Mkt - Blog - Retrospectiva 2025 — O ano em que o blog da Ad Rock consolidou sua voz técnica e estratégica",
+    "slug": "retrospectiva-adrock-blog-2025",
+    "url": "https://adrock.com.br/blog/retrospectiva-adrock-blog-2025",
+    "description": "Retrospectiva 2025 do blog da Ad Rock: destaques de conteúdo, evolução editorial técnica e institucional, tendências em SEO, IA, analytics, mídia e automação que marcaram o ano.",
+    "category": "Tendências e Mercado",
+    "published_at": "2025-12-22"
+  },
+  {
     "title": "Ad Rock Digital Mkt - Blog - Por que métricas isoladas mentem: rigor estatístico na avaliação de IA",
     "slug": "rigor-estatistico-avaliacao-ia",
     "url": "https://adrock.com.br/blog/rigor-estatistico-avaliacao-ia",
     "description": "Entenda por que métricas isoladas podem enganar na avaliação de IA e como rigor estatístico garante decisões técnicas mais confiáveis.",
     "category": "SEO e IA",
     "published_at": "2026-01-14"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - Por Que Seu ROAS Está Inflado? O Impacto da Nova Interface da SERP na Atribuição",
+    "slug": "roas-inflado-nova-serp-atribuicao-2026",
+    "url": "https://adrock.com.br/blog/roas-inflado-nova-serp-atribuicao-2026",
+    "description": "Entenda como a nova interface da SERP pode inflar artificialmente o ROAS e gerar canibalização entre SEO e mídia paga em 2026.",
+    "category": "Mídia e Performance",
+    "published_at": "2026-02-27"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - ROAS não existe (e está destruindo suas campanhas)",
+    "slug": "roas-nao-existe-marketing-dados",
+    "url": "https://adrock.com.br/blog/roas-nao-existe-marketing-dados",
+    "description": "Entenda por que ROAS isolado é uma métrica falha e como isso pode estar prejudicando suas decisões de marketing e campanhas.",
+    "category": "Mídia e Performance",
+    "published_at": "2026-05-12"
   },
   {
     "title": "Ad Rock Digital Mkt - Blog - Robots.txt, llms.txt, Google-Extended, Content Signals e AI Dataset: quando usar cada um na otimização para IA",
@@ -1600,12 +2128,28 @@
     "published_at": "2026-07-07"
   },
   {
+    "title": "Ad Rock Digital Mkt - Blog - RSL Standard: O novo protocolo que garante compensação justa para criadores na era da IA",
+    "slug": "rsl-standard-compensacao-justa-ia",
+    "url": "https://adrock.com.br/blog/rsl-standard-compensacao-justa-ia",
+    "description": "Descubra como o novo protocolo RSL Standard garante compensação justa para criadores e editores na era da IA. Já apoiado por Reddit, Yahoo e Medium.",
+    "category": "SEO e IA",
+    "published_at": "2025-09-11"
+  },
+  {
     "title": "Ad Rock Digital Mkt - Blog - Solving the RSS Problem in Framer: A Python-Based Feed Generator for Ad Rock Blog",
     "slug": "rss-generator-framer-python",
     "url": "https://adrock.com.br/blog/rss-generator-framer-python",
     "description": "Build a valid RSS feed for your Framer blog using Python. Solve the lack of native RSS with this open-source generator built by Ad Rock Digital Mkt.",
     "category": "Analytics e Dados",
     "published_at": "2025-09-04"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - RSS Generator v2.0: Integrando IndexNow, Cloudflare Workers e Framer para Indexação Quase em Tempo Real",
+    "slug": "rss-generator-v2-indexnow-cloudflare-framer",
+    "url": "https://adrock.com.br/blog/rss-generator-v2-indexnow-cloudflare-framer",
+    "description": "Evolução do RSS Generator para Framer com integração ao IndexNow, Cloudflare Workers, automação via cron e arquitetura robusta para indexação quase em tempo real no Bing e AI Search.",
+    "category": "Código e Automação",
+    "published_at": "2026-02-11"
   },
   {
     "title": "Ad Rock Digital Mkt - Blog - Da prospecção inteligente à ativação: como sanitizar, segmentar e usar dados do Google Maps em Email Marketing",
@@ -1622,6 +2166,14 @@
     "description": "Entenda como usar Schema.org estrategicamente para aumentar suas chances de ser citado por Gemini, ChatGPT e Perplexity. Guia técnico para SEO em 2026.",
     "category": "SEO e IA",
     "published_at": "2026-02-23"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - O Google Search Console vai exibir dados de redes sociais: o que isso significa para SEO",
+    "slug": "search-console-dados-redes-sociais-visibilidade-integrada",
+    "url": "https://adrock.com.br/blog/search-console-dados-redes-sociais-visibilidade-integrada",
+    "description": "Google vai integrar dados de canais sociais no Search Console Insights. Entenda o novo experimento, como isso impacta visão de performance orgânica e como usar para otimizar sites e presença digital.",
+    "category": "SEO e IA",
+    "published_at": "2025-12-17"
   },
   {
     "title": "Ad Rock Digital Mkt - Blog - Search Console ganha relatório de AI Search: Google passa a mostrar dados de AI Mode e experiências generativas",
@@ -1646,6 +2198,22 @@
     "description": "Semrush One brings the next generation of AI-powered SEO. Measure your brand’s visibility in AI search, analyze competitor prompts, and uncover where ChatGPT and Gemini mention — or ignore — your business.",
     "category": "SEO e IA",
     "published_at": "2025-10-30"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - Semrush One: a nova geração do SEO com IA — análise, prompts e visibilidade para 2025",
+    "slug": "semrush-one-ia-seo-2025",
+    "url": "https://adrock.com.br/blog/semrush-one-ia-seo-2025",
+    "description": "O Semrush One inaugura uma nova era do SEO com IA. Descubra como medir sua visibilidade em buscadores de IA, rastrear prompts e entender onde sua marca aparece — ou não — nas respostas de ChatGPT e Gemini.",
+    "category": "SEO e IA",
+    "published_at": "2025-10-30"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - Semrush: A Ferramenta Completa de Marketing Digital e SEO",
+    "slug": "semrush-seo-ferramenta-marketing-digital",
+    "url": "https://adrock.com.br/blog/semrush-seo-ferramenta-marketing-digital",
+    "description": "Descubra como o Semrush se tornou a ferramenta completa de SEO e marketing digital. Compare com Ahrefs, veja funcionalidades e como contratar pela Ad Rock.",
+    "category": "Ferramentas e Parcerias",
+    "published_at": "2025-09-11"
   },
   {
     "title": "Ad Rock Digital Mkt - Blog - SEO, GEO, AIO, AEO, SXO? A sopa de letrinhas do marketing em 2025 explicada",
@@ -1678,6 +2246,14 @@
     "description": "Entenda como aplicar SEO técnico em projetos Next.js, explorando tipos de renderização, boas práticas e governança para evitar regressões e garantir resultados sustentáveis.",
     "category": "SEO e IA",
     "published_at": "2025-10-01"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - SEO Orientado a IA: como preparar seu site para mecanismos de busca, LLMs e agentes inteligentes",
+    "slug": "seo-orientado-a-ia",
+    "url": "https://adrock.com.br/blog/seo-orientado-a-ia",
+    "description": "SEO orientado a IA vai além de rankings. Entenda como preparar conteúdo, busca e dados para LLMs, AI Search e agentes inteligentes.",
+    "category": "SEO e IA",
+    "published_at": "2026-01-05"
   },
   {
     "title": "Ad Rock Digital Mkt - Blog - SEO para AI Mode do Google: Como Estruturar Conteúdo em Blocos de 500 Tokens",
@@ -1768,12 +2344,60 @@
     "published_at": "2026-03-10"
   },
   {
+    "title": "Ad Rock Digital Mkt - Blog - Supermetrics: Automate your marketing reporting and save hours per week",
+    "slug": "supermetrics-automated-reporting",
+    "url": "https://adrock.com.br/blog/supermetrics-automated-reporting",
+    "description": "Supermetrics automates your marketing reporting across platforms like GA4 and Google Ads. Learn how Ad Rock integrates it to save time and boost insights.",
+    "category": "Ferramentas e Parcerias",
+    "published_at": "2025-09-09"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - Supermetrics: Automatize relatórios de marketing e economize horas por semana",
+    "slug": "supermetrics-relatorios-automatizados",
+    "url": "https://adrock.com.br/blog/supermetrics-relatorios-automatizados",
+    "description": "Descubra como o Supermetrics pode automatizar seus relatórios de marketing e economizar horas por mês. Veja como a Ad Rock usa e recomenda essa ferramenta.",
+    "category": "Ferramentas e Parcerias",
+    "published_at": "2025-09-09"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - SurveyMonkey: understand your audience and grow with smarter data",
+    "slug": "surveymonkey-data-driven-insights",
+    "url": "https://adrock.com.br/blog/surveymonkey-data-driven-insights",
+    "description": "SurveyMonkey helps you collect feedback, analyze trends, and make data-driven marketing decisions. Discover how Ad Rock Digital Mkt integrates it into smart growth strategies.",
+    "category": "Ferramentas e Parcerias",
+    "published_at": "2025-10-13"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - SurveyMonkey: como entender seu público e crescer com dados inteligentes",
+    "slug": "surveymonkey-pesquisas-inteligentes",
+    "url": "https://adrock.com.br/blog/surveymonkey-pesquisas-inteligentes",
+    "description": "A SurveyMonkey transforma dados em decisões inteligentes. Descubra como integrar pesquisas, UX e marketing em um só fluxo com a Ad Rock Digital Mkt.",
+    "category": "Ferramentas e Parcerias",
+    "published_at": "2025-10-13"
+  },
+  {
     "title": "Ad Rock Digital Mkt - Blog - Tendências de captação de recursos para 2026: o que ONGs precisam fazer no digital agora",
     "slug": "tendencias-captacao-recursos-2026-ongs",
     "url": "https://adrock.com.br/blog/tendencias-captacao-recursos-2026-ongs",
     "description": "Veja as tendências de captação de recursos para 2026 e como ONGs podem estruturar SEO, Google Ad Grants, UX e dados para escalar doações no digital.",
     "category": "Tendências e Mercado",
     "published_at": "2026-02-12"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - Tidio — Atendimento Omnichannel e Chatbots de IA para Vendas e Suporte",
+    "slug": "tidio-chatbot-atendimento-omnichannel",
+    "url": "https://adrock.com.br/blog/tidio-chatbot-atendimento-omnichannel",
+    "description": "Conheça o Tidio, plataforma de chat e chatbot com IA generativa para vendas e suporte. Atenda clientes 24h com automação e integração omnichannel.",
+    "category": "Ferramentas e Parcerias",
+    "published_at": "2025-10-22"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - TikTok Hashtag Scraper: Automatizando a Coleta de Dados de Hashtags no TikTok",
+    "slug": "tiktok-hashtag-scraper-python",
+    "url": "https://adrock.com.br/blog/tiktok-hashtag-scraper-python",
+    "description": "Aprenda a usar o TikTok Hashtag Scraper em Python para coletar dados de hashtags de forma automatizada. Guia completo com código aberto e exemplos práticos.",
+    "category": "Código e Automação",
+    "published_at": "2025-09-25"
   },
   {
     "title": "Ad Rock Digital Mkt - Blog - Tradify — Sistema de Gestão e Automação para Prestadores de Serviço e Obras",
@@ -1808,6 +2432,14 @@
     "published_at": "2026-08-15"
   },
   {
+    "title": "Ad Rock Digital Mkt - Blog - UTMs podem estar destruindo seu SEO (e quase ninguém percebeu)",
+    "slug": "utms-parametros-url-problemas-seo",
+    "url": "https://adrock.com.br/blog/utms-parametros-url-problemas-seo",
+    "description": "Entenda como UTMs e parâmetros de URL podem gerar problemas de SEO técnico, canonização, indexação e AI Search.",
+    "category": "SEO e IA",
+    "published_at": "2026-05-29"
+  },
+  {
     "title": "Ad Rock Digital Mkt - Blog - Como validar XML Sitemap automaticamente com Python (SEO técnico)",
     "slug": "validar-sitemap-python-seo-tecnico",
     "url": "https://adrock.com.br/blog/validar-sitemap-python-seo-tecnico",
@@ -1822,6 +2454,14 @@
     "description": "O Postman possui dezenas de variáveis dinâmicas para gerar nomes, e-mails, UUIDs e outros dados aleatórios automaticamente. Veja como usar corretamente e evitar erros nos testes de API.",
     "category": "Código e Automação",
     "published_at": "2025-11-05"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - Você não pode otimizar para respostas geradas por IA? Vamos falar sobre isso.",
+    "slug": "voce-nao-pode-otimizar-para-ia",
+    "url": "https://adrock.com.br/blog/voce-nao-pode-otimizar-para-ia",
+    "description": "A discussão sobre “AEO — AI Engine Optimization” está crescendo, mas será que realmente existe como otimizar para respostas de IA como ChatGPT, Perplexity e Gemini? Este artigo analisa a visão de Himanshu Sharma (Optimize Smart) e traz uma reflexão técnica sobre o que é mito, o que é tendência e o que já é prática real.",
+    "category": "SEO e IA",
+    "published_at": "2025-11-06"
   },
   {
     "title": "Ad Rock Digital Mkt - Blog - Wati.io — Automação de WhatsApp Business com API Oficial da Meta",
@@ -1848,6 +2488,14 @@
     "published_at": "2026-07-07"
   },
   {
+    "title": "Ad Rock Digital Mkt - Blog - WhatsApp, IA e controle de plataforma: por que a Meta está fechando o jogo",
+    "slug": "whatsapp-ia-meta-controle-plataforma",
+    "url": "https://adrock.com.br/blog/whatsapp-ia-meta-controle-plataforma",
+    "description": "Entenda por que a Meta está restringindo automações no WhatsApp e como isso se conecta à estratégia de IA e controle de plataforma.",
+    "category": "Tendências e Mercado",
+    "published_at": "2026-03-25"
+  },
+  {
     "title": "Ad Rock Digital Mkt - Blog - WhatsApp Marketing API em 2026: Novo modelo de preço muda ROI das campanhas",
     "slug": "whatsapp-marketing-api-2026-max-price-roi",
     "url": "https://adrock.com.br/blog/whatsapp-marketing-api-2026-max-price-roi",
@@ -1862,5 +2510,21 @@
     "description": "Entenda como os nomes de usuário do WhatsApp mudam a comunicação entre empresas e clientes, quais sistemas serão impactados, o que continua igual e como preparar sua operação.",
     "category": "Ferramentas e Parcerias",
     "published_at": "2026-06-30"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - XML Sitemap: arquitetura ideal para SEO técnico em 2026",
+    "slug": "xml-sitemap-arquitetura-seo-tecnico-2026",
+    "url": "https://adrock.com.br/blog/xml-sitemap-arquitetura-seo-tecnico-2026",
+    "description": "Entenda como estruturar um XML Sitemap eficiente para SEO em 2026, com arquitetura escalável, indexação otimizada e boas práticas oficiais do Google.",
+    "category": "SEO e IA",
+    "published_at": "2026-03-26"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - YouTube Thumbnail Downloader em Python: Baixe Thumbnails de Vídeos com um Script Simples",
+    "slug": "youtube-thumbnail-downloader-python",
+    "url": "https://adrock.com.br/blog/youtube-thumbnail-downloader-python",
+    "description": "Aprenda a baixar thumbnails de vídeos do YouTube com um script simples em Python. Código open source, fácil de usar e ideal para automações e relatórios de marketing.",
+    "category": "Código e Automação",
+    "published_at": "2025-09-25"
   }
 ]

@@ -1,0 +1,11 @@
+{
+  "slug": "limpar-conversoes-ga4-deduplicacao-validacao",
+  "url": "https://adrock.com.br/blog/limpar-conversoes-ga4-deduplicacao-validacao",
+  "title": "Ad Rock Digital Mkt - Blog - Como limpar conversões no GA4: deduplicação, parâmetros obrigatórios e validação técnica",
+  "description": "Como eliminar conversões duplicadas, sujas ou inválidas no GA4 usando regras técnicas, validações e deduplicação de eventos.",
+  "category": "Analytics e Dados",
+  "published_at": "2025-11-25",
+  "content": "A maior causa de números inflados, divergentes e sem confiabilidade no GA4 não é a modelagem — é conversão suja .\nConversões sujas são eventos que:\n- disparam múltiplas vezes\n\n- chegam com parâmetros incompletos\n\n- vêm de fontes erradas\n\n- são enviados tanto no client-side quanto no server-side\n\n- entram duplicadas no Google Ads\n\n- quebram o funil real\n\nEste post mostra como limpar conversões no GA4 , como validar eventos, como deduplicar e como manter um sistema confiável em 2025.\n1. O que é uma “conversão suja” no GA4?\nUma conversão é considerada suja quando:\nChega duplicada\nEx:\n– generate_lead dispara no GTM + novamente no código hardcoded.\n– purchase dispara client-side e server-side sem dedupe.\nChega com parâmetros faltando\nExemplo clássico:\n– purchase sem transaction_id\n– generate_lead sem email\n– view_item sem item_id\nChega no momento errado\n– Antes da página carregar\n– Após um redirecionamento fora do padrão\n– Em pop-ups que não carregam estado da página\nChega com UTMs corrompidas\n– redirect tira UTMs\n– links internos com UTM geram “conversões falsas”\n– e-mails sem UTMs caem em Direct\nÉ criada automaticamente por derivação\nEx:\nCriar no GTM:\nif page_location contains “ / obrigado” → generate_lead",
+  "content_length": 1222,
+  "content_bytes": 1289
+}

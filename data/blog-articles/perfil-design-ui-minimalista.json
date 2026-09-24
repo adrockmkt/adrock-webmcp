@@ -1,0 +1,11 @@
+{
+  "slug": "perfil-design-ui-minimalista",
+  "url": "https://adrock.com.br/blog/perfil-design-ui-minimalista",
+  "title": "Ad Rock Digital Mkt - Blog - Perfil Design: UI minimalista para perfis digitais modernos",
+  "description": "Conheça o projeto Perfil Design, desenvolvido pela Ad Rock Digital, que cria interfaces de perfil modernas e responsivas em React. Veja como funciona e como usar o repositório no GitHub.",
+  "category": "Código e Automação",
+  "published_at": "2025-10-02",
+  "content": "Introdução\nCom a ascensão de plataformas digitais, ter uma interface de perfil clara e atrativa é fundamental. Pensando nisso, desenvolvi o Perfil Design , um projeto open source que combina UI moderna, responsividade e fácil implementação em React . O objetivo é fornecer um template que possa ser adaptado para diferentes contextos — desde perfis profissionais até redes sociais internas.\nPrincipais Funcionalidades\n- Design Minimalista: foco em tipografia, cores suaves e destaque para avatar.\n\n- Versões Diferentes de Card: dois layouts para comparação e uso.\n\n- Responsividade: funciona em desktop e mobile sem ajustes adicionais.\n\n- Stack Utilizada: React + Tailwind CSS.\n\n- Customização Simples: fácil alteração de textos, cores e métricas.\n\nEstrutura do Projeto\nO repositório segue um padrão enxuto para facilitar clonagem e customização:\n- /src/components/ProfileCard.jsx – componente principal do card de perfil.\n\n- /public/ – ícones e assets utilizados.\n\n- package.json – dependências (React, Tailwind).\n\nCaso de Uso\nEsse design pode ser usado em:\n- Portfólios digitais.\n\n- Dashboards internos.\n\n- Áreas de login de aplicativos.\n\n- Perfis de redes corporativas ou comunidades.\n\nComo Testar e Usar\n- Clone o repositório 👉 Perfil Design no GitHub\n\ngit clone https : //github.com/adrockmkt/perfil_design.git\ncd perfil_design\nnpm install\nnpm run dev",
+  "content_length": 1357,
+  "content_bytes": 1394
+}

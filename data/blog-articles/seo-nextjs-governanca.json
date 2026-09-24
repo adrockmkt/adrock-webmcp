@@ -1,0 +1,11 @@
+{
+  "slug": "seo-nextjs-governanca",
+  "url": "https://adrock.com.br/blog/seo-nextjs-governanca",
+  "title": "Ad Rock Digital Mkt - Blog - SEO para Next.js: Técnicas, Renderização e Governança em Projetos de Tecnologia",
+  "description": "Entenda como aplicar SEO técnico em projetos Next.js, explorando tipos de renderização, boas práticas e governança para evitar regressões e garantir resultados sustentáveis.",
+  "category": "SEO e IA",
+  "published_at": "2025-10-01",
+  "content": "SEO para Next.js: Técnicas, Renderização e Governança em Projetos de Tecnologia\n\nAutor: Rafael Lins\n\nEntenda como aplicar SEO técnico em projetos Next.js, explorando tipos de renderização, boas práticas e governança para evitar regressões e garantir resultados sustentáveis.\n\nFique por dentro do que há de mais relavante no Marketing Digital, assine a nossa newsletter:\n\nFique por dentro do que há de mais relavante no Marketing Digital, assine a nossa newsletter:\n\nIntrodução\nO Next.js se consolidou como um dos frameworks mais utilizados para desenvolvimento web moderno, especialmente quando o assunto é performance e escalabilidade. Mas quando falamos de SEO, o desafio vai além de implementar tags: é necessário compreender como os tipos de renderização impactam os mecanismos de busca, além de criar uma governança de SEO que evite regressões ao longo do ciclo de vida do projeto.\nNeste artigo, vamos explorar:\n- Como funcionam os diferentes tipos de renderização do Next.js e sua relação com SEO.\n\n- Boas práticas técnicas para otimizar indexação.\n\n- Como estruturar governança de SEO em times de tecnologia.",
+  "content_length": 1115,
+  "content_bytes": 1148
+}
