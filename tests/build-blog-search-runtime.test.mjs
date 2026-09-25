@@ -107,3 +107,28 @@ test("AI and IA variants count as equivalent concepts for coverage", () => {
   assert.equal(result.results[0].url, "https://adrock.com.br/blog/ga4-ia-analise-contextual");
   assert.equal(result.results[0].coverage, 1);
 });
+
+
+test("search returns the canonical slug required by get_blog_article", () => {
+  const runtime = loadRuntime([
+    {
+      title: "Google Sponsored Results nova interface",
+      slug: "google-sponso%E2%80%8Bred-results-nova-interface-anuncios",
+      url: "https://adrock.com.br/blog/google-sponso%E2%80%8Bred-results-nova-interface-anuncios",
+      description: "Google Sponsored Results.",
+      category: "Mídia e Performance",
+      published_at: "2026-01-01"
+    }
+  ]);
+
+  const result = runtime.search("Google Sponsored Results");
+  assert.equal(result.count, 1);
+  assert.equal(
+    result.results[0].slug,
+    "google-sponsored-results-nova-interface-anuncios",
+  );
+  assert.equal(
+    result.results[0].url,
+    "https://adrock.com.br/blog/google-sponso%E2%80%8Bred-results-nova-interface-anuncios",
+  );
+});
