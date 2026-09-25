@@ -70,6 +70,20 @@ export function renderBlogSearchRuntime(index) {
     return score;
   }
 
+  function canonicalizeResultSlug(slug) {
+    try {
+      const decoded = decodeURIComponent(String(slug || ""));
+      const cleaned = decoded
+        .replace(/[\\u200B-\\u200D\\uFEFF]/g, "")
+        .normalize("NFKD")
+        .replace(/[\\u0300-\\u036f]/g, "")
+        .toLowerCase();
+      return /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(cleaned) ? cleaned : null;
+    } catch {
+      return null;
+    }
+  }
+
   function searchBlog(query, limit = 5) {
     const cleanQuery = String(query || "").trim();
 
@@ -95,6 +109,7 @@ export function renderBlogSearchRuntime(index) {
     const maxScore = ranked.length ? ranked[0].rawScore : 0;
     const results = ranked.map(({ post, rawScore, coverage }) => ({
       title: post.title,
+      slug: canonicalizeResultSlug(post.slug),
       url: post.url,
       description: post.description,
       category: post.category,
