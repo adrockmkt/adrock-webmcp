@@ -37,7 +37,7 @@ jobs:
           node-version: "22"
 
       - name: Run runtime tests
-        run: node --test tests/build-blog-search-runtime.test.mjs tests/get-blog-article.test.mjs
+        run: node --test tests/build-blog-search-runtime.test.mjs tests/generate-blog-article-store.test.mjs tests/get-blog-article.test.mjs
 
       - name: Build dynamic blog runtime
         run: node scripts/build-blog-search-runtime.mjs
