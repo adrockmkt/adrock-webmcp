@@ -27,6 +27,25 @@ export function canonicalizeSlug(slug) {
   return cleaned;
 }
 
+export function assertUniqueCanonicalSlugs(index) {
+  const seen = new Map();
+
+  for (const article of index) {
+    const canonical = canonicalizeSlug(article?.slug);
+    if (!canonical) {
+      throw new Error(`Invalid article slug: ${article?.slug ?? "<missing>"}`);
+    }
+
+    const previous = seen.get(canonical);
+    if (previous) {
+      throw new Error(
+        `Canonical slug collision: ${previous} and ${article.slug} -> ${canonical}`,
+      );
+    }
+    seen.set(canonical, article.slug);
+  }
+}
+
 export function normalizeArticleRecord(article, content) {
   const slug = canonicalizeSlug(article?.slug);
   if (!article || !slug) {
@@ -80,6 +99,7 @@ async function mapConcurrent(items, limit, mapper) {
 }
 
 export async function generateArticleStore(index, options = {}) {
+  assertUniqueCanonicalSlugs(index);
   const fetchContent = options.fetchContent ?? fetchArticleContent;
   const concurrency = options.concurrency ?? DEFAULT_CONCURRENCY;
   const records = await mapConcurrent(index, concurrency, async (article) =>
