@@ -5,8 +5,8 @@ import { discoverPublishedBlogUrls } from "./discover-blog-urls.mjs";
 import { fetchArticleMetadata } from "./extract-blog-metadata.mjs";
 
 const DEFAULT_OUTPUT = "data/blog-index.generated.json";
-const DEFAULT_METADATA_ATTEMPTS = 3;
-const DEFAULT_RETRY_DELAY_MS = 500;
+const DEFAULT_METADATA_ATTEMPTS = 5;
+const DEFAULT_RETRY_DELAY_MS = 1000;
 
 export function normalizeIndexRecord(record) {
   return {
@@ -21,6 +21,17 @@ export function normalizeIndexRecord(record) {
 
 export function isIndexableArticle(record) {
   return Boolean(record?.url && record?.slug && record?.title && record?.published_at);
+}
+
+export function isTransientlyEmptyMetadata(record) {
+  return Boolean(
+    record?.url &&
+    record?.slug &&
+    !record?.title &&
+    !record?.description &&
+    !record?.category &&
+    !record?.published_at
+  );
 }
 
 export function buildDeterministicIndex(records) {
@@ -47,15 +58,23 @@ export async function fetchIndexableMetadata(url, fetchMetadata, options = {}) {
   for (let attempt = 1; attempt <= attempts; attempt += 1) {
     try {
       lastRecord = normalizeIndexRecord(await fetchMetadata(url));
+
       if (isIndexableArticle(lastRecord)) {
         return { record: lastRecord, attempts: attempt, error: null };
       }
-      lastError = new Error("Incomplete article metadata");
+
+      if (!isTransientlyEmptyMetadata(lastRecord)) {
+        return { record: lastRecord, attempts: attempt, error: null };
+      }
+
+      lastError = new Error("Persistently empty article metadata");
     } catch (error) {
       lastError = error instanceof Error ? error : new Error(String(error));
     }
 
-    if (attempt < attempts) await wait(retryDelayMs * attempt);
+    if (attempt < attempts) {
+      await wait(retryDelayMs * (2 ** (attempt - 1)));
+    }
   }
 
   return { record: lastRecord, attempts, error: lastError };
@@ -69,10 +88,13 @@ export async function generateBlogIndex(options = {}) {
 
   for (const url of urls) {
     const result = await fetchIndexableMetadata(url, fetchMetadata, options);
-    if (result.record) records.push(result.record);
-    if (result.error && !result.record) {
+
+    if (result.error) {
       errors.push({ url, attempts: result.attempts, error: result.error.message });
+      continue;
     }
+
+    if (result.record) records.push(result.record);
   }
 
   const index = buildDeterministicIndex(records);
@@ -92,10 +114,14 @@ export async function generateBlogIndex(options = {}) {
   };
 }
 
+export function canPublishGeneratedIndex(result) {
+  return result.error_count === 0 && result.skipped_count <= 6;
+}
+
 async function main() {
   const output = process.argv[2] ?? DEFAULT_OUTPUT;
   const result = await generateBlogIndex();
-  await writeFile(output, JSON.stringify(result.index, null, 2) + "\n", "utf8");
+  const publishable = canPublishGeneratedIndex(result);
 
   process.stdout.write(JSON.stringify({
     output,
@@ -103,11 +129,17 @@ async function main() {
     indexed_count: result.indexed_count,
     skipped_count: result.skipped_count,
     error_count: result.error_count,
+    publishable,
     skipped: result.skipped,
     errors: result.errors,
   }, null, 2) + "\n");
 
-  if (result.error_count > 0 || result.skipped_count > 6) process.exitCode = 2;
+  if (!publishable) {
+    process.exitCode = 2;
+    return;
+  }
+
+  await writeFile(output, JSON.stringify(result.index, null, 2) + "\n", "utf8");
 }
 
 const isDirectExecution =
