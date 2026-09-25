@@ -5,6 +5,7 @@ import { join } from "node:path";
 import { tmpdir } from "node:os";
 
 import {
+  assertUniqueCanonicalSlugs,
   buildManifest,
   canonicalizeSlug,
   generateArticleStore,
@@ -84,4 +85,37 @@ test("writes one JSON artifact per slug plus manifest", async () => {
   assert.equal(article.content, "Article body");
   assert.equal(manifest.article_count, 1);
   assert.equal(manifest.articles[0].slug, "article-a");
+});
+
+
+test("rejects canonical slug collisions before fetching article content", async () => {
+  const index = [
+    {
+      slug: "google-sponso%E2%80%8Bred-results",
+      url: "https://adrock.com.br/blog/google-sponso%E2%80%8Bred-results",
+      title: "Encoded",
+    },
+    {
+      slug: "google-sponsored-results",
+      url: "https://adrock.com.br/blog/google-sponsored-results",
+      title: "Canonical",
+    },
+  ];
+
+  assert.throws(
+    () => assertUniqueCanonicalSlugs(index),
+    /Canonical slug collision/,
+  );
+
+  let fetches = 0;
+  await assert.rejects(
+    () => generateArticleStore(index, {
+      fetchContent: async () => {
+        fetches += 1;
+        return "Body";
+      },
+    }),
+    /Canonical slug collision/,
+  );
+  assert.equal(fetches, 0);
 });
