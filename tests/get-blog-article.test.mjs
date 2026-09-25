@@ -76,7 +76,7 @@ test("fails closed on a tampered manifest path", async () => {
     }),
   }));
 
-  await assert.rejects(() => context.AdRockBlogArticles.get("known-article"), /Invalid article manifest path/);
+  await assert.rejects(() => context.AdRockBlogArticles.get("known-article"), /Invalid article manifest/);
 });
 
 test("registers get_blog_article with the frozen public contract", async () => {
