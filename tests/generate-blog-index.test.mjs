@@ -3,9 +3,11 @@ import test from "node:test";
 
 import {
   buildDeterministicIndex,
+  canPublishGeneratedIndex,
   generateBlogIndex,
   fetchIndexableMetadata,
   isIndexableArticle,
+  isTransientlyEmptyMetadata,
   normalizeIndexRecord,
 } from "../scripts/generate-blog-index.mjs";
 
@@ -44,6 +46,8 @@ test("combines discovery and metadata extraction while reporting failures", asyn
   ];
   const result = await generateBlogIndex({
     urls,
+    metadataAttempts: 2,
+    retryDelayMs: 0,
     fetchMetadata: async (url) => {
       if (url.endsWith("/b")) throw new Error("HTTP 500");
       return { title: "A", slug: "a", url, published_at: "2026-01-01" };
@@ -56,38 +60,49 @@ test("combines discovery and metadata extraction while reporting failures", asyn
   assert.match(result.errors[0].error, /HTTP 500/);
 });
 
-
-test("excludes structural blog pages without publication date", () => {
-  const categoryPage = {
-    title: "SEO e IA",
-    slug: "seo-ia",
-    url: "https://adrock.com.br/blog/seo-ia",
-    description: "Category landing page",
-    category: null,
-    published_at: null,
-  };
-  assert.equal(isIndexableArticle(categoryPage), false);
-  assert.deepEqual(buildDeterministicIndex([categoryPage]), []);
-});
-
-test("reports structurally skipped pages separately from HTTP errors", async () => {
+test("excludes structural blog pages without publication date without retrying", async () => {
+  let calls = 0;
   const result = await generateBlogIndex({
     urls: ["https://adrock.com.br/blog/seo-ia"],
-    fetchMetadata: async (url) => ({
-      title: "SEO e IA",
-      slug: "seo-ia",
-      url,
-      description: "Category landing page",
-      category: null,
-      published_at: null,
-    }),
+    metadataAttempts: 5,
+    retryDelayMs: 0,
+    fetchMetadata: async (url) => {
+      calls += 1;
+      return {
+        title: "SEO e IA",
+        slug: "seo-ia",
+        url,
+        description: "Category landing page",
+        category: null,
+        published_at: null,
+      };
+    },
   });
-  assert.equal(result.discovered_count, 1);
+  assert.equal(calls, 1);
   assert.equal(result.indexed_count, 0);
   assert.equal(result.skipped_count, 1);
   assert.equal(result.error_count, 0);
 });
 
+test("identifies only fully empty article metadata as transient", () => {
+  assert.equal(isTransientlyEmptyMetadata({
+    title: null,
+    slug: "article",
+    url: "https://adrock.com.br/blog/article",
+    description: null,
+    category: null,
+    published_at: null,
+  }), true);
+
+  assert.equal(isTransientlyEmptyMetadata({
+    title: "Category",
+    slug: "category",
+    url: "https://adrock.com.br/blog/category",
+    description: null,
+    category: null,
+    published_at: null,
+  }), false);
+});
 
 test("retries incomplete transient metadata until the article is indexable", async () => {
   let calls = 0;
@@ -95,10 +110,12 @@ test("retries incomplete transient metadata until the article is indexable", asy
     "https://adrock.com.br/blog/kiro",
     async (url) => {
       calls += 1;
-      if (calls < 3) return { title: null, slug: "kiro", url, published_at: null };
+      if (calls < 3) {
+        return { title: null, slug: "kiro", url, description: null, category: null, published_at: null };
+      }
       return { title: "Kiro", slug: "kiro", url, published_at: "2026-04-02" };
     },
-    { metadataAttempts: 3, retryDelayMs: 0 },
+    { metadataAttempts: 5, retryDelayMs: 0 },
   );
 
   assert.equal(calls, 3);
@@ -107,20 +124,34 @@ test("retries incomplete transient metadata until the article is indexable", asy
   assert.equal(result.record.title, "Kiro");
 });
 
-test("keeps a persistently incomplete page as skipped after retries", async () => {
+test("promotes persistently empty metadata to an error after retries", async () => {
   let calls = 0;
   const result = await generateBlogIndex({
     urls: ["https://adrock.com.br/blog/incomplete"],
-    metadataAttempts: 3,
+    metadataAttempts: 5,
     retryDelayMs: 0,
     fetchMetadata: async (url) => {
       calls += 1;
-      return { title: null, slug: "incomplete", url, published_at: null };
+      return {
+        title: null,
+        slug: "incomplete",
+        url,
+        description: null,
+        category: null,
+        published_at: null,
+      };
     },
   });
 
-  assert.equal(calls, 3);
+  assert.equal(calls, 5);
   assert.equal(result.indexed_count, 0);
-  assert.equal(result.skipped_count, 1);
-  assert.equal(result.error_count, 0);
+  assert.equal(result.skipped_count, 0);
+  assert.equal(result.error_count, 1);
+  assert.match(result.errors[0].error, /empty article metadata/);
+});
+
+test("fails closed when generation has errors or unexpected skipped pages", () => {
+  assert.equal(canPublishGeneratedIndex({ error_count: 0, skipped_count: 6 }), true);
+  assert.equal(canPublishGeneratedIndex({ error_count: 1, skipped_count: 6 }), false);
+  assert.equal(canPublishGeneratedIndex({ error_count: 0, skipped_count: 7 }), false);
 });
