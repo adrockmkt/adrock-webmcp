@@ -7,7 +7,7 @@ const runtimeSource = await readFile(new URL("../src/blog-articles.js", import.m
 const toolSource = await readFile(new URL("../src/get-blog-article-tool.js", import.meta.url), "utf8");
 
 function runtimeContext(fetchImpl) {
-  const context = { fetch: fetchImpl, console };
+  const context = { fetch: fetchImpl, console, URL, TextEncoder };
   context.globalThis = context;
   vm.createContext(context);
   vm.runInContext(runtimeSource, context);
@@ -21,10 +21,13 @@ test("retrieves only a manifest-approved article artifact", async () => {
     if (url.endsWith("blog-articles-manifest.json")) {
       return { ok: true, json: async () => ({
         schema_version: 1,
+        article_count: 1,
         articles: [{
           slug: "known-article",
           url: "https://adrock.com.br/blog/known-article",
           path: "blog-articles/known-article.json",
+          content_length: 23,
+          content_bytes: 23,
         }],
       }) };
     }
@@ -33,6 +36,7 @@ test("retrieves only a manifest-approved article artifact", async () => {
       url: "https://adrock.com.br/blog/known-article",
       content: "Grounded editorial body",
       content_length: 23,
+      content_bytes: 23,
     }) };
   });
 
@@ -46,7 +50,7 @@ test("rejects unsafe and unknown slugs without arbitrary article fetch", async (
   let calls = 0;
   const context = runtimeContext(async () => {
     calls++;
-    return { ok: true, json: async () => ({ schema_version: 1, articles: [] }) };
+    return { ok: true, json: async () => ({ schema_version: 1, article_count: 0, articles: [] }) };
   });
 
   await assert.rejects(() => context.AdRockBlogArticles.get("../admin"), /Invalid article slug/);
@@ -61,10 +65,13 @@ test("fails closed on a tampered manifest path", async () => {
     ok: true,
     json: async () => ({
       schema_version: 1,
+      article_count: 1,
       articles: [{
         slug: "known-article",
         url: "https://adrock.com.br/blog/known-article",
         path: "../secret.json",
+        content_length: 4,
+        content_bytes: 4,
       }],
     }),
   }));
@@ -108,4 +115,111 @@ test("does not register when WebMCP or retrieval runtime is unavailable", async 
     await new Promise((resolve) => setImmediate(resolve));
   }
   assert.equal(calls, 0);
+});
+
+
+test("rejects manifest entries pointing outside the public Ad Rock blog", async () => {
+  const context = runtimeContext(async () => ({
+    ok: true,
+    json: async () => ({
+      schema_version: 1,
+      article_count: 1,
+      articles: [{
+        slug: "known-article",
+        url: "https://evil.example/blog/known-article",
+        path: "blog-articles/known-article.json",
+        content_length: 4,
+        content_bytes: 4,
+      }],
+    }),
+  }));
+
+  await assert.rejects(() => context.AdRockBlogArticles.get("known-article"), /Invalid article manifest/);
+});
+
+test("rejects manifest count mismatches and duplicate slugs", async () => {
+  for (const manifest of [
+    {
+      schema_version: 1,
+      article_count: 2,
+      articles: [{
+        slug: "known-article",
+        url: "https://adrock.com.br/blog/known-article",
+        path: "blog-articles/known-article.json",
+        content_length: 4,
+        content_bytes: 4,
+      }],
+    },
+    {
+      schema_version: 1,
+      article_count: 2,
+      articles: [1, 2].map(() => ({
+        slug: "known-article",
+        url: "https://adrock.com.br/blog/known-article",
+        path: "blog-articles/known-article.json",
+        content_length: 4,
+        content_bytes: 4,
+      })),
+    },
+  ]) {
+    const context = runtimeContext(async () => ({ ok: true, json: async () => manifest }));
+    await assert.rejects(() => context.AdRockBlogArticles.get("known-article"), /Invalid article manifest/);
+  }
+});
+
+test("rejects tampered article length and byte metadata", async () => {
+  const context = runtimeContext(async (url) => {
+    if (url.endsWith("blog-articles-manifest.json")) {
+      return { ok: true, json: async () => ({
+        schema_version: 1,
+        article_count: 1,
+        articles: [{
+          slug: "known-article",
+          url: "https://adrock.com.br/blog/known-article",
+          path: "blog-articles/known-article.json",
+          content_length: 4,
+          content_bytes: 4,
+        }],
+      }) };
+    }
+    return { ok: true, json: async () => ({
+      slug: "known-article",
+      url: "https://adrock.com.br/blog/known-article",
+      content: "Body!",
+      content_length: 4,
+      content_bytes: 4,
+    }) };
+  });
+
+  await assert.rejects(() => context.AdRockBlogArticles.get("known-article"), /Invalid article artifact/);
+});
+
+test("validates UTF-8 byte length independently from character length", async () => {
+  const content = "ação";
+  const byteLength = new TextEncoder().encode(content).length;
+  const context = runtimeContext(async (url) => {
+    if (url.endsWith("blog-articles-manifest.json")) {
+      return { ok: true, json: async () => ({
+        schema_version: 1,
+        article_count: 1,
+        articles: [{
+          slug: "known-article",
+          url: "https://adrock.com.br/blog/known-article",
+          path: "blog-articles/known-article.json",
+          content_length: content.length,
+          content_bytes: byteLength,
+        }],
+      }) };
+    }
+    return { ok: true, json: async () => ({
+      slug: "known-article",
+      url: "https://adrock.com.br/blog/known-article",
+      content,
+      content_length: content.length,
+      content_bytes: byteLength,
+    }) };
+  });
+
+  const article = await context.AdRockBlogArticles.get("known-article");
+  assert.equal(article.content, content);
 });
