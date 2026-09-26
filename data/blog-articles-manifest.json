@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "article_count": 317,
+  "article_count": 318,
   "articles": [
     {
       "slug": "10-pilares-do-geo-visibilidade-ia-search",
@@ -1137,6 +1137,13 @@
       "content_bytes": 2907
     },
     {
+      "slug": "ia-economia-links-seo-trafego",
+      "url": "https://adrock.com.br/blog/ia-economia-links-seo-trafego",
+      "path": "blog-articles/ia-economia-links-seo-trafego.json",
+      "content_length": 11884,
+      "content_bytes": 12196
+    },
+    {
       "slug": "ia-no-marketing-problema-nao-tecnologia",
       "url": "https://adrock.com.br/blog/ia-no-marketing-problema-nao-tecnologia",
       "path": "blog-articles/ia-no-marketing-problema-nao-tecnologia.json",
@@ -1343,8 +1350,8 @@
       "slug": "menos-de-um-terco-das-buscas-google-geram-cliques",
       "url": "https://adrock.com.br/blog/menos-de-um-terco-das-buscas-google-geram-cliques",
       "path": "blog-articles/menos-de-um-terco-das-buscas-google-geram-cliques.json",
-      "content_length": 10953,
-      "content_bytes": 11242
+      "content_length": 10869,
+      "content_bytes": 11160
     },
     {
       "slug": "meta-ads-brasil-2026-tributacao",
