@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "article_count": 322,
+  "article_count": 324,
   "articles": [
     {
       "slug": "10-pilares-do-geo-visibilidade-ia-search",
@@ -1074,6 +1074,13 @@
       "content_bytes": 5735
     },
     {
+      "slug": "google-tag-manager-settings-destination-tags-atualizacao-2026",
+      "url": "https://adrock.com.br/blog/google-tag-manager-settings-destination-tags-atualizacao-2026",
+      "path": "blog-articles/google-tag-manager-settings-destination-tags-atualizacao-2026.json",
+      "content_length": 23973,
+      "content_bytes": 24799
+    },
+    {
       "slug": "google-think-week-2025-novidades-ads-analytics",
       "url": "https://adrock.com.br/blog/google-think-week-2025-novidades-ads-analytics",
       "path": "blog-articles/google-think-week-2025-novidades-ads-analytics.json",
@@ -2024,6 +2031,13 @@
       "path": "blog-articles/serp-atribuicao-tracking-google-ads-seo.json",
       "content_length": 3824,
       "content_bytes": 4005
+    },
+    {
+      "slug": "sincronizar-palavras-chave-google-ads-planilha-zapier-mcp",
+      "url": "https://adrock.com.br/blog/sincronizar-palavras-chave-google-ads-planilha-zapier-mcp",
+      "path": "blog-articles/sincronizar-palavras-chave-google-ads-planilha-zapier-mcp.json",
+      "content_length": 4577,
+      "content_bytes": 4675
     },
     {
       "slug": "sistema-completo-cold-email-ia",

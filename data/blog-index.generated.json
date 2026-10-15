@@ -1224,6 +1224,14 @@
     "published_at": "2026-04-13"
   },
   {
+    "title": "Ad Rock Digital Mkt - Blog - Google Tag Manager Settings: entenda a nova arquitetura do GTM, Destination Tags e o que muda na mensuração",
+    "slug": "google-tag-manager-settings-destination-tags-atualizacao-2026",
+    "url": "https://adrock.com.br/blog/google-tag-manager-settings-destination-tags-atualizacao-2026",
+    "description": "O Google Tag Manager ganhou Settings e Destination Tags. Entenda como atualizar containers, revisar permissões, otimizar performance e validar GA4 e Google Ads.",
+    "category": "Analytics e Dados",
+    "published_at": "2026-10-15"
+  },
+  {
     "title": "Ad Rock Digital Mkt - Blog - Google Think Week 2025: Guia Completo das Novidades em Ads, AI e Analytics",
     "slug": "google-think-week-2025-novidades-ads-analytics",
     "url": "https://adrock.com.br/blog/google-think-week-2025-novidades-ads-analytics",
@@ -2310,6 +2318,14 @@
     "description": "Entenda como mudanças na SERP do Google, modelos de atribuição e configuração de tracking se conectam e por que analisar SEO e mídia paga de forma isolada gera decisões erradas.",
     "category": "Mídia e Performance",
     "published_at": "2026-02-03"
+  },
+  {
+    "title": "Ad Rock Digital Mkt - Blog - Como sincronizamos as palavras-chave ativas do Google Ads com a planilha de planejamento usando Python, Zapier MCP e IA",
+    "slug": "sincronizar-palavras-chave-google-ads-planilha-zapier-mcp",
+    "url": "https://adrock.com.br/blog/sincronizar-palavras-chave-google-ads-planilha-zapier-mcp",
+    "description": "Case técnico: cruzamento de 298 palavras-chave ativas do Google Ads com a planilha de planejamento e escrita via Google Sheets API pelo Zapier MCP.",
+    "category": "Analytics e Dados",
+    "published_at": "2026-10-15"
   },
   {
     "title": "Ad Rock Digital Mkt - Blog - Cold Email com IA: Sistema Completo de Prospecção e Automação Passo a Passo",
