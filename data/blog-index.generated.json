@@ -2320,10 +2320,10 @@
     "published_at": "2026-02-03"
   },
   {
-    "title": "Ad Rock Digital Mkt - Blog - Como sincronizamos as palavras-chave ativas do Google Ads com a planilha de planejamento usando Python, Zapier MCP e IA",
+    "title": "Ad Rock Digital Mkt - Blog - Como sincronizamos as palavras-chave ativas do Google Ads com a planilha de planejamento usando Google Ads API, Zapier MCP e IA",
     "slug": "sincronizar-palavras-chave-google-ads-planilha-zapier-mcp",
     "url": "https://adrock.com.br/blog/sincronizar-palavras-chave-google-ads-planilha-zapier-mcp",
-    "description": "Case técnico: cruzamento de 298 palavras-chave ativas do Google Ads com a planilha de planejamento e escrita via Google Sheets API pelo Zapier MCP.",
+    "description": "Case técnico: 298 palavras-chave ativas do Google Ads sincronizadas com a planilha de planejamento via Google Ads API, Zapier MCP e um prompt.",
     "category": "Analytics e Dados",
     "published_at": "2026-10-15"
   },
