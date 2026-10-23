@@ -1,7 +1,7 @@
 {
   "slug": "gtag-server-side-container-sgtm-configuracao",
   "url": "https://adrock.com.br/blog/gtag-server-side-container-sgtm-configuracao",
-  "title": "Ad Rock Digital Mkt - Blog - Mudança no SGTM: Como o carregamento do gtag.js passou a ser responsabilidade do Web Container Client",
+  "title": "Mudança no SGTM: Como o carregamento do gtag.js passou a ser responsabilidade do Web Container Client | Ad Rock",
   "description": "Entenda a nova forma de carregar o gtag.js via Server-side Google Tag Manager (SGTM). Veja como configurar corretamente o Web Container Client e garantir que os scripts do Google sejam servidos com segurança e atribuição preservada.",
   "category": "Analytics e Dados",
   "published_at": "2025-09-07",

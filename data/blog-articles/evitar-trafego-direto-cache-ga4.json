@@ -1,7 +1,7 @@
 {
   "slug": "evitar-trafego-direto-cache-ga4",
   "url": "https://adrock.com.br/blog/evitar-trafego-direto-cache-ga4",
-  "title": "Ad Rock Digital Mkt - Blog - Como o Cache Pode Prejudicar sua Atribuição no GA4 (e Como Corrigir)",
+  "title": "Como o Cache Pode Prejudicar sua Atribuição no GA4 (e Como Corrigir) | Ad Rock",
   "description": "Evite que o cache distorça seus dados no GA4. Aprenda 6 práticas técnicas que impedem que campanhas pagas sejam atribuídas como tráfego direto, com exemplos de CDN, UTMs, SPAs e cabeçalhos HTTP.",
   "category": "Analytics e Dados",
   "published_at": "2025-09-05",

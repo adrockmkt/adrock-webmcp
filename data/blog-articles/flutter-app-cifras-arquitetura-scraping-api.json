@@ -1,7 +1,7 @@
 {
   "slug": "flutter-app-cifras-arquitetura-scraping-api",
   "url": "https://adrock.com.br/blog/flutter-app-cifras-arquitetura-scraping-api",
-  "title": "Ad Rock Digital Mkt - Blog - Flutter na prática: construindo um app de cifras com scraping, API própria e arquitetura escalável",
+  "title": "Flutter na prática: construindo um app de cifras com scraping, API própria e arquitetura escalável | Ad Rock",
   "description": "Projeto técnico com Flutter para criação de app de cifras integrado a scraping, API própria em Python e arquitetura escalável. Veja stack, decisões e roadmap completo.",
   "category": "Código e Automação",
   "published_at": "2026-05-02",

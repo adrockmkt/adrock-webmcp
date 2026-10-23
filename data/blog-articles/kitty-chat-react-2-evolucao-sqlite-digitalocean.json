@@ -1,7 +1,7 @@
 {
   "slug": "kitty-chat-react-2-evolucao-sqlite-digitalocean",
   "url": "https://adrock.com.br/blog/kitty-chat-react-2-evolucao-sqlite-digitalocean",
-  "title": "Ad Rock Digital Mkt - Blog - 🐱 Kitty Chat React 2.0: evolução para infraestrutura própria com SQLite e DigitalOcean",
+  "title": "🐱 Kitty Chat React 2.0: evolução para infraestrutura própria com SQLite e DigitalOcean | Ad Rock",
   "description": "Veja a evolução do Kitty Chat React: saída do Supabase, backend próprio em Node.js, SQLite e nova arquitetura mais leve e controlada.",
   "category": "Código e Automação",
   "published_at": "2026-04-17",

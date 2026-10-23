@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "article_count": 324,
+  "article_count": 326,
   "articles": [
     {
       "slug": "10-pilares-do-geo-visibilidade-ia-search",
@@ -990,6 +990,13 @@
       "content_bytes": 5797
     },
     {
+      "slug": "google-hifens-urls-underscore-seo",
+      "url": "https://adrock.com.br/blog/google-hifens-urls-underscore-seo",
+      "path": "blog-articles/google-hifens-urls-underscore-seo.json",
+      "content_length": 19098,
+      "content_bytes": 19693
+    },
+    {
       "slug": "google-html-2mb-indexacao-documentacao-oficial",
       "url": "https://adrock.com.br/blog/google-html-2mb-indexacao-documentacao-oficial",
       "path": "blog-articles/google-html-2mb-indexacao-documentacao-oficial.json",
@@ -1364,8 +1371,8 @@
       "slug": "menos-de-um-terco-das-buscas-google-geram-cliques",
       "url": "https://adrock.com.br/blog/menos-de-um-terco-das-buscas-google-geram-cliques",
       "path": "blog-articles/menos-de-um-terco-das-buscas-google-geram-cliques.json",
-      "content_length": 10960,
-      "content_bytes": 11251
+      "content_length": 10948,
+      "content_bytes": 11247
     },
     {
       "slug": "meta-ads-brasil-2026-tributacao",
@@ -1429,6 +1436,13 @@
       "path": "blog-articles/meta-business-agent-ia-empresas.json",
       "content_length": 2344,
       "content_bytes": 2389
+    },
+    {
+      "slug": "meta-whatsapp-business-tools-mcp-agentes-ia-api-oficial",
+      "url": "https://adrock.com.br/blog/meta-whatsapp-business-tools-mcp-agentes-ia-api-oficial",
+      "path": "blog-articles/meta-whatsapp-business-tools-mcp-agentes-ia-api-oficial.json",
+      "content_length": 26010,
+      "content_bytes": 26841
     },
     {
       "slug": "metodo-bcg-ad-rock-portfolio-midia-paga-limitacoes",

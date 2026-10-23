@@ -1,7 +1,7 @@
 {
   "slug": "link-builder-api-flask-gpt-automacao",
   "url": "https://adrock.com.br/blog/link-builder-api-flask-gpt-automacao",
-  "title": "Ad Rock Digital Mkt - Blog - Link Builder – Da Ideia ao Middleware Inteligente com Flask, Nginx e GPT Actions",
+  "title": "Link Builder – Da Ideia ao Middleware Inteligente com Flask, Nginx e GPT Actions | Ad Rock",
   "description": "O Link Builder é uma API em Python/Flask desenvolvida pela Ad Rock Digital Mkt para geração automática de links UTM e QR Codes. O projeto integra infraestrutura com Nginx, HTTPS e GPT Actions, servindo como base para automações futuras com o OpenAI Assistant API.",
   "category": "Código e Automação",
   "published_at": "2025-10-09",

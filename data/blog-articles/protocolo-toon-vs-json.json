@@ -1,7 +1,7 @@
 {
   "slug": "protocolo-toon-vs-json",
   "url": "https://adrock.com.br/blog/protocolo-toon-vs-json",
-  "title": "Ad Rock Digital Mkt - Blog - TOON Protocol: o novo padrão que tenta superar o JSON",
+  "title": "TOON Protocol: o novo padrão que tenta superar o JSON | Ad Rock",
   "description": "O TOON Protocol propõe uma abordagem moderna para representar e transmitir dados estruturados, integrando tipagem forte, validação embutida e semântica rígida. Neste artigo, analisamos o protocolo, comparamos com JSON, Avro, Protobuf, Zod e Pydantic, e discutimos seu potencial real de adoção.",
   "category": "Código e Automação",
   "published_at": "2025-11-13",

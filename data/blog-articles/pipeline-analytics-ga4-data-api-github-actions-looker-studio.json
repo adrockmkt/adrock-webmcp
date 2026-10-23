@@ -1,7 +1,7 @@
 {
   "slug": "pipeline-analytics-ga4-data-api-github-actions-looker-studio",
   "url": "https://adrock.com.br/blog/pipeline-analytics-ga4-data-api-github-actions-looker-studio",
-  "title": "Ad Rock Digital Mkt - Blog - Do GA4 Data API ao Looker Studio: como programamos um pipeline automatizado de Analytics para um curso Latam",
+  "title": "Pipeline de Analytics: GA4 API ao Looker Studio | Ad Rock",
   "description": "Como programamos um pipeline de Analytics com GA4 Data API, Node.js, Apps Script, Sheets, testes, GitHub Actions e Looker Studio para um curso Latam.",
   "category": "Código e Automação",
   "published_at": "2026-09-11",

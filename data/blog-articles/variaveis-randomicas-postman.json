@@ -1,7 +1,7 @@
 {
   "slug": "variaveis-randomicas-postman",
   "url": "https://adrock.com.br/blog/variaveis-randomicas-postman",
-  "title": "Ad Rock Digital Mkt - Blog - Usando variáveis dinâmicas no Postman: gere dados aleatórios automaticamente",
+  "title": "Usando variáveis dinâmicas no Postman: gere dados aleatórios automaticamente | Ad Rock",
   "description": "O Postman possui dezenas de variáveis dinâmicas para gerar nomes, e-mails, UUIDs e outros dados aleatórios automaticamente. Veja como usar corretamente e evitar erros nos testes de API.",
   "category": "Código e Automação",
   "published_at": "2025-11-05",

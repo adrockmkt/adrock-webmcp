@@ -1,7 +1,7 @@
 {
   "slug": "detectar-bloquear-piggyback-gtm-ga4-alerta",
   "url": "https://adrock.com.br/blog/detectar-bloquear-piggyback-gtm-ga4-alerta",
-  "title": "Ad Rock Digital Mkt - Blog - Como detectamos e neutralizamos um caso de piggyback usando GTM + GA4",
+  "title": "Como detectamos e neutralizamos um caso de piggyback usando GTM + GA4 | Ad Rock",
   "description": "Detectamos que alguém estava piggybacking nosso container e criamos um detector com Google Tag Manager + GA4, relatório exploratório e alertas automáticos. Guia prático com código e checklist.",
   "category": "Analytics e Dados",
   "published_at": "2025-09-19",

@@ -1,7 +1,7 @@
 {
   "slug": "ga4-assistant-bot-chatgpt-openapi",
   "url": "https://adrock.com.br/blog/ga4-assistant-bot-chatgpt-openapi",
-  "title": "Ad Rock Digital Mkt - Blog - GA4 Assistant Bot: Consultas Inteligentes ao Google Analytics 4 com IA e Linguagem Natural",
+  "title": "GA4 Assistant Bot: Consultas Inteligentes ao Google Analytics 4 com IA e Linguagem Natural | Ad Rock",
   "description": "Bot inteligente com IA e ChatGPT que responde dados do GA4 via linguagem natural. Desenvolvido pela Ad Rock com FastAPI, OAuth e OpenAPI.",
   "category": "Analytics e Dados",
   "published_at": "2025-08-15",
