@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "article_count": 327,
+  "article_count": 328,
   "articles": [
     {
       "slug": "10-pilares-do-geo-visibilidade-ia-search",
@@ -1093,6 +1093,13 @@
       "path": "blog-articles/google-tag-manager-settings-entenda-a-nova-arquitetura-do-gtm-destination-tags-e-o-que-muda-na-mensuracao.json",
       "content_length": 24090,
       "content_bytes": 24920
+    },
+    {
+      "slug": "google-tag-manager-verbose-logging-preview-tag-assistant",
+      "url": "https://adrock.com.br/blog/google-tag-manager-verbose-logging-preview-tag-assistant",
+      "path": "blog-articles/google-tag-manager-verbose-logging-preview-tag-assistant.json",
+      "content_length": 7910,
+      "content_bytes": 8142
     },
     {
       "slug": "google-think-week-2025-novidades-ads-analytics",
