@@ -504,6 +504,14 @@
     "published_at": "2025-10-07"
   },
   {
+    "title": "Complianz e Consent Mode no Newspack: guia e case | Ad Rock",
+    "slug": "complianz-consent-mode-newspack-ga4-gtm-guia",
+    "url": "https://adrock.com.br/blog/complianz-consent-mode-newspack-ga4-gtm-guia",
+    "description": "Guia de Complianz e Consent Mode v2 em sites Newspack: case real, conflito com Site Kit e Perfmatters, configuração correta e testes de GA4 e GTM.",
+    "category": "Analytics e Dados",
+    "published_at": "2026-11-18"
+  },
+  {
     "title": "Quando o problema é tracking: erros comuns na configuração de conversões do Google Ads | Ad Rock",
     "slug": "configuracao-conversoes-google-ads-erros-comuns",
     "url": "https://adrock.com.br/blog/configuracao-conversoes-google-ads-erros-comuns",
@@ -1072,7 +1080,7 @@
     "published_at": "2026-01-06"
   },
   {
-    "title": "GA4 Data Manager: conexões, integrações e riscos de duplicidade",
+    "title": "GA4 Data Manager: conexões e integrações | Ad Rock",
     "slug": "google-analytics-4-data-manager-integracoes-conexoes-dados",
     "url": "https://adrock.com.br/blog/google-analytics-4-data-manager-integracoes-conexoes-dados",
     "description": "Conheça o Data Manager do GA4: mapa de conexões, importações, integrações e cuidados para evitar duplicidade de conversões.",
@@ -1144,10 +1152,10 @@
     "published_at": "2026-01-12"
   },
   {
-    "title": "Google reforça o uso de hífens em URLs: entenda a diferença entre hífen e underscore para SEO",
+    "title": "Hífen ou underscore em URLs: o que diz o Google | Ad Rock",
     "slug": "google-hifens-urls-underscore-seo",
     "url": "https://adrock.com.br/blog/google-hifens-urls-underscore-seo",
-    "description": "Google atualiza sua documentação sobre hífens em URLs. Entenda por que usar hífen em vez de underscore, veja exemplos práticos e saiba quando alterar URLs existentes.",
+    "description": "Entenda a recomendação do Google sobre hífens e underscores em URLs, veja exemplos e saiba quando vale alterar endereços existentes.",
     "category": "SEO e IA",
     "published_at": "2026-10-22"
   },
@@ -1256,7 +1264,7 @@
     "published_at": "2026-10-15"
   },
   {
-    "title": "Google Tag Manager Settings: entenda a nova arquitetura do GTM, Destination Tags e o que muda na mensuração",
+    "title": "GTM Settings e Destination Tags: o que muda | Ad Rock",
     "slug": "google-tag-manager-settings-entenda-a-nova-arquitetura-do-gtm-destination-tags-e-o-que-muda-na-mensura%C3%A7%C3%A3o",
     "url": "https://adrock.com.br/blog/google-tag-manager-settings-entenda-a-nova-arquitetura-do-gtm-destination-tags-e-o-que-muda-na-mensura%C3%A7%C3%A3o",
     "description": "O Google Tag Manager ganhou Settings e Destination Tags. Entenda como atualizar containers, revisar permissões, otimizar performance e validar GA4 e Google Ads.",
@@ -1264,7 +1272,7 @@
     "published_at": "2026-10-26"
   },
   {
-    "title": "Google Tag Manager ganha Verbose Logging no Preview: mais detalhes para identificar erros de mensuração",
+    "title": "GTM Verbose Logging: depuração no Preview | Ad Rock",
     "slug": "google-tag-manager-verbose-logging-preview-tag-assistant",
     "url": "https://adrock.com.br/blog/google-tag-manager-verbose-logging-preview-tag-assistant",
     "description": "Conheça o Verbose Logging no Preview do Google Tag Manager, seus benefícios para depuração de GA4 e Google Ads, exemplos de uso e cuidados técnicos.",
@@ -1672,10 +1680,10 @@
     "published_at": "2026-06-11"
   },
   {
-    "title": "Meta lança WhatsApp Business Tools MCP: como conectar agentes de IA à API oficial do WhatsApp",
+    "title": "WhatsApp Business Tools MCP: agentes de IA | Ad Rock",
     "slug": "meta-whatsapp-business-tools-mcp-agentes-ia-api-oficial",
     "url": "https://adrock.com.br/blog/meta-whatsapp-business-tools-mcp-agentes-ia-api-oficial",
-    "description": "Meta lança o WhatsApp Business Tools MCP para conectar Claude, ChatGPT e Codex à API oficial do WhatsApp. Veja como funciona, exemplos de uso, configuração e limitações.",
+    "description": "Veja como o WhatsApp Business Tools MCP conecta agentes de IA à API oficial, com exemplos de uso, configuração e limitações.",
     "category": "Código e Automação",
     "published_at": "2026-10-22"
   },
